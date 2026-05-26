@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>📰 朝のニュースサマリー</title>
+  <style>
+    /* ── デザイントークン ────────────────────────────────
+       新聞・通信社を思わせる落ち着いたインク基調。
+       見出しはセリフ、本文はシステムフォント。
+       紫グラデや Inter 等のありがち AI 風は避ける。 */
+    :root {
+      --bg:        #faf9f6;
+      --surface:   #ffffff;
+      --border:    #e3e0d8;
+      --text:      #1f2328;
+      --text-soft: #5a626c;
+      --accent:    #2f5d8a;  /* 落ち着いたネイビーブルー */
+      --accent-bg: #eaf0f6;
+      --shadow:    0 1px 2px rgba(31, 35, 40, .06);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:        #16181c;
+        --surface:   #1e2126;
+        --border:    #2c3036;
+        --text:      #e6e8ea;
+        --text-soft: #9aa1aa;
+        --accent:    #7fa9d4;
+        --accent-bg: #1f2730;
+        --shadow:    0 1px 2px rgba(0, 0, 0, .35);
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+                   "Hiragino Sans", "Yu Gothic", "Meiryo", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.75;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.15rem 4rem; }
+
+    header {
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", Georgia, "Times New Roman", serif;
+      font-size: 1.7rem;
+      line-height: 1.35;
+      margin: 0 0 .55rem;
+      letter-spacing: .01em;
+      overflow-wrap: anywhere;
+    }
+
+    .lead { margin: 0; color: var(--text-soft); font-size: 1rem; }
+
+    h2 {
+      font-size: .82rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--text-soft);
+      margin: 0 0 1rem;
+      font-weight: 600;
+    }
+
+    /* ── サマリー一覧 ──────────────────────────────────── */
+    ul.briefs {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: .6rem;
+    }
+    ul.briefs li { margin: 0; }
+
+    ul.briefs a {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      padding: .85rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      color: var(--text);
+      text-decoration: none;
+      transition: border-color .15s ease, transform .15s ease;
+    }
+    ul.briefs a:hover,
+    ul.briefs a:focus-visible {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+      outline: none;
+    }
+    ul.briefs a::after {
+      content: "›";
+      color: var(--accent);
+      font-size: 1.2rem;
+      line-height: 1;
+      margin-left: auto;
+    }
+
+    .date-jp { font-weight: 600; }
+    .date-iso {
+      font-family: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: .8rem;
+      color: var(--text-soft);
+      background: var(--accent-bg);
+      padding: .1rem .45rem;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-soft);
+      font-size: .82rem;
+    }
+
+    @media (max-width: 480px) {
+      .wrap { padding: 1.5rem 1rem 3rem; }
+      h1 { font-size: 1.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>📰 朝のニュースサマリー</h1>
+      <p class="lead">
+        その日の主要な一般ニュースを、毎朝ひとつのサマリーにまとめて蓄積しています。
+        通勤前の数分で要点を把握できることを目指したアーカイブです。
+      </p>
+    </header>
+
+    <main>
+      <h2>過去のサマリー</h2>
+      <!-- 新しい日付ほど上に来るよう、この ul の先頭に <li> を追記していく -->
+      <ul class="briefs">
+        <!-- INSERT-NEXT-SUMMARY-HERE: 新規サマリーはこの行の直下に追加する -->
+        <li>
+          <a href="./2026-05-26/">
+            <span class="date-jp">2026年05月26日(火)</span>
+            <span class="date-iso">2026-05-26</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      毎朝更新 · GitHub Pages で公開
+    </footer>
+  </div>
+</body>
+</html>
