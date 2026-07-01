@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-01(水)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月1日(水)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://www.bbc.com/news/articles/cdr42623e1do" target="_blank" rel="noopener"><span class="lede">本日最大</span><span class="cont">続報</span>米商務省、AnthropicのFable 5とMythos 5への輸出規制を解除 ─ 7/1にグローバル復帰</a></h3>
+  <p class="src">参照元: BBC / Axios / TechCrunch / Bloomberg / Reuters / WSJ (via Techmeme)</p>
+  <p class="summary">(前日からの続報) 米商務省が6月30日、Anthropicの最上位モデル「Claude Fable 5」「Mythos 5」への輸出規制(6/12停止)を解除。7月1日からFable 5がグローバル復帰、Mythos 5は政府承認済み組織限定で復帰。停止のきっかけはAmazon研究者による脱獄手法(脆弱性コード生成)発見で、Anthropicは政府と脱獄検知フレームワークをMS/Google/Amazonと共同策定。18日ぶりの解禁でAI各社と政府の連携モデルが常態化へ。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/" target="_blank" rel="noopener">Cloudflare、AI用クローラーを検索と分離しない企業をブロック ─ 9/15適用</a></h3>
+  <p class="src">参照元: TechCrunch (Sarah Perez)</p>
+  <p class="summary">Cloudflareが9月15日から、検索とAIエージェント/学習を兼ねる「mixed-use」クローラーを広告掲載ページで既定ブロックにすると発表。新規顧客・新規サイト・既存フリー顧客に自動適用され、公開Web上のAI学習アクセスコストを実質引き上げる措置。ボットのトラフィックが人間を上回った現状を踏まえ、Prince CEOは「持続可能なエコシステム構築のため」と説明。Googleを名指しで「他社の約2倍の情報にアクセス」と批判。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/" target="_blank" rel="noopener">Meta、余剰AI計算資源をクラウド販売へ「Meta Compute」構想 ─ AWS・Google Cloudに挑戦</a></h3>
+  <p class="src">参照元: TechCrunch / Bloomberg</p>
+  <p class="summary">Metaが自社AIデータセンターの余剰計算能力をクラウド販売する新事業「Meta Compute」を計画中とBloomberg報道。Zuckerbergが表明済みの$1,829億AI設備投資を回収する狙い。SpaceX(xAI)がAnthropicとColossus 1一括契約を結んだのに続く動きで、「AI競争の勝者は最強モデルではなくデータセンター保有者」との見立てを補強。閉重み付けモデル「Muse Spark」の外販も並走。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/" target="_blank" rel="noopener">SpaceX、スマホ状のAIデバイス試作機を投資家に披露 ─ Musk氏は否定</a></h3>
+  <p class="src">参照元: TechCrunch / Wall Street Journal</p>
+  <p class="summary">SpaceXが投資家向けに「iPhoneより薄いハンドセット型AIデバイス」の試作機を提示、とWSJ。買収済みxAIの技術と独自OSを搭載する構想で、Starlink Mobile展開と組み合わせVerizon/AT&Tへの通信参入も視野。Musk氏は報道を「完全に虚偽」と否定するが、OpenAI×Jony Iveの端末開発、Apple元幹部Paul MeadeのOpenAI合流など、AI専用ハードの覇権争いが表面化。</p>
+</article>
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://www.japantimes.co.jp/business/2026/07/01/companies/toyota-joint-venture-joby-aviation/" target="_blank" rel="noopener">トヨタ、米Joby Aviationと「空飛ぶクルマ」量産合弁会社設立 ─ 出資比率51%</a></h3>
+  <p class="src">参照元: Japan Times / Nikkei Asia / ロイター</p>
+  <p class="summary">トヨタ自動車がJoby Aviationと合弁会社「Joby Toyota Aero Manufacturing Preparation Company」を米カリフォルニアに設立。トヨタ出資51%/Joby49%、代表は鶴田洋介氏。eVTOL「S4」シリーズの商用生産と米FAA認証取得を目指す。トヨタは既にJoby筆頭株主(累計約$894M出資)で、最終トランシェ$250Mも第4四半期に予定。トヨタ生産方式をJobyの設計と融合させる戦略。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.itmedia.co.jp/news/articles/2607/01/news139.html" target="_blank" rel="noopener">ソフトバンクG、OpenAIに追加1兆6,273億円出資を実行 ─ 300億ドル計画の第2弾</a></h3>
+  <p class="src">参照元: ITmedia NEWS / SoftBank Group 公式</p>
+  <p class="summary">ソフトバンクGが7月1日、OpenAI Group PBCへの計$300億追加出資のうち第2弾(セカンドトランシェ)の$100億(1兆6,273億円)を実行、と発表。原資は3月に締結したブリッジローン。第3弾$100億は10月1日に実行予定で、完了後の累計出資額は$646億(約10.3兆円)、出資比率は約13%となる見込み。Vision Fund 2経由。</p>
+</article>
+
+<article>
+  <h3><a href="https://news.yahoo.co.jp/articles/22d74e06122a0b0ae337b3a299cd27f4c7ab2485" target="_blank" rel="noopener">LINEヤフー、カカクコム買収を正式提案 ─ EQTのTOB期限直前で対抗</a></h3>
+  <p class="src">参照元: TBS NEWS DIG / 共同通信 (Yahoo!ニュース経由)</p>
+  <p class="summary">LINEヤフーが米ベインキャピタルと共同で、価格比較サイト「カカクコム」買収の正式提案(法的拘束力あり)を発表。買い付け価格は欧州系EQTのTOB($3,000円/株、7/2期限)を上回るとしている。カカクコム筆頭株主のデジタルガレージは6月にLINEヤフー案を「蓋然性が低い」として拒否したが、EQT期限直前の正式提案でカカクコム争奪戦が最終局面へ。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/01/sony-to-end-physical-playstation-game-discs-in-2028/" target="_blank" rel="noopener">ソニー、PS新作の物理ディスク生産を2028年1月に終了 ─ 完全デジタルシフト</a></h3>
+  <p class="src">参照元: TechCrunch (Lauren Forristal)</p>
+  <p class="summary">ソニーが7月1日、2028年1月以降に発売するPlayStation新作の物理ディスク生産を全面終了し、全タイトルをPS Storeなどで完全デジタル配信に切り替えると発表。PS4/PS5のダウンロード比率は既に85%、物理は15%。GameStop 1,300店舗閉鎖など小売崩壊が背景。同日、PS3ストアの一部地域終了、来年PS3・Vitaストアの世界的閉鎖も併せて公表。</p>
+</article>
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/" target="_blank" rel="noopener">Together AI、Series Cで$800M調達 ─ 評価額$8.3B、Aramco Ventures主導</a></h3>
+  <p class="src">参照元: TechCrunch (Julie Bort)</p>
+  <p class="summary">Nvidia GPUクラスタを貸し出す「Neocloud」のTogether AIがSeries Cで$800M調達、評価額$8.3B。16カ月前の$3.3Bから急伸。リードはAramco Venturesで、Vista Equity・Nvidia・General Catalyst等が参加。年間予約$11.5億超、顧客にCursor・Cognition・Decagon。オープンソースモデル利用が1年で3倍、閉モデルよりコスト優位な「Neocloud」市場が急拡大。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/" target="_blank" rel="noopener">Venice AI、Series A $65Mでユニコーンへ ─ プライバシー優先の200+モデル基盤</a></h3>
+  <p class="src">参照元: TechCrunch (Ram Iyer)</p>
+  <p class="summary">200以上のAIモデルへ検閲なしアクセスを提供するVenice AIが、Series A $65MでValuation $10億(ユニコーン到達)。ARR $70M・黒字化済み。Dragonfly主導、Coinbase Ventures等が参加。ShapeShift創業者Erik Voorheesが率い、暗号化とサーバ非保存を武器にプライバシー訴求。AI精神障害リスクなど倫理論争のなか「中立的プラットフォーム」として拡大。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/01/ashton-kutcher-leaving-sound-ventures-to-launch-new-vc-firm-with-morgan-beller/" target="_blank" rel="noopener">俳優Ashton Kutcher、Sound Ventures離脱で新VC設立 ─ AIインフラ・エネルギー特化</a></h3>
+  <p class="src">参照元: TechCrunch / Wall Street Journal</p>
+  <p class="summary">俳優/投資家のAshton Kutcherが、共同創業したSound Ventures(OpenAI・Anthropic出資)を離れ、元a16z/NFXパートナー、Meta Libra共同創業のMorgan Bellerと新VC設立。AI基盤・エネルギー・ディープテック等「アーリーステージ」への集中投資。「AIラボの下層(電力/計算資源)にお金が流れる」新潮流の象徴、とTechCrunchは指摘。</p>
+</article>
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://mainichi.jp/articles/20260701/k00/00m/020/296000c" target="_blank" rel="noopener">日銀短観、大企業製造業DI +22 ─ 5期連続改善で約8年ぶり高水準、AI/半導体牽引</a></h3>
+  <p class="src">参照元: 毎日新聞 / 共同通信 / ロイター</p>
+  <p class="summary">日銀の6月短観で、大企業・製造業の業況判断DIが+22(前回比+5、5期連続改善)、2018年3月以来の高水準。非製造業も+37(35年ぶり高水準)。中東情勢による原材料高がある一方、AI・半導体需要と「値上がり前の前倒し需要」で押し上げ。ただし先行きは製造業-5・非製造業-9と悪化見通しで、原油高と個人消費不振を意識。日銀の追加利上げ観測が強まる材料。</p>
+</article>
+
+<article>
+  <h3><a href="https://topics.smt.docomo.ne.jp/article/tbs/business/tbs-2772984" target="_blank" rel="noopener"><span class="cont">続報</span>7月値上げ2,566品目 ─ 円安162円台後半、財務相「断固たる措置」示唆</a></h3>
+  <p class="src">参照元: TBS NEWS DIG / 帝国データバンク</p>
+  <p class="summary">(前日からの続報) 7月値上げは食品を中心に2,566品目、パン100種類やハム・カップ麺などが対象(帝国データバンク集計)。要因は中東情勢に加え、円相場が7月1日に一時1ドル=162.80円まで下落(39年半ぶり安値)。片山財務相は「いつでも適切に対応する」「断固たる措置」と介入警告、ふくおかFG佐々木氏は「政治の日銀圧力が続けば170円もあり得る」と警鐘。</p>
+</article>
+
+<article>
+  <h3><a href="https://zaikei.co.jp/article/20260701/859261.html" target="_blank" rel="noopener">日経平均一時1,700円高 ─ 3日続伸で70,246円、AI・半導体株が牽引</a></h3>
+  <p class="src">参照元: 財経新聞 / TBS NEWS DIG</p>
+  <p class="summary">7月1日の東京株式市場で日経平均株価が取引開始直後に一時1,700円超上昇、大引けでは3日続伸の70,246円(+184円)。前日の米ハイテク株高を受け、東京エレクトロン、イビデンなど半導体・AI関連株に買い集中。イビデン1銘柄で日経平均を約141円分押し上げ。「AI相場の潮目変化」報道でAlphabetから半導体関連に資金シフトの動きが顕在化。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.sankei.com/article/20260701-Q3IQKGEDWBM2BH4EA5DVHZKUZU/" target="_blank" rel="noopener">長期金利2.700% ─ 米金利上昇波及、日本国債売り継続</a></h3>
+  <p class="src">参照元: 産経新聞</p>
+  <p class="summary">7月1日の国債市場で、新発10年国債利回りの終値が前日比+0.020%の2.700%まで上昇。米長期金利上昇が波及し、日本国債が売られた。大阪取引所10年国債先物9月限は22銭安の127.55円。日銀短観改善で追加利上げ観測も金利上昇圧力に。</p>
+</article>
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://www.sankei.com/article/20260701-3IGTJQWF3VOM3KNE425HLMP2HM/" target="_blank" rel="noopener">高市首相、インドへ出発 ─ モディ首相と2日会談、経済安保・AI連携で共同声明</a></h3>
+  <p class="src">参照元: 産経新聞 (竹之内秀介)</p>
+  <p class="summary">高市早苗首相が7月1日、インド訪問のため政府専用機で羽田を出発。2日にモディ首相と会談し、経済安全保障と人工知能連携の共同声明を発表する方向。就任後初のインド訪問でクアッド一巡。エネルギー資源備蓄タスクフォース創設、CNG車向けバイオガス協力、重要鉱物・半導体サプライチェーン強化、防衛装備品協力などで合意見通し。スズキ等数十社が同行。</p>
+</article>
+
+<article>
+  <h3><a href="https://slashdot.org/story/26/07/01/1841200/apple-iphone-18-details-leaked-in-latest-tata-breach" target="_blank" rel="noopener">Apple iPhone 18 Pro 部品構成が大規模流出 ─ Tata Electronicsで再びリーク</a></h3>
+  <p class="src">参照元: Slashdot / Reuters</p>
+  <p class="summary">iPhone製造委託先のTata Electronicsから、未発表のiPhone 18 Pro部品構成表を含む約20万ファイルがダークウェブへ流出(World Leaksによる侵入)。マザーボードのチップやバッテリー、カメラの各サプライヤーが特定可能な状態で、Appleが非公開にしていた調達構造が露呈。中国脱却で25%のiPhone製造を担うインドTata依存に暗雲。TSMC、Qualcomm、Tesla資料も含む。</p>
+</article>
+
+<article>
+  <h3><a href="https://slashdot.org/story/26/07/01/1721206/virginias-henrico-county-asks-workers-to-conserve-power-amidst-huge-data-center-rate-hikes" target="_blank" rel="noopener">米ヴァージニア州ヘンリコ郡、AI DC急増で電気代25%上昇 ─ 職員に節電要請</a></h3>
+  <p class="src">参照元: Slashdot / 404 Media</p>
+  <p class="summary">DC近郊のヘンリコ郡(37カ所のデータセンター稼働、17カ所計画中)で、7/1から公共施設の電気料金が25%引き上げられ、年$500万コスト増。郡マネージャーが職員に「照明・PCオフ、電気ヒーター停止」等の節電依頼メールを一斉送信。Meta等の大規模DC集積で電力価格が住民サービスを圧迫する構図が顕在化、南北戦争史跡がDCに転用される計画も進む。</p>
+</article>
+
+<article>
+  <h3><a href="https://slashdot.org/story/26/07/01/1425204/anthropic-launches-claude-science-ai-workbench-for-research-labs" target="_blank" rel="noopener">Anthropic、「Claude Science」発表 ─ 60超の科学DB統合、抗生物質設計デモ</a></h3>
+  <p class="src">参照元: Slashdot / Genetic Engineering &amp; Biotechnology News</p>
+  <p class="summary">Anthropicが研究者向けAIワークベンチ「Claude Science」を発表。60を超える科学DBとツールを単一インターフェースで統合。Basecamp Researchの「EDEN」モデルが自然言語プロンプトから抗生物質ペプチドを設計、ワクチン標的を予測する機能を提供。「計算科学者でなくても臨床医が抗生物質設計できる」時代へ向けたデモとなるが、実験室検証は必須。</p>
+</article>
+</section>
+
+<footer>
+  <p>📡 <strong>収集元</strong>: Bloomberg Japan <span class="fail">(トップページ個別記事URLが取得しづらいためYahoo!ニュース等の Bloomberg 配信記事で代替)</span> / NewsPicks / 日本経済新聞 <span class="fail">(直接取得不可、共同・毎日・産経・ITmedia等の同題材記事で代替)</span> / Techmeme / TechCrunch / Slashdot</p>
+  <p>※ 前日(2026-06-29)に取り上げた記事と同一URL・実質同一トピックは除外。「Anthropic Fable/Mythos 復帰」「円安162円台/財務相コメント」は重要な続報のため <span class="cont">続報</span> マークで採用。</p>
+</footer>
+
+</div>
+</body>
+</html>
