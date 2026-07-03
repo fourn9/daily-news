@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-03(金)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月3日(金)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://www.scmp.com/tech/big-tech/article/3359375/alibaba-bans-staff-using-claude-code-over-anthropic-spyware-concerns" target="_blank" rel="noopener"><span class="lede">本日最大</span>アリババ、社内でClaude Code禁止 ─ Anthropicの「中国ユーザー追跡コード」発覚、7月10日から</a></h3>
+  <p class="src">参照元: South China Morning Post / Reuters / The Next Web / Caixin Global（Techmemeトップ集約60媒体超）</p>
+  <p class="summary">アリババが社内文書で「Claude Codeにバックドアリスクが確認された」として高リスクソフトウェアに指定、7月10日から全社員に利用を禁止、自社の「Qoder」への切替を通知。Reddit投稿者LegitMichel777が6月30日に公開した解析で、Claude Codeがバージョン2.1.91（4月2日リリース）以降、Asia/Shanghai等のタイムゾーンやプロキシURLをステガノグラフィで検出する隠しコードを含んでいたことが判明。Anthropicのエンジニアは「不正リセラーとdistillation防止の実験」と釈明、7月1日に削除PRをマージ済みと述べたが、6月10日にAnthropicが上院委員会宛書簡でアリババQwen関連の2.5万偽アカウント・2,880万往復のdistillation攻撃を指弾した経緯があり、米中AI冷戦の象徴的事件に発展。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.aol.com/articles/alexandr-wang-says-metas-coming-235204000.html" target="_blank" rel="noopener">Meta「Watermelon」がGPT-5.5に追いつく ─ Alexandr Wang氏がタウンホールで従業員に報告</a></h3>
+  <p class="src">参照元: Business Insider (via AOL) / InfoWorld / Yellow.com / TechCrunch</p>
+  <p class="summary">Meta Superintelligence Labsのアレクサンドル・ワン氏が7月2日の社内タウンホールで、現在訓練中の次期基盤モデル「Watermelon」が主要ベンチマークでOpenAIのGPT-5.5に追いついたと報告。前世代Avocado（Muse Spark）比で「一桁多い演算量」を投入。同氏はX投稿で「Muse Spark更新版もコーディング・エージェント能力で近日改善」とし、Anthropic Claude Opus級コーディング能力の時期を「近い」と回答。今年AIインフラ1,450億ドル投資を続けるMeta。ザッカーバーグCEOはAIエージェントの進化が想定より遅いとも認めており、対抗馬到達を賭ける勝負所。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/" target="_blank" rel="noopener">ザッカーバーグCEO「AIエージェントは期待ほど加速していない」 ─ 8,000人リストラも成果出ず</a></h3>
+  <p class="src">参照元: TechCrunch (Lucas Ropek) / Reuters</p>
+  <p class="summary">ザッカーバーグ氏が7月2日の社内タウンホールでAIエージェント開発の進捗が幹部の想定通りに「加速していない」と表明。今年実施した約8,000人のリストラ（法人従業員の約10%）と7,000人のAI部門再配置を「クリーンでなかった」と振り返り、AI再編の上振れは「まだ実を結んでいない」と発言。3〜6ヶ月で改善が見えると強調するも、Meta AI部門は現場エンジニアから「魂を削る強制収容所」と評され厳しい状況。今年AIインフラ最大1,450億ドル投資が正当化されるかが問われる局面。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.theregister.com/ai-and-ml/2026/07/01/godot-says-bye-bye-ai-bans-vibe-coded-contributions/5265344" target="_blank" rel="noopener">Godot財団、AI生成コード受入を禁止へ ─ 「vibe-coded」PR氾濫でメンテナー疲弊</a></h3>
+  <p class="src">参照元: The Register / Game Developer / Godot Engine公式ブログ</p>
+  <p class="summary">オープンソースゲームエンジンGodotの財団が6月30日、AIエージェント経由のPRおよびAIによる大規模コード生成を明文で禁止する方針を発表。「自律AIエージェント／vibe codingは即GitHubからBAN」「補完・正規表現・置換など menial なAI利用に限定」「PR議論での機械生成テキストも禁止」など厳格化。AIに責任は取れず、AI多用者はコードを理解せず修正できない、と説明。オープンソース開発者コミュニティ全体で「AI slop PR」の是非を巡る議論を加速させる可能性大。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.securityweek.com/agentic-ai-used-to-conduct-ransomware-attack-via-langflow/" target="_blank" rel="noopener">Sysdig、初の「エージェント型ランサムウェア」JadePufferを確認 ─ LLMが自律的にDB暗号化</a></h3>
+  <p class="src">参照元: SecurityWeek / The Register / Sysdig公式ブログ</p>
+  <p class="summary">SysdigのThreat Researchチームが、初めて確認されたエージェント型ランサムウェア攻撃「JadePuffer」を報告。攻撃者はLangflow(LLM開発フレームワーク)のCVE-2025-3248脆弱性を突いてアクセス、LLMがAPIキー・クラウド資格情報・仮想通貨ウォレット・DB認証情報を自律的に列挙。標的の本番MySQL/Alibaba Nacos設定サービスへピボットし、認可バイパス(CVE-2021-29441)と署名鍵デフォルトを悪用、1,342項目を暗号化。攻撃者は身代金要求だけ残し、暗号鍵は保存されず復旧不能。「31秒でエラーから修復コード生成」など人手速度を超え、AIが攻撃者ツールキットを置き換える時代の到来を告げる事例。</p>
+</article>
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGN02CNJ0S6A700C2000000/" target="_blank" rel="noopener"><span class="cont">続報</span>アップルの中国メモリー調達観測、米市場も直撃 ─ サンディスク14%安、半導体売り連鎖</a></h3>
+  <p class="src">参照元: 日本経済新聞 / Bloomberg</p>
+  <p class="summary">(前日からの続報) Bloombergが1日、Appleが中国CXMT・YMTCからメモリー半導体を調達検討と報道した余波が、7月2日の米市場に波及。サンディスクが14%急落、既存サプライヤーのマイクロン・SKハイニックス・キオクシアも大幅安が続き、米朝銅の半導体株連鎖安に。前日の東京・韓国市場からグローバル半導体セクターに売りが広がる展開。米政府ブラックリスト企業からの調達は米安全保障との衝突リスクをはらむ一方、Appleは慢性メモリ不足で製品全体の値上げを迫られており、業界秩序の再構築が焦点。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/03/chevy-built-an-all-american-ev-truck-why-is-nobody-buying-it/" target="_blank" rel="noopener">シボレーの「全米製EVトラック」なぜ売れない ─ 関税でBOM有利も需要低迷、市場設計を問う</a></h3>
+  <p class="src">参照元: TechCrunch (Tim De Chant)</p>
+  <p class="summary">GMがアメリカ国内サプライチェーンで組み立てる電気ピックアップトラック「Silverado EV」の販売が想定を大きく下回っている構造を分析。トランプ122条関税で輸入部品コストが上がる中、国内生産BOMが相対的に有利になっているにもかかわらず、EVピックアップ市場そのものが縮小しており米EV政策の効果に疑問符。給油スタンドから充電への切替コスト、モデルレンジ設計、価格帯の問題が浮上し、米自動車政策と関税政策の整合性が問われる展開。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/02/thiel-capitals-jack-selby-nabs-stakes-in-hot-startups-like-etched-through-arizona-connections/" target="_blank" rel="noopener">Thiel CapitalのJack Selby、Etched等の人気スタートアップに参画 ─ アリゾナ人脈で「隠れVC」台頭</a></h3>
+  <p class="src">参照元: TechCrunch (Marina Temkin)</p>
+  <p class="summary">Peter Thielの右腕として長年活動してきたJack Selby氏が、AIチップ新興Etched等の注目スタートアップにアリゾナ拠点のネットワーク経由で投資を積み上げる動きが顕在化。伝統的シリコンバレーVCの目が届かない砂漠の州で「独立系富豪ネットワーク」を作り上げ、Thiel Capitalとは別建てで案件を確保するパターンで、AIハードウェア領域の資金流動を大きく左右し得るプレイヤーに。米中AI冷戦下、非従来型VCの影響力拡大が注目点。</p>
+</article>
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/" target="_blank" rel="noopener">Meta、「Meta Compute」クラウド新事業へ ─ 余剰GPU販売でAWSと真っ向勝負、株9%高</a></h3>
+  <p class="src">参照元: Bloomberg / TechCrunch / CNBC / Tom's Hardware</p>
+  <p class="summary">MetaがAIインフラ余剰キャパを外販するクラウド新事業「Meta Compute」構築中とBloombergが報道、7月1日のMeta株は9〜10%急騰(月間最大)。責任者は Santosh Janardhan / Daniel Gross / Dina Powell McCormick の3氏。Muse Sparkモデル込みのマネージド提供（Bedrock型）と、生GPU販売（CoreWeave型）の2方式を検討中。同社は今年AIインフラに1,450億ドル投資、CoreWeaveに210億ドル・Nebiusに270億ドル委託の巨大顧客だったが自ら供給側へ転換、報道でCoreWeave・Nebiusは12%急落。SpaceXに続く「自社データセンター外販」トレンドが本格化。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/01/after-18b-ipo-bending-spoons-founder-says-success-comes-from-minimizing-luck/" target="_blank" rel="noopener">イタリアBending Spoons、Nasdaqで180億ドル上場 ─ AOL・Vimeo・Evernote等買収の「AI前からAI」企業</a></h3>
+  <p class="src">参照元: TechCrunch (Anna Heim)</p>
+  <p class="summary">ミラノ拠点13年目のインターネットブランド収集企業Bending SpoonsがNasdaqに上場、初値時点で180億ドル超の企業価値、初日終値は40%高。Meetup・Eventbrite・Vimeo・WeTransfer・AOLなど「愛されるが停滞したブランド」を次々買収し、AI活用で機能開発を加速して伸ばす戦略。共同創業者Danieli氏「運の役割を減らす戦略」を強調、F-1目論見書に「AI before it was cool」章。欧州テック企業の米上場成功例が久々に加わり、AIタグ付き案件への公開市場の飢餓感を象徴。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/02/iqm-europes-first-public-quantum-company-admits-the-future-of-the-tech-is-uncertain/" target="_blank" rel="noopener">IQM、欧州初の上場量子コンピュータ企業が「業界の将来は不透明」と告白 ─ 量子ハイプ調整局面</a></h3>
+  <p class="src">参照元: TechCrunch (Anna Heim)</p>
+  <p class="summary">フィンランド発の超伝導型量子コンピュータ企業IQMが、欧州量子スタートアップ初のIPOを果たしたにも関わらず、CEOが決算コールで「量子技術の将来は不確実」「まだ大規模有用性の実証段階に至らない」と率直に告白。フォールトトレラント量子計算実現に何年か明言できず、キュービット数の伸びだけでは商業価値に直結しないと認める内容。AI一辺倒の投資環境下で、量子分野のバブル調整が本格化する兆し。日本の量子スタートアップ・研究機関にも同様の期待値調整圧力が及ぶ可能性。</p>
+</article>
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUB0337F0T00C26A7000000/" target="_blank" rel="noopener"><span class="cont">続報</span>長期金利、一時2.81% 30年ぶり高水準 ─ 「骨太ショック」で秋には3%視野の警戒感</a></h3>
+  <p class="src">参照元: 日本経済新聞 / 時事通信 / 読売新聞</p>
+  <p class="summary">(前日からの続報) 3日の東京債券市場で新発10年物国債の流通利回りが一時2.810%まで上昇、1996年10月以来約30年ぶりの高水準。高市政権が6月30日に示した「骨太の方針」原案で「日銀の適切な金融政策運営が非常に重要」と明記されたことが、日銀利上げけん制と受け止められ債券売りが加速。三井住友トラスト・アセットの稲留氏は「拡張的財政の方針が変わらなければ秋に3%に達する可能性」と警告。米欧金利は落ち着く中、日本固有の財政・金融政策懸念で金利上昇が続く「骨太ショック」との呼び方も登場。片山さつき財相は「責任ある積極財政」を強調するも市場との対話が急務に。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGN02CTO0S6A700C2000000/" target="_blank" rel="noopener">米6月雇用統計、増加幅5.7万人と半減 ─ W杯効果見えず、早期利上げ論も後退</a></h3>
+  <p class="src">参照元: 日本経済新聞</p>
+  <p class="summary">米労働省が7月2日発表した6月雇用統計は非農業部門雇用者数が前月比+5.7万人と大幅未達、失業率は4.2%に微上昇。W杯開催地の労働需要は限定的で、市場が期待した「W杯効果」は現れず、労働市場の減速を鮮明化。ただし労働参加率は61.5%まで低下(Covid期を除きprime age層の縮小は1976年以来)、720万人が労働力から離脱している構造も浮き彫りに。米国内では早期利上げ観測が後退、ドルが1ドル=161円台まで急速に円高、NY円急伸で日本の介入ラインを瀬踏みする展開。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOFL02CU60S6A700C2000000/" target="_blank" rel="noopener">NYダウ最高値更新594ドル高 ─ ナスダックは半導体安で続落、リーダー交代を示唆</a></h3>
+  <p class="src">参照元: 日本経済新聞</p>
+  <p class="summary">7月2日のニューヨーク株式市場でダウ工業株30種平均は前日比594ドル高の52,900ドルで史上最高値を更新。バリュー株・金融が牽引した一方、ナスダック総合はAppleの中国メモリ調達観測を受けた半導体関連株安で続落。SOX急落・ハイパースケーラーAIキャピタルの持続性議論・Google/Amazon「AI真のコスト」警戒(TC記事)などが重なり、市場の主導権がAI/半導体からバリュー株にシフトする兆しが強まる。</p>
+</article>
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/02/politician-who-investigated-spyware-abuses-had-his-phone-hacked-with-pegasus-spyware/" target="_blank" rel="noopener">EU議会のスパイウェア調査委メンバー、Pegasusに感染 ─ 調査対象の技術で調査人が被害</a></h3>
+  <p class="src">参照元: TechCrunch (Zack Whittaker) / Citizen Lab</p>
+  <p class="summary">トロント大Citizen Labが、EU議会のPEGA委員会(スパイウェア悪用調査委)で活動したギリシャ人ジャーナリスト・元議員Stelios Kouloglou氏が、まさに調査対象のNSO Group「Pegasus」で2022年10月と2023年3月に感染したと確認。iOSのゼロクリック脆弱性を利用、当時未適用のパッチ対象。同一のPegasus登録メールアドレスが複数国のジャーナリスト・議員攻撃で再利用されており、NSO承認顧客による広域監視の構図。「法の支配への直接的攻撃」との声が上がり、EU委員会に27加盟国全体でのスパイウェア厳格制限を要求する動き。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGM025CL0S6A700C2000000/" target="_blank" rel="noopener"><span class="cont">続報</span>日印首脳、インド高速鉄道計画を推進で合意 ─ 27年一部開業へ日本協力、ムンバイ・アーメダバード間</a></h3>
+  <p class="src">参照元: 日本経済新聞</p>
+  <p class="summary">(前日からの続報) 高市早苗首相とインド・モディ首相の首脳会談で、日本が円借款・技術供与するインド初の新幹線方式高速鉄道(ムンバイ−アーメダバード間 約500km)について、2027年に一部区間の営業開業を目指すことで正式合意。E5系ベース車両の生産・地上設備・ATC信号を含む日本方式で、遅延気味だった計画の巻き返し。中国「一帯一路」に対抗する日印インフラ協力の目玉として位置づけ、対中経済安保・レアアース協力5分野と一体運用で戦略深化。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGN02CHL0S6A700C2000000/" target="_blank" rel="noopener">米東部で危険熱波、体感40度超 ─ 独立記念日250周年行事に規模縮小・中止相次ぐ</a></h3>
+  <p class="src">参照元: 日本経済新聞</p>
+  <p class="summary">米東部を厳しい熱波が襲い、ニューヨーク州ではエアコン故障バスに乗った高校生ら約20人が熱中症で搬送。ワシントン・NYで最高気温40度近く観測、1.6億人が熱中症リスク圏内。7月4日の独立宣言250周年の関連イベントに規模縮小・中止が相次ぎ、エネルギー省は緊急命令発動。気候変動と国家的祝祭が正面衝突する象徴的展開に。エネルギー需要ひっ迫でデータセンター運用にも影響する可能性、AIブームと電力供給の綱引きが顕在化。</p>
+</article>
+</section>
+
+<footer>
+  <p>📡 <strong>収集元</strong>: Bloomberg Japan / NewsPicks / 日本経済新聞 / Techmeme / TechCrunch / Slashdot <span class="fail">(WebFetch直接取得は3媒体で403、Exa MCP経由で取得)</span></p>
+  <p>※ 前日(2026-07-02)に取り上げた記事と同一URL・実質同一トピックは除外。「Apple中国メモリ調達」「10年債金利」「日印首脳会談」は本日新展開があるため <span class="cont">続報</span> マークで採用。</p>
+</footer>
+
+</div>
+</body>
+</html>
