@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-05(日)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月5日(日)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://thenextweb.com/news/openai-apparently-never-visited-the-site-of-its-flagship-uk-ai-project" target="_blank" rel="noopener"><span class="lede">本日最大</span>OpenAI「Stargate UK」£20B構想は「政府PRの空約束」だった ─ Guardianスクープ、Cobalt Park現地訪問ゼロ</a></h3>
+  <p class="src">参照元: The Guardian (Aisha Down) / The Next Web / Techmeme集約</p>
+  <p class="summary">Guardianが7月4日、英政府とOpenAIが2025年に発表した英国最大級のAI投資計画「Stargate UK」の実態を暴露。目玉だった北Tyneside・Cobalt Parkの£20B（約4兆円）データセンター構想について、情報公開請求で「OpenAIもパートナーのNscaleも一度も現地自治体に接触していなかった」と判明。訪問実績があったのはNvidiaだけ（トランプ訪英から5か月後の2026年2月）。関係者は「Nscaleは事前通知なしにStargate参画を強要された。実質は政府のPRスタント。プラグが抜かれたときSam Altmanが責を負っただけ」と語る。政府が「£30B投資予定」と宣伝したうちの£20Bは"仮想"、実際に契約済みだったのはBlackstoneの£10Bのみ。3月のGuardian報道「AIを英経済の血管に注入する取引の多くは幽霊投資」の続編で、英米AI協力の看板が虚構だったことを示す一撃。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/" target="_blank" rel="noopener">Godot Engine財団、AI生成コード寄稿を全面禁止へ ─ 「AIは責任を取れず、ヘビーユーザーは自分のコードを理解していない」</a></h3>
+  <p class="src">参照元: PC Gamer / The Register / Kotaku（Slashdotトップ集約）</p>
+  <p class="summary">オープンソースのゲームエンジン「Godot」（Slay the Spire 2などで採用）を運営するGodot Foundationが、コントリビュータ規約を改定し「全コードは人間著者であること」を必須化。AI生成のPR・自律エージェント提出・AI生成の議論文書までも禁止対象で、違反はGitHubリポからの自動BAN。既に5,000超の未解決PRが山積みで、多くがAI生成疑い。マージPRが3件以下の新規コントリビュータには機能追加・大規模リファクタは事前許可制。「AIは責任を負えず、AIヘビーユーザーは自分のコードを理解しておらず修正依頼にまともに応答できない」「レビュアーの労力を機械に吸収させるのは基本的な敬意の欠如」との説明。VibeコーディングOSS流入の弊害を認めた初の大型プロジェクトで、他OSSプロジェクトの方針にも波及するかが焦点。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/" target="_blank" rel="noopener">Midjourney、ハリウッド大手に「AI利用の実態開示」を逆要求 ─ Disney/Universal訴訟に真っ向対決</a></h3>
+  <p class="src">参照元: TechCrunch (Anthony Ha)</p>
+  <p class="summary">AI画像・動画生成のMidjourneyが、Disney・Universalによる著作権侵害訴訟への対抗策として、両スタジオがどのようなAIツールを内部利用しているかの詳細開示を要求。「訴え続けるスタジオこそがAIを大量に使っている」との反論構造で、ディスカバリー戦を主戦場化する意図。ハリウッドとAI企業の対立が「AI排除」から「相互暴露」フェーズへ突入した象徴的動き。同日、TikTok（ByteDance）がハリウッドで生成動画$9/分でシェア拡大中との報道と重なり、大手スタジオが「敵視しつつ内製で頼る」構造矛盾が鮮明に。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/" target="_blank" rel="noopener">Google、独立宣言を「AIが手伝って書いた」CMを公開 ─ 米建国250年、Big Techの記念便乗にネット賛否</a></h3>
+  <p class="src">参照元: TechCrunch (Anthony Ha)</p>
+  <p class="summary">米建国250周年（7月4日）に合わせGoogleが「もし1776年のジェファーソンがGoogle AIを使って独立宣言を書いたら」というコマーシャルを公開。Gemini/AIによる歴史文書起草補助のデモを兼ねるが、SNSでは「米建国精神をAIプロモに転用するのは不謹慎」「便利さの強調としては秀逸」と賛否両論。前日にトランプ大統領が「米国の黄金時代の幕開け」と250年演説した文脈もあり、Big TechのAIブランディングが政治・国民統合の象徴と交差する試金石に。</p>
+</article>
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://www.straitstimes.com/world/united-states/7-eleven-sues-nike-over-air-max-with-slurpee-makers-colours" target="_blank" rel="noopener">セブン-イレブン、ナイキを提訴 ─ 「7-Eleven Day（7/11）」発売のAir Max 95が3色ストライプ模倣</a></h3>
+  <p class="src">参照元: Reuters / The Straits Times / Yahoo!ニュース / Hypebeast</p>
+  <p class="summary">米セブン-イレブンが7月1日、Nikeを米テキサス州ダラス連邦地裁に商標権侵害で提訴。7月11日「セブン-イレブン・デー」（毎年恒例スラーピー無料配布日）に発売予定の「Air Max 95 Big Bubble Convini Pack」の1足が、セブン-イレブンを象徴するオレンジ・グリーン・レッドの3色ストライプ配色を採用しており、ブランド関係の混同を招くと主張。訴状には「NikeはセブンのDay Nikeブランド認知に便乗する意図」「メディアが同スニーカーを"7-Eleven inspired"と報じている」との言及。販売差止・出荷済品回収・損害賠償・売上利益返還を要求。Nikeは回答を控えている。ストリートウェアと小売ブランドが「文化引用の境界」で衝突する象徴的訴訟に。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUF026JI0S6A600C2000000/" target="_blank" rel="noopener">政令市でも公務員「応募ゼロ」 ─ 相模原・新潟の技術職で追加募集も届かず、行政サービス維持に赤信号</a></h3>
+  <p class="src">参照元: 日本経済新聞（Inside Out）</p>
+  <p class="summary">日経調査で、政令指定都市クラスでも自治体公務員の採用難が深刻化していると判明。相模原市の2025年度大卒設備職（公共施設整備担当）は応募ゼロ、新潟市も大卒の電気職・機械職（水道）で応募ゼロ、追加募集を実施しても改善せず。少子化・民間ITとの給与競争激化・都市部志向の複合要因で技術職不足が特に顕著。給与増額だけでは解決せず、待遇改善と職務魅力の再設計が必要との論調。地方行政のインフラ維持・災害対応能力に直結する構造課題として、2020年代後半の日本の統治システム持続可能性を問う一件。</p>
+</article>
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/05/what-is-bending-spoons-everything-to-know-about-aols-acquirer/" target="_blank" rel="noopener">Bending Spoonsとは何者か ─ AOL・Vimeo・Evernoteを飲み込みIPOで$18B、"レガシー買収機械"の全貌</a></h3>
+  <p class="src">参照元: TechCrunch (Anna Heim)</p>
+  <p class="summary">6月末に$18Bでミラノ市場IPOを果たしたイタリア発のBending Spoonsを解剖したTechCrunch特集。写真加工アプリRemini・動画編集アプリで急成長した後、Evernote（2022）、Meetup、WeTransfer、Filmic Pro、Vimeo（2025）、そして今年AOL（Yahoo!から取得）と、"忘れられた"消費者ソフトの買収・再エンジニアリング・値上げ・売上復活で成長する特異戦略。創業者Luca Ferrari氏は「成功は運の最小化」と語り、社員はAI導入で少数精鋭化。「Adobeでも小規模VCでもない、消費者アプリ版のBerkshire Hathaway」と評される新カテゴリの企業像が、AI時代のOSS/レガシーソフト再生モデルとして注目集める。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/" target="_blank" rel="noopener">2026年上半期、新ユニコーン誕生90社近くに ─ AI関連が過半、"ユニコーン"の希少性が消える年</a></h3>
+  <p class="src">参照元: TechCrunch (Dominic-Madori Davis)</p>
+  <p class="summary">TechCrunchが2026年上半期に評価額$1B超に到達した新規スタートアップを集計、90社近くが「ユニコーン」入りしたと報告。うち過半はAI関連（LLM、AIエージェント、AIインフラ、AI SaaS）、次いでヘルスケア・フィンテック・気候関連。$1Bを短期間で通過する「デカコーン即決」も複数あり、Together AI $8.3B・Cursor（Anysphere）・Groq $9Bなどが同期の顔ぶれ。ジャージー・マイクスIPOにみられるAI hype警告論もある一方、「$1Bの意味が薄まりつつある」「新規ユニコーンの半数以上が既存VC/hyperscalerの資金循環」との批判も。市場構造そのものの再考期に。</p>
+</article>
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://www.coindesk.com/business/2026/07/04/trump-s-crypto-token-buyers-are-down-usd3-8-billion-blockchain-data-shows" target="_blank" rel="noopener"><span class="lede">Techmemeトップ</span>Trumpミームコイン、購入者98.9万ウォレットが$3.81B損失 ─ トランプ氏本人は$636M利益、Nansenが「教科書的富の移転」と分析</a></h3>
+  <p class="src">参照元: CoinDesk / NYT (Eric Lipton) / The Seattle Times / Cryptopolitan（Techmeme・60媒体超集約）</p>
+  <p class="summary">ブロックチェーン分析Nansenの調査を7月4日にNYTが1面扱いで報道、7月5日に世界60媒体超が追随。2025年1月ローンチのミームコイン「$TRUMP」を購入した148万ウォレットのうち、98.9万ウォレット（3分の2）が計$3.81Bの損失、対照的にほぼ全て発売数時間以内の早期買いに集中した49.2万ウォレットが$4.04Bの利益。$TRUMPはピークから96%下落、時価総額は$15B→$425Mに縮小。トランプ氏本人は取引手数料収入で$636M、加えて関連World Liberty Financial収入含め2025年暗号関連総収入は$1.4B超（自身の財務開示より）。取引量に対する手数料モデルのため「価格が上がろうと下がろうとTrump氏だけ儲かる構造」。上院民主党は暗号市場構造法案でTrump家族の暗号益禁止条項を要求、8月休会前の主戦場に。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOCD02CKO0S6A700C2000000/" target="_blank" rel="noopener">円買い介入の効果、FX「ミセス・ワタナベ」が減殺 ─ 巨額円買いポジションの利益確定売りで円高が続かず</a></h3>
+  <p class="src">参照元: 日本経済新聞</p>
+  <p class="summary">円安防止のため為替介入の機会をうかがう政府・日銀にとって、FX個人投資家（通称ミセス・ワタナベ）の巨額円買いポジションが新たな悩みの種に。介入時の利益確定を狙って前もって円買いを異例の規模に膨らませており、円買い介入で円が上昇した瞬間に一斉に円売り戻しが入る構造。介入効果を減殺するだけでなく、日銀の政策後手観測とも重なりドル円は161円台で膠着。片山さつき財務相は米財務省と「断固たる措置」で連携する方針を表明しているが、個人投資家経由の"介入前予測売買"が円安是正の実質的な壁として立ちはだかっている構図が浮き彫りに。</p>
+</article>
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://www.bbc.com/news/articles/c8j2vmzxezro" target="_blank" rel="noopener">ウクライナ、サンクトペテルブルクの大型石油ターミナルとバルト艦隊基地を無人機攻撃 ─ 850km長距離飛行、露北西部で最大規模の一撃</a></h3>
+  <p class="src">参照元: BBC / Al Jazeera / Moscow Times / Kyiv Independent（Nikkeiも報道）</p>
+  <p class="summary">7月4日夜、ウクライナ軍の長距離無人機がロシア第二の都市サンクトペテルブルクを大規模攻撃、Kirovsky地区の石油ターミナル（年間1,250万トン処理能力、"露最大級")を破壊。同時にKronstadtのバルト艦隊主要基地も攻撃、Peterhof宮殿敷地内にも一部落下。国境から850〜900kmという同市への攻撃としては過去最深遠。露は「地域上空で72機を撃墜」と発表するが、ゼレンスキー氏は動画で黒煙を公開。ウクライナ参謀本部は「露石油精製能力の42.7%を無効化、8か月で60超のタンクを破壊、露産業損失$13.5B」と主張。露国内では40超の地域でガソリン販売制限・輸出禁止延長が続き、プーチン氏も「深刻ではないが不足は認識」と発言。長距離ドローン戦のフェーズが「露首都圏聖域化の終焉」段階へ移行。</p>
+</article>
+
+<article>
+  <h3><a href="https://topics.smt.docomo.ne.jp/article/kyodo_nor/nation/kyodo_nor-2026070201001911" target="_blank" rel="noopener">マイナンバー活用、政府が国民に直接現金給付 ─ 「デジタル敗戦」教訓、感染症・災害時に自治体を通さない給付基盤へ</a></h3>
+  <p class="src">参照元: 共同通信 / 読売新聞 / d menuニュース</p>
+  <p class="summary">政府がまとめるデジタル社会重点計画2026年版が7月2日に判明、Nikkei7月5日朝刊でも要旨掲載。マイナンバー・公金受取口座を活用し、政府（デジタル庁+日銀+ADAMSシステム）が自治体を経由せず直接国民に現金給付できる基盤を整備する方針。コロナ禍で市町村に負荷が集中した「デジタル敗戦」を教訓化。同重点計画にはスマホに免許情報を格納する「モバイル運転免許証」実現も明記。ただし公金受取口座登録率は依然約5割、100%達成が課題。29年度に予定される中低所得者向け新給付制度も口座登録前提で検討。国民ID・給付・免許のデジタル完結という日本行政の"最終形"への地ならしが本格化。</p>
+</article>
+</section>
+
+<footer>
+  <p>📡 <strong>収集元</strong>: Bloomberg Japan <span class="fail">(取得失敗)</span> / NewsPicks <span class="fail">(WebFetch失敗、Exa MCP経由で補完)</span> / 日本経済新聞 / Techmeme / TechCrunch / Slashdot（トップページはWebFetchで403継続のため、Exa MCPとキーワード検索で補完）</p>
+  <p>※ 前日(2026-07-04)に取り上げた記事（Anthropic Claude Science、サカナAI Fugu、ByteDance Seedance、マイクロン広島工場起工式、Sony PS ディスク終了、Yann LeCun AMI Labs、Together AI $800M、ドル円162→160円統計後、米株ファンド流出、BTC回復、Trump 250周年演説、イラン国葬・日本原油打診、Instagram India CSAM）と同一URL・実質同一トピックは除外。</p>
+</footer>
+
+</div>
+</body>
+</html>
