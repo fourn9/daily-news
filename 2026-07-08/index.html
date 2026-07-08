@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-08(水)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月8日(水)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://thenextweb.com/news/openai-gpt-5-6-broad-rollout-us-approval" target="_blank" rel="noopener"><span class="lede">本日最大</span>OpenAI GPT-5.6 Sol/Terra/Luna、米政府が広域公開を承認 ─ 7月9日一般公開へ、州承認リストからの脱却で「政府主導のリリーススケジュール」が新規範に</a></h3>
+  <p class="src">参照元: TNW / The Verge / 9to5Mac / Axios（Techmeme集約）</p>
+  <p class="summary">米商務省のCenter for AI Standards and Innovation（CAISI）が7月8日、OpenAIの最先端モデル群GPT-5.6（フラッグシップ「Sol」、中位「Terra」、廉価「Luna」）の広域一般公開を承認、7月9日（木）から順次開放されると同社が発表。同モデルはこれまで政府承認済みの20社パートナー限定のクローズドプレビュー扱いで、米国のフロンティアAI企業として初めて「政府管理のアクセスリスト」下に置かれていた。CAISIは6月2日にトランプ政権が導入した「任意事前レビュー」フレームワークの中でGPT-5.6を強制的な事前検査ケース第1号として扱い、OpenAI技術者が数週間にわたりWashingtonでの質疑応答を強いられた。今回の承認は「米国のフロンティアAIリリースは政府スケジュールに従う」という新規範の初のテストケース。商業的にはRAI企業に規制圧力が広がる一方、OpenAIには数週間の商機損失が生じた。</p>
+</article>
+
+<article>
+  <h3><a href="https://venturebeat.com/technology/openai-launches-gpt-live-a-full-duplex-voice-upgrade-that-lets-chatgpt-talk-more-like-a-person" target="_blank" rel="noopener">OpenAI「GPT-Live」発表 ─ 全二重（full-duplex）アーキテクチャで「聞きながら話す」音声モデル、ChatGPT音声モードを人間並みの掛け合いに刷新</a></h3>
+  <p class="src">参照元: VentureBeat / The Verge (Techmeme集約)</p>
+  <p class="summary">OpenAIが7月8日、音声モデル新世代「GPT-Live」を発表。従来モデルの半二重（人が話し終えてからAIが応答する）を刷新し、フルデュープレックス構造で「聞きながら同時に話す」ことが可能に。相槌、割り込み、口を挟むといった人間の会話特有のふるまいを再現し、ChatGPTの音声モードが「機械的な問答」から「自然な対話」へ大きく前進。既存の音声モードで頻繁に問題視されていた「AIが話し終わるまで割り込めない」課題や「唐突な発話終了」を根本改善。エンタープライズのカスタマーサポート、ライブ通訳、教育チュータリング分野の商用市場を直撃する構造変化で、Amazon Alexa+、Google Gemini Voice、Apple Intelligence等の既存対話UXへの競争圧力が一気に高まる。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/08/apple-to-produce-made-in-america-wireless-chips-with-broadcom/" target="_blank" rel="noopener">Apple、Broadcomと$30B超・15B個の米国製ワイヤレスチップ契約 ─ Fort Collins工場に$1.5B拡張投資、Apple $600B米国投資公約の最大案件で「関税圧力への回答」</a></h3>
+  <p class="src">参照元: TechCrunch / Axios / MacRumors / Apple Newsroom (Techmeme集約)</p>
+  <p class="summary">Appleが7月8日、Broadcomと総額$30B超・多年契約でカスタムワイヤレス接続チップ150億個以上を米国内生産すると発表。契約は2031年まで、Appleの「American Manufacturing Program（AMP）」最大コミット。Broadcomのコロラド州Fort Collins工場にAppleが$1.5Bの設備投資を投入し、RF（FBARフィルタ等）、Wi-Fi、Bluetoothコネクティビティ部材を生産。「hundreds of American jobs」創出を約束するもTags $30Bに対して雇用効果は限定的。同案件は既に7月頭のBroadcom規制届出で先出しされていたが、8日の詳細発表でトランプ政権が求める製造回帰への大企業の回答が具体化。米関税政策とAppleの「$600B米国投資」公約下でのハードウェア国内回帰の代表的事例に。</p>
+</article>
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://financialpost.com/investing/nvidias-slide-sends-valuation-to-pre-ai-boom-levels" target="_blank" rel="noopener">Nvidia、2か月で$1兆の時価総額喪失 ─ 5月ピークから-16%、フォワードPER 18倍で2019年以来最低、S&P500平均より割安に</a></h3>
+  <p class="src">参照元: Bloomberg (Financial Post/Yahoo Finance) / Quartz / Crypto Briefing</p>
+  <p class="summary">Bloomberg集計によると、NvidiaがAIブーム最盛期のシンボル的存在からわずか2か月で約$1兆の時価総額を失い、5月14日の高値から株価は約-16%（一部集計では-18%）下落、株価は$192-$200レンジで推移。フォワードPERは18倍で2019年（ChatGPT以前）以来の水準に低下、S&P500（20倍）やNasdaq100（23倍）よりも割安。同社は今年S&P500で第4位の売上成長を予想されている一方、Hershey（菓子）やDominion Energy（電力）よりも安値評価される矛盾。要因はサムスン電子好決算の期待未達→半導体全体への売り波及、DeepSeek独自チップ開発報道、AIモネタイゼーション時期への疑問。Nvidiaと半導体指数の相関は先月2014年以来最低に低下、「AI一極集中相場」の巻き戻しが構造化。バリューコーチのHuntington銀行らは「割安」と指摘。</p>
+</article>
+
+<article>
+  <h3><a href="https://topics.smt.docomo.ne.jp/article/reuters/business/reuters-20260708016" target="_blank" rel="noopener">アマゾン、$25B社債発行を発表 ─ 発行需要は$62Bに達し3倍に、AI投資テック四社の年間投資$700B超、"手元資金で賄う"時代から資本市場調達へ大転換</a></h3>
+  <p class="src">参照元: Reuters (dメニューニュース経由) / Bloomberg</p>
+  <p class="summary">米Amazonが7月7日、ドル建て社債$25B調達計画を明らかにし、8日の詳細で発行需要が募集期間中最大$62B（要請の約2.5倍）に達したと判明。8トランシェ構成、満期2029-2066年の固定/変動金利のミックス。使途はAIインフラ設備投資と既存債務の借換。同社のほかAlphabet（先月$85B株式売り出し）、Meta（昨年10月$30B社債＋今年初$25B）、Microsoftを合わせた大手テック4社の2026年AI投資見通しは合計$7,000億超、これまで「手元キャッシュで賄う」路線だった巨大テックが「AIインフラ資金は資本市場から調達」へと歴史的転換。共同ブックランナーはBarclays、Goldman Sachs、JPMorgan、Morgan Stanley。AIブームがクレジットスプレッドと金利市場に波及する新局面のシグナル。</p>
+</article>
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://www.cnbc.com/2026/07/08/blue-origin-bezos-fundraising.html" target="_blank" rel="noopener">Blue Origin、$10B初の外部資金調達 ─ プレマネー評価$130B、Coatue $4B/Bezos自身$2Bで、SpaceX上場後の「宇宙2大巨頭」構図に外部投資家参入</a></h3>
+  <p class="src">参照元: CNBC / NYT / The Information / Ars Technica / TNW</p>
+  <p class="summary">Jeff Bezos氏創業のBlue Originが7月8日、創業25年で初の外部資金調達に踏み切ることが判明、$10Bを調達し評価額はプレマネーで$130Bに達する見通し。CNBC/NYT報道によればCoatue Management（Philippe Laffont氏）が約$4Bを主導、Bezos氏自身が$2Bを追加、残る$4Bは大型機関投資家が奪い合う状況。Bezos氏は5月のCNBC出演で「未来と財務成功に十分な可視性が持てた」と外部資金導入を示唆していた。$130B評価は民間宇宙企業として最大級、Elon Musk氏SpaceXの記録的IPOに対抗する形。Blue Origin New Glenn、月着陸機Blue Moon、ISS後継"Orbital Reef"などの資金需要が背景で、宇宙2巨頭の対立軸が「打ち上げ現場から資金市場」まで拡大。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/" target="_blank" rel="noopener">SambaNova Systems、Series F $1B調達で評価額$11B ─ 5か月前の$350M Series E($1.6B)から7倍評価、General Atlantic主導・JPMorganが自社AI用に採用</a></h3>
+  <p class="src">参照元: TechCrunch / Bloomberg (Techmeme集約)</p>
+  <p class="summary">米AIチップスタートアップSambaNova Systemsが7月8日、Series F $1Bをファーストクローズし評価額$11Bに達したと発表、General Atlanticがリード。2月に発表した「SN50チップ」と$350M Series E時の$1.6B評価から、わずか5か月で約7倍の評価額に急拡大。同時にJPMorganが顧客としてサインし、社内AI用の推論チップとして採用することが判明。参加投資家はSeligman Ventures、T. Rowe Price、Capital Group、Battery Ventures、BlackRock、Qatar Investment Authority (QIA)、Vista Equity Partners等。Rodrigo Liang CEO曰く「サプライチェーンの確保に資金を投入」、今後12か月間の需要充足が焦点。Nvidia独占の対抗軸として、AIハイパースケーラーの「マルチベンダー戦略」の受け皿という位置付けが鮮明化。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/" target="_blank" rel="noopener">Prime Intellect、Series A $130M調達 ─ エンタープライズが「自社製AIエージェント」を構築するインフラで、"エージェント民主化"の第一世代</a></h3>
+  <p class="src">参照元: TechCrunch (Marina Temkin)</p>
+  <p class="summary">米Prime Intellectが7月8日、Series A $130Mを調達したと発表。同社は大手企業が自前でAIエージェントを構築・運用するためのオープンな分散GPU/計算プラットフォームを提供、「Anthropic/OpenAI/GoogleのフロンティアモデルはAPI経由で叩けるが、社内データを扱うエージェント基盤は各社独自」というギャップを埋めるレイヤー。過去には分散型学習「INTELLECT-1/2」のオープンソース公開でも注目、Fortune 500の複数社が試験導入済み。エージェント経済の裾野拡大には「ハイパースケーラーAPI以外の選択肢」が不可欠との仮説がベースで、Together AI、Fireworks AI、Modal Labsとの競合が激化する成長分野。</p>
+</article>
+
+<article>
+  <h3><a href="https://siliconangle.com/2026/07/08/quantum-startup-oratomic-banks-300m-race-straight-fault-tolerance/" target="_blank" rel="noopener">量子コンピューティングOratomic、Series A $300M調達 ─ ARCH/Spark/Khosla共同リード、Bezos Expeditions等参加、"耐障害性直行ルート"戦略で先行Atom Computing・QuEraと三つ巴</a></h3>
+  <p class="src">参照元: SiliconANGLE (Kyt Dotson)</p>
+  <p class="summary">米量子コンピューティングOratomic Inc.が7月8日、Series A $300M（アーリーステージとしては異例規模）を調達したと発表。ARCH Venture Partners、Spark Capital、Khosla Venturesが共同リード。参加はBezos Expeditions、Index Ventures、General Catalyst、Lowercarbon Capital、Bain Capital等。同社は「中間NISQ段階を経ずに耐障害性・誤り訂正機に一気に到達する」ロードマップを掲げ、中性子アトム方式で先行するAtom Computing（$300M調達済み）、QuEra Computing（AWSと連携、2028年商用機予定）と直接競合。量子ハードウェア分野は「実用フォールトトレランス達成が2028-30年」に焦点が集中し、大型ラウンドが相次ぐ「量子の第2波」局面。</p>
+</article>
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://kabutan.jp/news/marketnews/?b=n202607081057" target="_blank" rel="noopener"><span class="lede">日本市場</span><span class="cont">前日からの続報</span>日経平均、1437円安(-2.11％)の6万6819円で6万7000円割れ ─ 3日続落、韓国KOSPI乱高下・ホルムズ海峡商船攻撃で全面安、25日線を更に下抜け</a></h3>
+  <p class="src">参照元: 株探ニュース / ロイター / 時事通信</p>
+  <p class="summary">8日の東京市場、日経平均は前日比1437.91円安（-2.11%）の66,819.05円で安値引け、節目の6万7,000円割れ。連日1,000円超の急落は珍しく、6万8,000円台から一気に大台を割った。前日Nasdaq反落・SOX指数-4.65%・サムスン電子好決算後の売り込みがそのまま日本市場に波及、キオクシアHD、太陽誘電、アドバンテスト、東エレク、レーザーテック、ディスコ、SUMCO、イビデン等半導体主力株が全面安。上げ幅寄与最上位はKDDIとメルカリのみで押し上げ寄与+26円に対し、下押しはアドテスト・東エレク・ファストリ・ファナック・イビデンで合計-720円。加えてイランがホルムズ海峡で商船2隻を攻撃、米中央軍が反撃したと報じられ中東情勢の再緊迫が投資家心理を冷やした。バリュー株シフトが継続、鉱業（INPEX）、海運、証券が上昇。TOPIXは-1.37%の4,006.43、東証グロース250指数は-2.63%の711.43。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.jiji.com/jc/article?g=eco&k=2026070800989" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>「骨太ショック」、長期金利2.870%まで上昇29年ぶり高水準 ─ 政府が原案の日銀利上げ「けん制」文言を修正、「安定的な物価上昇の実現」追加も市場は反応薄</a></h3>
+  <p class="src">参照元: 時事通信 / 日本経済新聞 / 47NEWS (共同通信) / 読売新聞 / ロイター</p>
+  <p class="summary">8日の東京債券市場で10年物新発国債利回りが一時2.870%まで上昇、1997年5月以来約29年ぶりの高水準を更新（前日は2.850%）、20年債も3.850%と1996年以来の水準。「骨太ショック」の名称で市場報道が定着。政府は前日7日、与党に骨太原案の修正案を提示し、日銀への金融政策記述に「安定的な物価上昇の実現に資する」との文言を追加、市場で広がった「利上げけん制」イメージの緩和を狙う。城内実経財相は7日「原案の趣旨と異なる誤解」と釈明したが、市場の警戒感は解けず。加えてホルムズ海峡商船攻撃で原油先物が上昇、インフレ懸念が金利上昇に拍車。大手証券は「3％突破もあり得る」との観測を維持、9日の30年債入札の需給が次の耐久試験。野村総研の木内エコノミストは「政府は市場の警鐘に耳を傾け、財政運営の信認確保を」と警告。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.pbs.org/newshour/economy/world-economy-expected-to-grow-sluggish-3-this-year-imf-says" target="_blank" rel="noopener">IMF、2026年世界成長率3.0%に下方修正（4月予想3.1%比） ─ イラン戦争のエネルギーショックが下押しも、AI投資ブームが緩和材料、日本は27年に3.4%へリバウンド想定</a></h3>
+  <p class="src">参照元: PBS/AP / Fortune / Globe and Mail / France24 / Khaleej Times</p>
+  <p class="summary">IMFが7月8日発表の世界経済見通し（WEO）更新版で、2026年の世界GDP成長率予測を4月時点の3.1%から3.0%へ下方修正、2025年（3.5%）を大きく下回る停滞ペースに。イラン戦争が招いたエネルギーショックが主因（原油価格が戦前比+25-32%、2月28日開戦時から+9%高）。2026年のヘッドラインインフレは4.7%（4月比+0.3ppt）に上方修正、対インフレ闘争の2年間の進捗が事実上ストップ。反面「AIと技術投資ブーム」がショックを緩和、米国は2.3%（4月比不変）、中国は4.6%、インドは6.4%と世界最速の高成長を維持。ホルムズ海峡は7月中に再開、27年3月までに正常化との前提。米欧はエネルギー輸出国とAI享受国に集中し勝ち組、AI未参入の資源輸入国は下方修正の集中対象に。2027年はグローバル成長3.4%へ復帰の想定。</p>
+</article>
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://news.web.nhk/newsweb/na/na-k10015171531000" target="_blank" rel="noopener"><span class="lede">中東</span>トランプ大統領「イラン停戦は終わったと思う」再攻撃警告 ─ イランがホルムズ海峡で商船2隻攻撃、米中央軍が反撃、米財務省がイラン産原油購入猶予を撤回</a></h3>
+  <p class="src">参照元: NHK / 時事通信 / 読売新聞 / ロイター</p>
+  <p class="summary">米トランプ大統領が7月8日、記者団に対しイランとの停戦覚書は「終わったと思う」と述べ、「おそらく今夜もまた攻撃する」と再攻撃を警告。同日にゼレンスキー大統領との首脳会談も開催、パトリオット製造の米許可も表明。契機は7日にイランがホルムズ海峡通航中の商船2隻をミサイル攻撃、これに対し米中央軍が「強力な攻撃を開始した」とSNS投稿・報復。米財務省は同日、イラン産原油購入を一時的に認めていた制裁緩和「一般ライセンス」を撤回、原油先物価格が3%前後上昇。イラン国営メディアはホルムズ海峡封鎖も警告し、2月28日以来収束していた中東情勢が再点火。攻撃対象にはLNG船も含まれ、日本の商船三井関係8隻がペルシャ湾を通過中で船舶避難も相次ぐ。中東緊張の再燃は日米欧の株安・原油高・金利高の3重ショックの震源に。</p>
+</article>
+
+<article>
+  <h3><a href="https://the-decoder.com/meta-tests-always-on-ai-glasses-that-capture-your-entire-day/" target="_blank" rel="noopener">Meta、"Super Sensing"AIグラスを試作 ─ 数秒毎に写真・音声を常時記録、LEDインジケータ「非点灯」案も、Zuckerberg氏「一日中共にいるパーソナルエージェント」構想</a></h3>
+  <p class="src">参照元: Financial Times (Hannah Murphy) / The Decoder / Gizmodo / Digital Trends</p>
+  <p class="summary">Financial Times独占報道で、Metaが「Super Sensing」と呼ぶ次世代スマートグラスのプロトタイプを試験中と判明。数秒毎に自動で写真撮影、音声を継続録音、「その日一日の見聞き」をAIが記憶し呼び出しに応じるパーソナルアシスタント構想。現行Ray-Ban Metaグラスはユーザーがボタン/音声で明示的にキャプチャすると白LED点灯を要求するが、Super Sensingモードでは「LED非点灯」で作動する案が有力候補で、周囲がプライバシー侵害を認識できない懸念。Meta AIモデルの学習データとしての利用も同時検討中で、社内でも意見割れ。同日Metaは既存グラスに対して「LEDが物理改造/被覆されたらカメラを自動停止」機能をソフトウェアアップデートで展開すると発表、対照的にプライバシー保護機能も追加。Project Aria研究の"一日中データ収集"路線が消費者製品化に近づく。GDPR・州盗聴法・企業録音同意規制と真っ向衝突する構造。</p>
+</article>
+
+<article>
+  <h3><a href="https://news.web.nhk/newsweb/na/na-k10015171871000" target="_blank" rel="noopener"><span class="lede">国内政治</span>個人情報保護法改正案、参院特別委で可決 ─ AI開発促進で個人情報取得規制を緩和、自維＋国民民主＋チームみらい賛成多数、9日にも本会議可決</a></h3>
+  <p class="src">参照元: NHK / 日本経済新聞</p>
+  <p class="summary">AI開発促進に向けて個人情報を取得する際の規制を緩和することなどを盛り込んだ個人情報保護法の改正案が7月8日、参議院の特別委員会で自民・維新・国民民主・チームみらいの賛成多数で可決。学習用データセット構築時の目的外利用や統計解析目的の取得緩和、擬似IDの再識別禁止、AI生成物の学習利用ルールの明確化などを規定。EUのGDPRやAI法とは対照的に、「AI国産の推進」を優先する日本独自の"産業重視型"データ政策の色合いが濃く、公取委が同日発表したメディア370社への「AI検索による記事無断使用」実態調査と併せて、日本のAIエコシステム設計の方向性が具体化。9日以降の参院本会議で可決見込み。生成AI活用したい大企業・スタートアップの追い風となる一方、報道・出版・クリエイター業界からは反発の可能性。</p>
+</article>
+</section>
+
+<footer>
+  <p>📡 <strong>収集元</strong>: Bloomberg Japan / NewsPicks / 日本経済新聞 / Techmeme / TechCrunch / Slashdot ─ 6媒体すべて直接WebFetch (403) を回避してExa MCP（web_search_exa / web_fetch_exa）経由で記事URLと本文を取得。</p>
+  <p>※ 前日（2026-07-07）に取り上げた記事（Samsung Q2営業益89.4兆ウォン、Meta Muse Image初出、ECB＋ESRB AIシステミックリスク、Anthropic J-space発見、Micron広島1.5兆円、ヤマダHD×エディオン統合、ソニー銀ステーブルコイン、Luxshare香港IPO、Norm AI $120M、Proxima Fusion €411M、UMA Northstar、日経平均1480円安、長期金利2.850%、自維社会保障合意、リニア静岡容認、中国AIモデル海外規制、Forterra Lancer UGV）と同一URL・実質同一トピックは除外。日経平均と長期金利については本日新たな進展（1437円安・6万7,000円割れ、政府文言修正、2.870%到達）があるため「前日からの続報」タグ付きで採用。</p>
+</footer>
+
+</div>
+</body>
+</html>
