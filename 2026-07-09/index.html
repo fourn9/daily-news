@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-09(木)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月9日(木)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work" target="_blank" rel="noopener"><span class="lede">本日最大</span><span class="cont">前日からの続報</span>OpenAI、GPT-5.6を政府ゲート解除で広域一般公開＋新エージェント「ChatGPT Work」同時投入 ─ Slack/Gmail/Drive/CRMを跨いで文書生成、Anthropic「Claude Cowork」に真っ向対抗</a></h3>
+  <p class="src">参照元: The Verge / TechTimes / TNW (Techmeme集約)</p>
+  <p class="summary">前日の政府承認を受け、OpenAIは7月9日、GPT-5.6シリーズ（Sol/Terra/Luna）を全世界の全プランで一般公開開始。6月26日から12日間続いた「政府承認20社限定」プレビューが正式終了し、米フロンティアAIとして初の「政府管理アクセスリスト」下からの解禁となった。同日、新エージェント「ChatGPT Work」を発表 ─ ChatGPTとCodexの融合体で、非エンジニアがSlack・Gmail・Google Drive・カレンダー・CRM等を横断してコンテキストを集め、文書・スプレッドシート・プレゼン・Webアプリを自動生成する。Mac/Windowsデスクトップは即日、モバイル/Webは24時間かけて段階配信。Altman CEOは「これまで作った最高のモデル」と発言。Anthropicの「Claude Cowork」（Claude＋Claude Code）を直接の競合と位置付けた戦略プロダクトで、「エージェント同士の直接対決」局面が到来。米商務省CAISIの事前レビューフレームワーク（8月1日期限）の初テストケースとしても業界の分水嶺に。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api" target="_blank" rel="noopener">Meta、Muse Spark 1.1と「Meta Model API」を米開発者向けに公開 ─ $1.25/$4.25 per 1M tokens、OpenAIとAnthropicの主力より25%安、AI価格戦争が本格開戦</a></h3>
+  <p class="src">参照元: The Verge / Bloomberg (Kurt Wagner) / Axios (Ina Fried) / The Decoder / Meta AI Blog (Techmeme集約)</p>
+  <p class="summary">Metaが7月9日、フラッグシップLLM「Muse Spark 1.1」を発表し、同時にMeta Model APIを米国開発者向けpublic previewで開放した。Alexandr Wangが「大幅な改善」と表現するCoding/エージェンティックタスク性能が焦点で、価格は入力$1.25/1Mトークン、出力$4.25/1Mトークンと発表。ザッカーバーグCEO自ら「攻撃的で魅力的な価格、OpenAI/Anthropicの上位モデルの約25%」と明言、AI推論価格の値下げ競争を主導する構え。GPT-5 miniとClaude Haiku 4.5より高いが、Claude Sonnet 4.6より安いミッドティア狙い。$20無料クレジット付き。Metaは4月のMuse Spark初出時は自社アプリ限定だったが今回API化 ─ AnthropicのMCP、OpenAIのResponses APIに対抗する「Meta外部エコシステム戦略」の起点となる。</p>
+</article>
+
+<article>
+  <h3><a href="https://x.ai/news/grok-4-5" target="_blank" rel="noopener">SpaceXAI「Grok 4.5」公開 ─ Cursorと共同訓練の"Opus級モデル"、コーディング$2/$6 per 1M tokens、OpenAI/Anthropic高級モデルの半額でSpaceX/Cursor統合エコシステムが始動</a></h3>
+  <p class="src">参照元: x.ai / Cursor Blog / Yahoo Finance (Reuters) / Engadget / InfoWorld</p>
+  <p class="summary">Elon Musk氏のSpaceXAIが7月9日（米時間8日夜）、コーディング/エージェンティック/知識ワーク特化の主力モデル「Grok 4.5」を公開。SpaceXAI（旧xAI）としては上場・Cursor買収後初のリリースで、Cursorと共同訓練したMoE構造。Musk氏は「Opus級モデル、より高速・トークン効率・低コスト」と称賛。ベンチマークではArtificial Analysis Coding Agent IndexでFable 5 in Claude Codeより下、Codexの GPT-5.5とほぼ同等、コーディングタスク当たりコストは$2.49（対 Claude/Fable5の$11.80、Codex/GPT-5.5の$5.07）と、価格競争力が明確。Grok Build、SpaceXAIコンソール、Cursor各プランで利用可能、EU向けは7月中旬公開予定。SpaceXが6月にCursor親会社Anysphere買収を発表しており、「垂直統合型AI開発スタック」の実装第一号。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.techmeme.com/260709/p13" target="_blank" rel="noopener">Meta、自社AIチップ「Iris」を9月から量産開始 ─ 2027年に14GWの計算能力目標、Alberta 1GW/$9B DC発表と同時、"外部依存脱却"のインフラ主権化が加速</a></h3>
+  <p class="src">参照元: Reuters (Meta社内メモ) / Techmeme集約</p>
+  <p class="summary">Metaが7月9日、社内メモにて自社設計AIチップ「Iris」（コードネーム）を2026年9月から量産開始することが明らかに。同社は2027年までに計算能力を14GWまで押し上げる計画で、Iris量産はその基盤インフラ戦略の要。前日発表のカナダAlberta州1GW/$9BデータセンターとMuse Spark 1.1 API開放をあわせ、「モデル・チップ・DC・APIまで自社統合」の本格垂直化を鮮明化。従来はNvidia H100/H200/B200依存だったMeta AIワークロードが、Iris量産開始で徐々に自社シリコンへ移行する道筋が固まる。Google TPU、Amazon Trainium/Inferentia、Microsoft Maiaと並ぶ「巨大テック脱Nvidia化」の第4極として、AIチップ市場の勢力図が再編される展開に。</p>
+</article>
+
+<article>
+  <h3><a href="https://cognition.ai/blog/swe-1-7" target="_blank" rel="noopener">Cognition、「SWE-1.7」公開 ─ 中国製Kimi K2.7ベースで微調整、Cerebras上で1,000 tok/s、GPT-5.5・Claude Opus 4.8に肉薄しコスト1/4以下でDevinに搭載</a></h3>
+  <p class="src">参照元: Cognition Blog / Techmeme集約 / Hacker News / LavX News</p>
+  <p class="summary">Devin開発元のCognitionが7月9日（米時間8日）、コーディングエージェント特化モデル「SWE-1.7」を公開。中国Moonshot AIの「Kimi K2.7」オープンモデルをベースにCognition独自の強化学習で+12.2ppt改善、FrontierCode 1.1 Mainで42.3%（GPT-5.5は43.0%、Claude Opus 4.8は46.5%）と主要モデルに肉薄。特筆すべきはCerebras Wafer-Scale上で1,000 tokens/秒の実行速度、対戦略モデルの1/4以下のロールアウトコスト。「RLの限界は言われてきたよりずっと先」と主張し、Kimi K2.7ベースへのRLがフロンティア級のパフォーマンスを引き出せる新パラダイムを提示。米国の閉じたAPI経済から一歩ずれた「中国オープンベース＋米国RL」の逆モジュール型AI開発が実用領域に到達、業界内で「オープン vs クローズ」議論を刺激する。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.securityweek.com/ai-coding-tools-tricked-into-hacking-developer-machine-via-decades-old-technique/" target="_blank" rel="noopener">Wiz、AIコーディングツールに「GhostApproval」脆弱性 ─ シンボリックリンクで承認ダイアログを騙し、Claude Code/Amazon Q Developer/Cursor/Antigravity等でRCE可能</a></h3>
+  <p class="src">参照元: SecurityWeek (Eduard Kovacs) / Wiz Research</p>
+  <p class="summary">Google傘下のクラウドセキュリティWizが7月9日、6種のAIコーディングアシスタント ─ Claude Code、Amazon Q Developer、Cursor、Google Antigravity、Augment、Windsurf ─ 全てで攻撃可能な脆弱性「GhostApproval」を公表。Unix黎明期から知られる古典的なシンボリックリンク攻撃を、AIコーディングエージェントの「Human-in-the-loop承認ダイアログ」に応用したもので、AIが編集を提案するファイルパスが実は攻撃者制御のsymlinkであっても、UIが最終的な標準パスを表示しないため、ユーザーが「無害なローカル変更」と誤認して承認、システムファイル書換えを許してしまう。開発者マシンでのRCE（リモートコード実行）に至る危険性。第1四半期に各社報告、AWS/Google/Cursorはパッチ配布済、Anthropicは「脆弱性ではない」との立場だが事前緩和策を実装済み。Augment/WindsurfはFix未対応。「AIコーディングエージェント時代のサプライチェーン攻撃」の新カテゴリーとして注目。</p>
+</article>
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://www.datacenterdynamics.com/en/news/meta-plans-917bn-gigawatt-scale-data-center-in-alberta-canada/" target="_blank" rel="noopener">Meta、Alberta州にカナダ初$9.17B・1GWデータセンター建設 ─ 米国外最大、1.8GWまで拡張可能、Sturgeon Countyに3,000雇用と年間$250M税収</a></h3>
+  <p class="src">参照元: Meta Newsroom / CNBC (Jonathan Vanian) / DCD (Georgia Butler) / Data Center Knowledge / Global News</p>
+  <p class="summary">Metaが7月8日夜（日本時間9日朝）、初のカナダデータセンターをAlberta州Sturgeon County（Edmonton北）に建設すると発表、投資額$9.17B（CA$13B）で1GWのAI最適化施設。将来的に1.8GWまで拡張可能で、これは米国外のMeta保有DCとして最大。カナダ史上最大級の民間投資、州政府は約3,000雇用と年間$250M（税収・ロイヤリティ・手数料）を試算。エネルギー確保として同州Pemina Pipeline等の$4.6B・900MW発電事業と並行進行する形。Zuckerberg CEOは「Meta単独で今後10年に数十GW、長期で数百GW」との規模を示唆。7月9日発表のAIチップ「Iris」9月量産、Muse Spark 1.1 APIと合わせ、「モデル×チップ×DC×API」の一気通貫垂直化戦略を実装フェーズに移行させる象徴的な発表。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOFL091K50Z00C26A7000000/" target="_blank" rel="noopener">米ベインキャピタル、キオクシアHD保有株を全売却 ─ 2018年買収から8年で完全EXIT、株価一時+11.24%、日本半導体エコシステムのPE離脱局面</a></h3>
+  <p class="src">参照元: 日本経済新聞 / Bloomberg TV / ロイター / 株帳</p>
+  <p class="summary">米投資ファンドBain CapitalのManaging Partner・David Gross氏が7月9日放映のBloomberg TVインタビューで「われわれはもはやキオクシアの株式を保有していない」と発言し、キオクシアHD（旧東芝メモリ）の保有株を完全売却したことが判明。Bainは2018年に日米韓連合の一角として$18Bで東芝メモリを買収、2024年12月上場後は段階的売却を続け、6月16日の変更報告書で保有比率14.17%まで低下していた。9日の東京市場でキオクシア株は前日比+8,080円（+11.24%）の7万9,950円まで急騰、「今後の売り圧力の心配軽減」を好感し半導体株全体を牽引、日経平均+924円反発の主要ドライバーに（アドテスト・東エレクとの3銘柄で+1,000円寄与）。日本の半導体復権の中心銘柄からPEが完全EXITする節目で、機関投資家・パッシブファンドの純アクセス局面へ移行する構造変化。</p>
+</article>
+
+<article>
+  <h3><a href="https://topics.smt.docomo.ne.jp/article/reuters/business/reuters-20260709102" target="_blank" rel="noopener">セブン＆アイHD、発行済み株式10.92%を消却 ─ 2億8,429万株を7月15日消却、$60B TOB反発後の「株主還元加速」で投資家対話を建て直し</a></h3>
+  <p class="src">参照元: ロイター (dメニューニュース経由)</p>
+  <p class="summary">セブン＆アイ・ホールディングスが7月9日、発行済み株式の10.92%に当たる2億8,429万株の自己株式を消却すると発表、消却予定日は7月15日。約2.6兆円規模の大型消却で、EPS押し上げ効果が期待される。2024年のCouche-Tard社（カナダ）の$60B TOB提案を株主主導で拒絶、非上場化MBO案（伊藤家）も財源不足で撤回に至った経緯を踏まえ、井阪隆一CEO体制下では「集中と選択×株主還元加速」による中期価値向上策を推進中。北米コンビニ子会社7-Elevenのグローバル再編、そごう・西武百貨店・イトーヨーカ堂の売却と並ぶ「アクティビスト時代のROE戦略」の一手として、コンビニ日本大手2位のローソン・ファミマとの資本効率比較の中で相対評価を狙う。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.itmedia.co.jp/news/articles/2607/09/news123.html" target="_blank" rel="noopener">三菱自動車＋Highlanders、国産ヒューマノイド量産で基本合意 ─ 東大発SU国産機を京都工場で量産、2027年後半に月産1,000台、車メーカー×ヒューマノイド量産は世界初</a></h3>
+  <p class="src">参照元: ITmedia NEWS / 産経新聞</p>
+  <p class="summary">三菱自動車工業と東京大学発ロボット新興のHighlanders（東京都豊島区）が7月9日、ヒューマノイドロボットの共同開発・量産化に向けた基本合意書を締結。三菱の京都製作所（右京区）遊休建屋を活用し、2027年前半までに生産開始、後半には月産1,000台の製造能力を目指す。三菱自は既にHighlandersへ少額出資済み、追加出資も検討中。加藤隆雄CEOは「量産を提案する会社は他にもあったが、Highlandersのスピード感がとんでもなく早かった」と説明、Highlandersの増岡宏哉CEOは「フィジカルAIの人型ロボットで、日本のものづくりのクオリティーが強み。世界のビッグテックに対抗できる」と表明。米OpenAI/Figure AI/Google 1X、中国Unitree、UBTECHが牽引してきたヒューマノイド分野で、自動車メーカーとロボット企業による量産化協業は世界初の事例、Physical AIの「日本モデル」の実装第一号として業界の注目を集める。</p>
+</article>
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/" target="_blank" rel="noopener">Ollama、Series B $65M調達 ─ Theory Ventures主導、Benchmark/8VC/Y Combinator参加、開発者9M到達で「オープンモデル・ローカル実行」プラットフォームが独自路線</a></h3>
+  <p class="src">参照元: TechCrunch (Julie Bort) / TNW / Ollama Blog</p>
+  <p class="summary">オープンソースAIツールOllamaが7月9日、Series B $65Mを調達したと発表。Theory Venturesがリード、Benchmark、8VC、Y Combinator他参加、総調達額$88Mに。Jeff Morgan CEO/創業者は3年前ローンチ以降、開発者9M人（月次ユーザー）に到達したと明かした。同社はLlama、DeepSeek、Kimi K2、Qwen等のオープンモデルをMacBook/Linux/WindowsでワンコマンドでローカルLLM実行できるツールとして急伸、AnthropicのAPI・OpenAIのAPI依存に対抗する「ローカル/オープン」路線を体現。同日SambaNovaのSeries F $1B、Prime Intellect $130Mと並び、「大手API依存以外の選択肢」への資本流入が加速。エンタープライズが機密データを外部APIに送らない選択肢として、社内LLMインフラの標準候補の一つに躍進する見込み。</p>
+</article>
+
+<article>
+  <h3><a href="https://tech.eu/2026/07/09/maritime-defence-startup-kraken-technology-hits-unicorn-status/" target="_blank" rel="noopener">Kraken Technology、Series B $175M/$1Bバリュエーションでユニコーン化 ─ NATO/英国防省/米海軍が採用の無人海洋艦艇、Anduril連携で防衛AI×自律航行が急成長</a></h3>
+  <p class="src">参照元: Tech.eu (John Reynolds) / Techmeme集約</p>
+  <p class="summary">英Kraken Technology（2020年設立、元スピードボートレーサーMal Crease CEO）が7月9日、Series B $175MをDigital Transformation Capital Partners（DTCP）主導で調達、バリュエーションは$1Bに達しユニコーン入り。British Business Bank、NATO Innovation Fund（NIF）、Rheinmetall、Inocea group、VC陣（Hico Ventures/Thesiger Capital/BOKA Capital）が参加。同社の無人海洋艦艇（USV/自律水面艦艇）はNATO、英国防省、米海軍で採用実績、Andurilが戦略パートナー。ロシア・ウクライナ戦、フーシ派紅海攻撃、イラン・ホルムズ海峡攻撃と続く「海洋の非対称戦」で無人艦艇需要が急伸中、Anduril本体（$3.5B調達、$28B評価）、Saronic Technologies（$600M調達、$4B評価）と並ぶ「新世代海洋防衛SU」の第3極として世界市場で存在感を高める。</p>
+</article>
+
+<article>
+  <h3><a href="https://thenextweb.com/news/oxylabs-130m-warburg-pincus-web-data-ai-agents" target="_blank" rel="noopener">Oxylabs、Warburg Pincusから$130M調達（$3.6Bバリュエーション） ─ 創業11年目で初の外部投資、AIエージェント向けWeb取得インフラの需要拡大</a></h3>
+  <p class="src">参照元: The Next Web (Cristian Dina) / Goldman Sachs (アドバイザー)</p>
+  <p class="summary">リトアニア・Vilnius拠点のWebデータ取得インフラ企業Oxylabsが7月9日、Warburg Pincus Capital Solutions Founders Fundから$130Mを調達、評価額$3.6B、2015年創業以来初の外部投資となる。Warburg Pincusは同州のNord Security（Tesonet傘下）にも既に出資しており、リトアニアが小さいながらも強力なデータインフラのクラスターであることを裏付ける。使途は既存のWebshare（2022買収）、ScrapingBee（2025買収）に続くM&A拡張とパートナーシップ拡大。AIエージェントの「ブラウザ・Web操作」ワークロードが急伸中で、Bright Data、Apify、Firecrawlと並ぶ「エージェント時代のWebインフラ」市場でPE主導の集約が始動。Goldman Sachsがアドバイザリー。</p>
+</article>
+
+<article>
+  <h3><a href="https://siliconcanals.com/sc-n-general-intuition-just-raised-320m-on-a-thesis-that-sounds-absurd-that-video-game-data-not-real-robot-telemetry-will-produce-the-gpt-of-embodied-ai/" target="_blank" rel="noopener">General Intuition、$320M調達で$2.3B評価 ─ "ビデオゲームデータ"を訓練基盤にした「エンボディッドAIのGPT」構想、ロボット業界の"言語モデル的転機"を先取り</a></h3>
+  <p class="src">参照元: Silicon Canals / TechCrunch</p>
+  <p class="summary">米ロボティクスファウンデーションモデル新興General Intuitionが7月9日、Series調達$320Mを$2.3B評価で完了。同社の仮説は「ロボットのGPTモーメントは、実世界ロボットのテレメトリでなくビデオゲームプレイの数百万時間データで訓練することで実現する」というもの。GPT-3の言語モデル大転換に匹敵する「エンボディッドAI（Physical AI）の変曲点」を狙う。ゲーム空間で人間が示す物理直観・因果推論・目標指向行動のデータ量が実世界ロボットデータより桁違いに豊富で、シミュレーション→現実（Sim2Real）の橋渡しを狙うアプローチ。Physical Intelligence（$400M調達）、Skild AI、1X Technologies、Figure AI等と並ぶ「フィジカルAI競争」の資本規模拡大の中で、独自のデータ戦略で差別化を狙う異色ポジション。三菱自×Highlandersの日本ヒューマノイド量産合意と同日で、「Physical AI元年」の投資テーマ化が本格化。</p>
+</article>
+
+<article>
+  <h3><a href="https://thenextweb.com/news/lyzr-ai-agent-100-million-series-b" target="_blank" rel="noopener">Lyzr、Series B $100M・$500M評価で調達 ─ 自社エージェント"Agent Sam"が資金調達を代行、投資家130社と対話・メモ作成で"AIが自分を売る"新時代</a></h3>
+  <p class="src">参照元: Bloomberg (Saritha Rai) / The Next Web / Techmeme集約</p>
+  <p class="summary">エンタープライズ向けAIエージェント新興のLyzr（Accenture出資）が7月9日、Series B $100Mを$500M評価で調達中と発表。特筆すべきは同社独自エージェント「Agent Sam」が資金調達プロセス自体を主導、投資家130社超からの質問を捌き、投資メモを多数下書きし、Silicon Valley・中東・金融セクターから$400M相当の関心を獲得したと発表。前回Series Aの$14.5M（Accenture主導、$250M評価）から数カ月で評価額が倍増するペース。「エージェントに自分の資金調達を任せる」というdogfoodingの極致で、AIエージェント経済の実務レベル実装を象徴。ただし本ラウンドは同社の自己申告で、リード投資家・クロージング時期は未確定と留意点あり。同日OpenAIのChatGPT WorkがSlack/Gmail/Drive横断エージェントを発表しており、「エージェント同士・エージェントvs人間の攻防」時代が本格化。</p>
+</article>
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://www.thestar.com.my/tech/tech-news/2026/07/09/sk-hynix-us-listing-more-than-seven-times-oversubscribed-source-says" target="_blank" rel="noopener"><span class="lede">大型IPO</span>SK Hynix、$26.5B Nasdaq ADR上場価格を$149に決定 ─ 需要7倍超のオーバーサブスクリプション、SpaceXに次ぐ史上2位の株式売り出し、AI/HBMメモリの資本市場覇権</a></h3>
+  <p class="src">参照元: Reuters (The Star) / Tech Startups / Globe and Mail / SEC F-1書類</p>
+  <p class="summary">韓国SK Hynixが7月9日、米国預託証券（ADR）を1株$149で価格決定、$26.5Bを調達すると発表 ─ 需要は募集株数の7倍超に達したと関係者。7月10日（金）Nasdaqでティッカー「SKHY」で取引開始、10 ADRが韓国普通株1株に相当。同社はHBM（高帯域幅メモリ）世界トップシェアでNvidia AI GPUの必須供給元、AI推論・訓練の性能ボトルネックを担う戦略的存在。2025年6月上場SpaceXの$85.7B IPOに次ぐ史上2位の大型株式売り出し。Baillie Gifford Overseas、Coatue Management、Situational Awareness Partners（Leopold Aschenbrenner氏のファンド）が最大$7Bの購入意向を表明。調達資金は韓国内工場新設とASML EUV露光装置調達に充当。Micronとの評価格差解消の可能性、フィラデルフィア半導体指数（SOX）採用でパッシブ買い誘発が期待される。Bank of America、Citigroup、Goldman Sachs、JPMorganがブックランナー。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUB08825TY6A700C2000000/" target="_blank" rel="noopener"><span class="lede">日本市場</span><span class="cont">前日からの続報</span>日経平均、4営業日ぶり反発+924円の6万7,743円 ─ 中国のNvidia H200解禁観測でAI半導体一極買い戻し、ただし値上がり37%対値下がり58%で「狭い上げ」、明日ETF換金売り1兆円警戒</a></h3>
+  <p class="src">参照元: 日本経済新聞 / ロイター / 毎日新聞 / 株帳</p>
+  <p class="summary">9日の東京市場で日経平均は4営業日ぶりに反発、前日比+924.80円（+1.38%）の67,743.85円で引け、朝方は+1,628.84円（+2.44%）の68,447.89円まで上げ幅を広げ半分近くを吐き出した。前日8日の米市場で、中国政府がNvidiaのAI半導体「H200」を国内主要AI企業に限定的購入を認める方針と伝わったことが半導体株を押し上げ、SOX指数+2%超、Nvidia+3%となった流れを引き継いだ。アドバンテスト・東京エレクトロン・キオクシアの3銘柄で日経平均を約1,000円押し上げ、+762円分の寄与を2銘柄で稼ぐ「半導体一極集中」型の反発。TOPIXは+0.35%止まり、プライム市場の値上がり銘柄585社（37%）に対し値下がり917社（58%）で相場の広がりは乏しい。中東緊迫化での原油高（WTI一時$76台）による景気敏感株軟調（自動車・ゴム）、円金利上昇による不動産軟調が重石。10日大引けにかけて想定されるETF分配金ねん出の換金売り1兆円が次の関門。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUB086M90Y6A700C2000000/" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>長期金利、一時2.9%到達で30年ぶり高水準更新 ─ 前日2.870%から+3.5bpに拡大、原油急騰＋骨太ショック＋財政悪化懸念の三重奏、政府は骨太案に「日銀独立性」明記へ</a></h3>
+  <p class="src">参照元: 日本経済新聞 / ロイター (dメニュー) / 読売新聞 / KSBニュース / 共同通信</p>
+  <p class="summary">9日の債券市場で新発10年物国債利回りが一時2.900%まで上昇（前日終値比+3.5bp）、1996年9月以来約29年8カ月ぶりの高水準を更新（前日は2.870%）。20年債・30年債も連れ高、国債先物9月限は126円台前半で軟調継続。米CENTCOMのイラン攻撃・イラン報復・トランプ氏「停戦終わった」宣言によりNY原油先物が一時+8%の$76台に急騰、インフレ懸念が国内金利を直撃。加えて「骨太原案」で財政健全化文言が削除されたことに伴う財政悪化懸念、日銀利上げの遅延観測が重層的に金利を押し上げる。政府は7日の与党提示に続き、9日には「日銀の独立性」に骨太で正式言及する方向で調整（7月中閣議決定予定）と報道 ─ 木原官房長官は「極めて高い緊張感」と発言。ドル/円は162円半ばで底堅く、SBI FXの上田氏は「介入はいつ出てもおかしくない、165円が視野に入る」と警戒。次の焦点は7月15日発表の米CPIと日銀の対応。</p>
+</article>
+
+<article>
+  <h3><a href="https://topics.smt.docomo.ne.jp/article/reuters/business/reuters-20260709091" target="_blank" rel="noopener">日銀「さくらリポート」全9地域景気判断据え置き ─ AI関連需要の"広範な好影響"が中東ショックによる下振れリスクを相殺、能力増強投資も積極スタンス維持</a></h3>
+  <p class="src">参照元: ロイター (dメニュー) / Bloomberg (Yahoo!経由) / TBS NEWS DIG / 共同通信 / 時事通信</p>
+  <p class="summary">日銀が7月9日、支店長会議と地域経済報告（さくらリポート）を発表、全9地域で景気判断を据え置き、北陸のみ生産判断を引き上げ。焦点は「AI関連需要」で、半導体製造装置・電子部品の受注増、電力・電源装置・通信設備・金型への波及が全国的に広範化。藤田研二大阪支店長（理事）は「幅広い好影響が当面持続」、畠中基博福岡支店長は「九州の半導体産業活況と大規模DC建設が需要を押し上げ」と述べ、AI需要への持続性への期待を示した。中東情勢の影響は「代替調達・輸送経路見直しで大幅減の可能性は低下」との評価。ただし包装資材の価格転嫁は「夏以降」の企業も多く、コスト圧の販売価格転嫁は継続する見通し。植田日銀総裁は年内追加利上げに向けた材料集めを続ける中で、「AIブームがマクロを支える」という異例の局面が示された。金利上昇と円安圧力に対する日銀のスタンス修正のタイミングを見極める重要な材料に。</p>
+</article>
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://www.bbc.com/japanese/articles/c5yz4mzjxejo" target="_blank" rel="noopener"><span class="lede">中東</span><span class="cont">前日からの続報</span>米中央軍、イランに2日連続空爆で170カ所以上を攻撃 ─ トランプ氏「攻撃されたら20倍で反撃」警告、イラン報復でクウェート/バーレーン/カタール米軍施設ドローン攻撃、原油ブレント$80台</a></h3>
+  <p class="src">参照元: BBC / ロイター / 毎日新聞 / 時事通信 / TBS NEWS DIG</p>
+  <p class="summary">米中央軍は7月8日（日本時間9日朝）、イランに対する2日連続の追加攻撃を実施、防空システム・沿岸レーダー・対艦ミサイル配備拠点等計90カ所を攻撃（前日80カ所と合わせ170超）。イラン南東部の主要港湾チャバハルにあるイスラム革命防衛隊海軍イマーム・アリ基地が初攻撃対象、Axiosによれば「停戦合意後、初のインフラ攻撃」として北東部の鉄道橋2本も破壊。イランは9日、報復としてクウェート（Patriot部隊）、バーレーン（燃料貯蔵）、カタール（早期警戒アンテナ）、さらにヨルダン領空も含む米軍関連施設を無人機・弾道ミサイル攻撃 ─ カタールのモハメド首相はイランAraqchi外相と電話会談、覚書履行を要求。トランプ大統領は「20倍で反撃する」「ハルグ島（イラン主要石油輸出拠点）も掌握可能」と警告するも「本格戦闘の再開ではない、短期間で終わる」と拡大回避も示唆。ブレント原油は8日+7%の$80台、9日は調整。過去2日で死者14人・負傷78人（イラン保健省）。日本の商船三井関係8隻がペルシャ湾通過中で船舶避難相次ぐ。中東ホルムズ海峡の航行安全は世界経済の最大リスクに再浮上。</p>
+</article>
+
+<article>
+  <h3><a href="https://en.yna.co.kr/view/AEN20260709001151315" target="_blank" rel="noopener"><span class="lede">韓国</span>韓国最高裁、尹前大統領に懲役7年の実刑判決確定 ─ 2024年12月「非常戒厳」失敗後の逮捕妨害で公務執行妨害等、8つの裁判の最初の最高裁判断、内乱罪の主要裁判は継続中</a></h3>
+  <p class="src">参照元: Yonhap News (英語) / UPI</p>
+  <p class="summary">韓国最高裁判所が7月9日、尹錫悦（ユン・ソンニョル）前大統領に対し、公務執行妨害罪などで懲役7年の実刑判決を確定させた。同氏は2024年12月3日の非常戒厳布告失敗後、2025年1月に逮捕状執行を大統領警護官に妨害させた事件を巡り、大法院（最高裁）が2025年4月の高裁判決（懲役7年）を「下級裁の判断に誤りはない」として支持。最高裁が下した尹氏に対する初の判決で、同氏が抱える計8件の刑事裁判のうち最初のケース。中核の内乱罪（martial law bid）については、下級審で無期懲役判決を受けた後、控訴審が進行中。尹氏は2025年7月から拘留中、弁護団は「憲法違反の訴え」を続ける方針。特別検察官チームは繰り返し内乱罪での死刑求刑を主張、韓国政治の分断は依然として続く構造。李在明政権下の司法対応が、日韓・韓米関係の政治力学にも影響する要素として注目される。</p>
+</article>
+</section>
+
+<footer>
+  <p>📡 <strong>収集元</strong>: Bloomberg Japan / NewsPicks / 日本経済新聞 / Techmeme / TechCrunch / Slashdot ─ 6媒体すべて Exa MCP（web_search_exa / web_fetch_exa）経由で記事URLと本文を取得。Techmeme・TechCrunch・NewsPicks・日経は当日記事直接取得成功。Bloomberg Japan と Slashdot はトップページの直接fetchはBot検出等で困難のため、web_searchで当日記事に到達（Bloombergは日経/共同通信/BBC/PBS等の集約経路を活用、Slashdotは主要記事の元ソースをTechmeme集約経由で回収）。</p>
+  <p>※ 前日（2026-07-08）に取り上げた記事（GPT-5.6承認、GPT-Live音声、Apple-Broadcom $30B、Nvidia -$1T、Amazon $25B社債、Blue Origin $10B、SambaNova $1B、Prime Intellect $130M、Oratomic $300M、日経平均1437円安、長期金利2.870%、IMF世界成長3.0%、トランプ「停戦終わった」、Meta Super Sensing、個人情報保護法改正）と同一URL・実質同一トピックは除外。GPT-5.6公開実施・日経平均反発・長期金利2.9%到達・イラン応酬エスカレートについては本日新たな進展（ChatGPT Work同時投入、+924円反発、2.900%到達、170カ所攻撃/20倍反撃警告）があるため「前日からの続報」タグ付きで採用。</p>
+</footer>
+
+</div>
+</body>
+</html>
