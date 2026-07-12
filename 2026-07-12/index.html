@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-12(日)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月12日(日)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://www.macrumors.com/2026/07/12/why-apple-is-skipping-m6-pro-m6-max-chips/" target="_blank" rel="noopener"><span class="lede">本日最大</span>Apple、M6 Pro/Max/Ultraをスキップ ─ AI最適化のM7世代を6か月前倒し、M7 Ultraは1.5TB RAMでNvidia Blackwell級・2029年にはApple Intelligenceサーバ基盤へ</a></h3>
+  <p class="src">参照元: MacRumors (Joe Rossignol) / Bloomberg Power On (Mark Gurman) / 9to5Mac (Michael Burkhardt) / AppleInsider (Malcolm Owen) / The Verge (Terrence O'Brien) / iClarified</p>
+  <p class="summary">Bloomberg Mark Gurmanが7月12日配信の「Power On」ニュースレターで、Appleが自社Macシリコンのロードマップを大幅再編と報道。年内発売のベースM6以降、M6 Pro/M6 Max/M6 Ultraはリリースせず、AI性能を大幅強化したM7世代（ベース：2027年上期、Pro/Max：2027年下期、Ultra：2028年）に直接移行する。Intel離脱以降Appleが確立したMacチップ発表ケイデンスを初めて破る形。M7 UltraはRAMを最大1.5TBまで搭載可能に設計され、2019年Mac Pro（Intel）と同水準を"Apple Silicon初"で達成、Neural Engine性能はNvidia Blackwellに迫る水準と報じられる。同チップは2029年以降、Apple Intelligence向け社内AIサーバ基盤に採用される計画。Gurmanは「AIはもはや対応する機能の一つではなく、製品の設計と出荷タイミングそのものを規定する存在になった」とコメント。Apple Carプロジェクトが遺したAI推論ハードウェア資産（Neural Engine）が、皮肉にも同社をAI時代のシリコン戦略で先行させたとThe Verge Terrence O'Brien分析。同日、次期Apple Pencil（2027春、EU規制対応で電池交換可能仕様）とiPad Proの計画もリーク。前日のApple v OpenAI提訴と併せ、Appleの"AIハードウェア独占"戦略の全体像が急速に明確化した週末となった。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.techmeme.com/260712/p5" target="_blank" rel="noopener">FT深掘り「バイブコーディング後の掃除は誰が？」 ─ AI生成PRがOSSメンテナーを圧迫、Python創始者ら実名で警鐘、"AIスロップは共有地の悲劇"</a></h3>
+  <p class="src">参照元: Financial Times (Sam Learner) / Techmeme / Guido van Rossum (Python) / Rich Harris (Svelte)</p>
+  <p class="summary">Financial Timesが7月11-12日、Sam Learner記者名義で長文特集「Who cleans up after the vibe-coding party?」を掲載。個人のAIコーディングツール（Cursor、Claude Code、GitHub Copilot、Codex等）活用による生産性向上のコストが、無償で世界のデジタルインフラを支えるOSSプロジェクトのメンテナーへ外部化されている実態を、Python創始者Guido van Rossum、Svelte開発者Rich Harris、cURL開発者Daniel Stenberg等の実名コメント付きで報道。研究者らは「AIスロップは共有地の悲劇。個人の生産性向上のコストがレビュアー・メンテナー・コミュニティ全体に外部化される」と結論。同日別記事では、LLMが実在しないOSSパッケージ名を幻覚する性質を悪用した「スロップスクワッティング（slopsquatting）」攻撃も分析：偽名パッケージを事前登録して悪意コードを混入する新型サプライチェーン攻撃で、オープンソースLLMは商用LLMの約4倍の頻度でパッケージ名幻覚を起こす（19.7% vs 3.59% GPT-4.0 Turbo）と示され、AIコーディングツール普及の"暗黒面"に業界の目が向く週末となった。</p>
+</article>
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://www.insidermonkey.com/blog/why-micron-technology-nasdaqmu-is-securing-long-term-ai-memory-demand-with-22-billion-in-customer-commitments-1800199/" target="_blank" rel="noopener">Micron、$100B規模のSCA（Strategic Customer Agreement）16件を完全ロックイン ─ 顧客が$22B前払金投入・キャンセル不可の"take-or-pay"、メモリー価格の景気循環そのものを"契約で消去"</a></h3>
+  <p class="src">参照元: Insider Monkey / Wccftech (Hassan Mujtaba) / Micronomicon</p>
+  <p class="summary">米メモリー大手Micron Technology（NASDAQ: MU）が7月12日にかけて詳細を開示した「Strategic Customer Agreement（SCA）」16件が、業界構造そのものを変えた。契約総額は約$100B（14社ぶんの最低確保収益）、うち$22B（現金$18B、金融コミット$4B）は顧客がMicronの貸借対照表に既に前払い済み。契約期間は主に2026-2030年の5年間で、"take-or-pay"（顧客が指定量を購入しない場合は前払金相殺）＋"cancel不可"＋"価格帯（フロア/シーリング）で四半期毎に再交渉"という前例のない構造。SCA対象はMicronのDRAM出荷量の約20%、NAND出荷量の約1/3。前払金の"人質構造"により、顧客側は容量を確保し、Micron側は前回サイクル最高値超のグロスマージン床（約62%）を保証。メモリーが「価格循環に晒された揮発性コモディティ」から「AI・データセンター向けに前払で買い占められた戦略資源」に本質転換した象徴的事案。前四半期の売上$41.5B・グロスマージン85%は、この契約構造の初期リターンを反映。Sumit Sadana EVP「顧客はこの5年計画から離脱できない」、Micronは「今後は売上の過半をSCA対象化する」方針。市場影響：①同業SamsungとSK Hynix（前日Nasdaq上場）にも波及、②スポット市場の価格弾力性が縮小、③2030年までのAI設備投資の"契約可視性"を市場に提供、④需要が失速すれば顧客側の$22B前払金が"割高な保険料"に変わるロング・ダウンサイドリスクは残存。</p>
+</article>
+
+<article>
+  <h3><a href="https://newspicks.com/news/17069000/" target="_blank" rel="noopener">セブン-イレブン、ナイキを提訴 ─ 新スニーカーが自社コーポレートカラー（赤・緑・オレンジ）を"模倣"、米加州連邦地裁で商標希釈化を争う</a></h3>
+  <p class="src">参照元: Reuters / NewsPicks / Bloomberg</p>
+  <p class="summary">米コンビニ大手Seven-Eleven, Inc.（親会社セブン&アイ・ホールディングス）が、Nikeを商標侵害・不正競争で米加州連邦地裁に提訴した。訴状によれば、Nikeが今春発売した新スニーカーの配色（赤・緑・オレンジのブロックカラー）がセブン-イレブンのコーポレートアイデンティティを模倣し、消費者混同・ブランド希釈化を招いていると主張。Nikeが日本のマラソン大会・ランニングカルチャーとのコラボ企画の一環として展開した限定モデルとの見方があり、二次流通市場では既に高値取引されている。訴訟の焦点は、①"色の組み合わせ"に商標保護が及ぶ範囲（Christian Louboutinの赤底判例等）、②Nikeが意図的にセブン-イレブンを想起させるマーケティングを行ったかの立証、③Trademark Dilution Revision Actの適用可否。Nike側は「オリジナルデザイン」と反論の見込み。ライセンス業界では、ナショナルブランド間で"配色を巡る訴訟"が続発する新しい紛争パターンとして注視されている。</p>
+</article>
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://techamerica.ai/ollama-secures-65-million-funding-as-open-source-ai-platform-nears-9-million-users" target="_blank" rel="noopener">Ollama、$65M Series B調達（Theory Ventures主導） ─ ローカル実行OSS-AIプラットフォーム、ユーザー900万目前、累計調達$88Mへ</a></h3>
+  <p class="src">参照元: TechAmerica.ai / Theory Ventures / Benchmark</p>
+  <p class="summary">オープンソースAIランタイム/デベロッパープラットフォームOllamaが7月12日、Theory VenturesとJeff Morgan創業者兼CEO主導のSeries Bで$65Mを調達。BenchmarkのPeter Fentonが主導した前回Series A（$15M）と合わせ、累計調達額は$88M。ユーザー数は900万目前で、LLMをローカルPC・エッジデバイスで動かす需要が想定を上回るペースで拡大。調達資金は①ローカルAI推論ランタイムの高速化、②モデル配布・パッケージング形式のエコシステム化、③エンタープライズ向け機能（プライバシー・監査・セキュリティ）拡張、に投入。Anthropic/OpenAIのフロンティア推論モデルがクラウド中心である一方、Ollamaは「オンデバイス」「オフライン」「データ主権」を強調する対極ポジションで、規制業界・プライバシー要件・エッジ推論の3方向で企業採用が進む。今回のラウンドは、"クラウドの巨額推論コストを回避したい"というエンタープライズ側の温度感がVC評価に反映された案件として位置付けられる。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.briefs.co/news/lyzr-secures-100m-after-using-its-own-ai-agent-to-handle-fundraising-outreach/" target="_blank" rel="noopener">Lyzr、$100M Series Bを"自社AIエージェント経由"で調達 ─ 評価額$500M（半年で2倍）、130投資家対応・$400M興味額獲得、"エージェント調達"最初のメガディールに</a></h3>
+  <p class="src">参照元: Briefs / Avataar Venture Partners / Open Opportunity Fund</p>
+  <p class="summary">エンタープライズAIエージェント基盤のLyzrが、Series B $100Mを調達し評価額$500M（前回$250Mから半年で2倍）に到達。特異点は、同社が自社のエージェント「SivaClaw」を投資家アウトリーチに投入し、130社超の投資家応対と$400M相当の関心獲得を"人手ゼロ"で実行、投資家フィット順にソート、$100Mラウンドを選抜的にクローズしたこと。主要投資家Avataar Venture Partners、Open Opportunity Fund（SoftBank由来のAtlanta系ファンド）が"AI Agent対応"を受けた側の初期メジャーVCとなる。裏付けメトリクスは過去3四半期連続で四半期売上+250%成長、既存アンカー投資家Accenture Plc。Lyzrは今後SivaClawをオープンソース化し、①エンタープライズ版、②銀行・通信・米政府機関向けsovereign版として展開する計画。エージェント調達（Agentic Fundraising）が"ベンチャーの標準所作"化する可能性を示す象徴案件で、①Term Sheet段階での投資家×AI Agent対応プロトコル、②Due Diligence時のエージェント発話の記録保管、③"AI Agentから来たピッチ"を判別する投資家側の運用整備、といった業界作法の見直し議論が予想される。</p>
+</article>
+
+<article>
+  <h3><a href="https://completeaitraining.com/news/marker-raises-13-million-seed-funding-to-build-an-ai-native/" target="_blank" rel="noopener">Marker、$13Mシード調達（Index Ventures主導） ─ "自動化ではなく支援"を掲げるAIネイティブ・ワードプロセッサ、Google Docs/Slack/HuggingFace創業者らエンジェル参加</a></h3>
+  <p class="src">参照元: Complete AI Training / Index Ventures / LocalGlobe / Betaworks</p>
+  <p class="summary">ロンドン発スタートアップMarkerが7月12日、Index Ventures主導のシードラウンドで$13Mを調達。LocalGlobe、Betaworks、Radical Ventures、Tiny VC、Otherwise Fundが参加。エンジェル陣にはGoogle Docs、Slack、Hugging Faceの創業者らが名を連ねる。プロダクトは"AIネイティブ・ワードプロセッサ"だが、方針は明確に「執筆を自動化するのではなく、執筆プロセスを支援する」。ドキュメント本体ではなく余白（マージン）ベースのエディタとして、書き手の思考プロセス・下書き・共同編集の"雑然としたイテレーション"に寄り添う設計思想を採用。従来のAI文書ツール（Notion AI、Grammarly Go、Google Docs Gemini、Microsoft Copilot等）が"文書を書いてしまう"方向に集約する中で、"人が書く経験そのものを設計する"逆張り。同ラウンドで公式ステルスを解除、早期アクセスプログラムを拡大。「LLMを黒子に、人を主役に」という2026年下期のAI UXデザインの新潮流の代表格として、業界の視線を集めている。</p>
+</article>
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGKKZO97506850S6A710C2MM8000/" target="_blank" rel="noopener"><span class="lede">日経1面</span>富裕層資産、香港がスイスを抜き世界首位 ─ 域外AUM $2.95T（+11%）、480兆円流入、59%が中国マネー、"国安法で香港凋落"シナリオを覆す</a></h3>
+  <p class="src">参照元: 日本経済新聞（7/12付1面） / 毎日経済（韓国MK） / BCG（Boston Consulting Group）</p>
+  <p class="summary">日経新聞7月12日付1面「チャートは語る」が、香港が域外富裕層資産管理（AUM）規模で世界首位に浮上と報道。BCG（ボストンコンサルティング）調査で香港のAUMは前年比+11%の$2.95T（約440兆円）、スイスを初めて上回った。20年の国家安全維持法（国安法）施行による"香港凋落論"を覆し、国際金融ハブの重心が着実に香港へ移動。BCGは現在の香港AUMの約59%が中国本土資金であり、2030年には68%まで拡大予想。①中国不動産市場の低迷・デフレ圧力・低金利下での投資先探し、②"アジアの世代交代"（成長経済で蓄積された富の次世代移転）、③投資益への低課税・中国本土市場アクセスの結合、が背景。米国・欧州・中東に分散していた中国系資産も、中東情勢不安とドル覇権への不確実性を背景に香港回帰。西九龍の新都心では、UBS等が中核ビルを賃借し香港事業を拡大中。香港SFCの別データでは2025年AUM全体が前年比+20%の$5.4T相当、純資金流入は2.9倍と加速。中国政府による資本移動規制がむしろ"香港経由"を必然化させる構造で、①シンガポール・ドバイのライバル台頭中でも香港シェアが上昇、②米中デカップリング下でのアジアマネー・ハブ、③"税制の裁定"としての香港の再定義、が浮上。ドル資金の"逃避先"としてのアジア金融ハブ格付けが変わる分岐点。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.zaikei.co.jp/article/20260711/860776.html" target="_blank" rel="noopener">米Q2決算シーズン週明け開幕、S&P利益予想+24% ─ 14日JPM/GS/BofA/Citi、15日ASML、16日TSMC、期待値ハードル高くRubin立ち上げ遅延懸念でAI株熱過ぎ検証局面</a></h3>
+  <p class="src">参照元: 財経新聞 / ロイター / dメニュー経由 / LSEG I/B/E/S / 工商時報</p>
+  <p class="summary">米国では7月14日週から2026年Q2決算シーズンが本格化。LSEG I/B/E/Sによれば、S&P500構成銘柄の利益は前年同期比+24%と大幅増予想、大部分をハイテク（AI・半導体）銘柄が牽引する見通し。スケジュールは、14日：JPモルガン・ゴールドマン・BofA・シティ・Wells Fargo、15日：ASML・BlackRock・J&J・モルスタ、16日：TSMC・Netflix・GE・UnitedHealth、17日：Travelers。前週にサムスン電子がHBM好調で想定超え決算を発表したが株価は"出尽くし感"で軟調、TSMC決算がAI関連株全体の"熱過ぎ"検証を左右する最大イベントに。US Bank Wealth Managementのテリー・サンドベン氏「今四半期は期待値が高く、誤差の余地はほとんどない」。特にNvidia新世代半導体"Rubin"の生産立ち上がりが鈍いとされ、TSMC見通しへの警戒感が織り込まれつつある状況。Warsh新FRB議長は14-15日に議会証言（前日発表の半期報告書で"AI投資"を関税・中東と並ぶ第3のインフレ要因に格上げ）。同週は6月米CPI/PPI/小売売上高も発表予定でコアCPIが上振れれば追加利下げ観測後退→AI関連株の高値限界検証、下振れれば"AIバブル継続シナリオ"温存。SK Hynix上場初日高騰（前日）とMicron $100B契約構造（本日別記事参照）でAI×メモリーの"配分ゲーム"に投資家の関心が集中。</p>
+</article>
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://www.bbc.com/japanese/articles/cvgqxyldpp1o" target="_blank" rel="noopener"><span class="lede">本日最大</span><span class="cont">前日からの続報</span>イラン、ホルムズ海峡"当面封鎖"を宣言 ─ 米中央軍が今週3回目のイラン攻撃、キプロス船籍コンテナ船攻撃で緊張最高潮、原油価格・世界インフレ再燃リスクへ</a></h3>
+  <p class="src">参照元: BBC Japanese / 産経ニュース (本間英士) / ロイター / 毎日新聞 / 日テレNEWS NNN</p>
+  <p class="summary">前日「停戦終了・水面下交渉」段階だった米イラン緊張が、12日未明から数時間で"ホルムズ海峡封鎖宣言＋米軍3回目の攻撃"にエスカレート。イラン革命防衛隊（IRGC）海軍は12日未明、「船舶自動識別装置を切って安全を脅かした船舶1隻を攻撃し航行不能にした」と発表、「追って通知するまで」「この地域における米国の介入が終わるまで」ホルムズ海峡を封鎖すると宣言、"アメリカのいかなる侵略行為にも厳しく対応・新たな敵の拠点も攻撃対象とする"と警告。米中央軍（CENTCOM）は11日、キプロス船籍のコンテナ船が攻撃を受け乗員1人が行方不明・航行不能となったことへの対抗措置として、今週3回目のイラン攻撃を実施したとX（旧Twitter）で発表。イラン南部バンダルアバス・シリク等で爆発音、Hegseth国防長官「イランは愚かな選択をした、140か所の軍事施設を攻撃」。前日にはイランの最高指導者モジタバ・ハメネイ師（2月末に米イスラエル攻撃で殺害された父アリ・ハメネイ前最高指導者の後継）が「必ず復讐しなくてはならない」と声明を発出。オマーンは"実務・政治レベル協議継続"、CNNは「オマーン領海内の南航路は自由航行・イラン領海内の北航路は事前承認・通行料なし」草案を提示と報道。イラン・米国・カタール・パキスタンが7/12開催予定だった交渉の実施可否は不明。市場影響：戦前は世界石油供給の約1/5がホルムズ海峡通過で、事実上の封鎖は原油価格急騰・世界的インフレ圧力の再燃直結。米連邦最高裁・G7サミット・OPEC+緊急会合が今後数週間の焦点に。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.aljazeera.com/news/2026/7/12/ukraines-zelenskyy-announces-cabinet-reshuffle-replaces-pm-svyrydenko" target="_blank" rel="noopener">ウクライナ、Svyrydenko首相辞任・内閣総改造 ─ ゼレンスキー大統領「政治戦略を刷新」、Shmyhal前首相・Fedorov国防相・Naftogaz Koretskyi氏らが後任候補に</a></h3>
+  <p class="src">参照元: Al Jazeera / Politico Europe / France 24 / Ukrainska Pravda</p>
+  <p class="summary">ゼレンスキー・ウクライナ大統領が7月12日、内閣総改造とYuliia Svyrydenko首相の交代を発表。Svyrydenko首相自身が辞任表明を追認、"ウクライナは政治戦略を変えつつあり、優先外交方針ごとに実質的経験を持つ担当者を配置する"と説明。ゼレンスキー氏は「Svyrydenko首相の効果的な仕事に感謝し、重要なパートナー国との関係の新分野を率いる機会を提供した」と発言、後任は明言せず。ウクライナ野党議員Yaroslav Zhelezniak氏はSvyrydenko氏が駐米大使に転出予定と示唆。後任首相候補にはDenys Shmyhal前首相（現エネルギー相）、Mykhailo Fedorov国防相、Serhiy Koretskyi国営エネルギー会社Naftogaz代表の3名の名が浮上。Svyrydenko氏は昨年7月Shmyhal氏の後任として就任、前職の副首相兼経済相時代にトランプ政権との重要鉱物協定を交渉し、当初冷え込んでいた両政権関係を融解させた立役者。ウクライナ憲法では首相辞任は議会承認が必要で、承認と同時に内閣全体が辞任、新内閣発足まで暫定内閣が職務執行を継続。法執行機関の指揮系統も刷新予定。米大統領のUkraine対応が短期変動する中で、"駐米大使Svyrydenko"配置と新内閣による対米・対EU外交の"次フェーズ"始動が読み取れる。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.jiji.com/jc/article?g=int&k=2026071200159" target="_blank" rel="noopener">南シナ海仲裁判決10年、日米比含む14か国共同声明 ─ 中国主張「法的根拠なし」・"最終的で決定的"を再確認、Australia/Canada/UK/Germany/Italy等が結集、対中包囲網の"法的アンカー"</a></h3>
+  <p class="src">参照元: 時事通信 / 産経ニュース / NHK / Philippine Information Agency（PIA公式声明全文）</p>
+  <p class="summary">南シナ海の領有権を巡り、中国の主張を退けた常設仲裁裁判所（PCA）判決から10年となる7月12日、日本・米国・フィリピン・オーストラリア・カナダ・エストニア・ドイツ・イタリア・ラトビア・リトアニア・ニュージーランド・ルーマニア・スロベニア・英国の14か国が共同声明を発表。「2016年7月12日の仲裁判決は中国とフィリピンの間で法的拘束力を持ち、最終的で決定的である」と再確認、「中国の"歴史的権利"に基づく南シナ海への広範な海洋権益主張には法的根拠が存在しない」と明記。海上警察・軍・海洋民兵を用いた"合法的活動の妨害・威嚇"に強く反対、"力または強制"による一方的行動への反対を明示的に打ち出した。バルト三国（エストニア・ラトビア・リトアニア）や中欧諸国（スロベニア・ルーマニア）が参加している点が、対中包囲網が"インド太平洋"を超えてグローバル化している証左。フィリピンMarcos政権が5月に主要仲裁判決の"エレメント化"作業を進めていた延長線上の外交勝利。ASEAN共通声明化には至っていないものの、"UNCLOSアンカー"での対中共同前線が着実に拡大。日本にとっては、①東シナ海尖閣領有権への波及効果、②高市政権のインド太平洋外交の実質的達成、③自民「法案の確実成立を」・立民「丁寧に審議を」の国会日曜討論でも取り上げ議論、と国内外双方で位置付け直しが進行中。</p>
+</article>
+
+<article>
+  <h3><a href="https://topics.smt.docomo.ne.jp/article/tbs/politics/tbs-2795252" target="_blank" rel="noopener"><span class="lede">日本政治</span>高市内閣支持率65.9%（-4.1pt）、就任8か月で過去最低 ─ 中傷動画秘書対応と国会空転で減点、それでも異例の高水準維持、皇室典範改正「男系男子」典範に火種残る【JNN世論調査】</a></h3>
+  <p class="src">参照元: TBS NEWS DIG (dメニュー経由) / JNN世論調査</p>
+  <p class="summary">TBS NEWS DIGが7月12日公表のJNN最新世論調査で、高市内閣の支持率は前回調査から-4.1ポイントの65.9%となり、2025年10月の内閣発足以来最低を記録した。ただし2000年以降で内閣発足8か月後に60%超を維持できたのは小泉・第2次安倍・岸田の3例のみで、65%超維持は依然として異例。総裁選・衆院選で高市総理の公設秘書が他陣営を誹謗中傷する動画作成に関与した疑惑を巡り、総理が「秘書の陳述書を理事会に提出」で対応を打ち切ろうとしたことが野党の委員会・本会議欠席と国会空転の引き金となった。JNN調査では「これまでの中傷動画めぐる総理対応に納得できない」51%（納得できる43%を上回る）、ただし世代別では30歳未満"納得できない"3割・60歳以上6割で高年齢層ほど反発強い。若年層ほど支持率が高い傾向は継続。皇室典範改正案（男系男子継承の明文化）の衆院通過を巡っては「国民の総意」との乖離広がり、"だまし討ち"批判、国会前デモ2万7000人動員も。11日現在、総理の言及した"秘書の陳述書"提出見通しは立たず、次週国会での説明責任局面と、来週の与野党協議、消費税議論（石破元総理からの"苦言"）が支持率動向の分岐点。片山財務相のGPIF国内投資後押し発言（7/10・前日既報）と併せ、"高市経済路線"の総合評価もこの1週間で正念場を迎える。</p>
+</article>
+</section>
+
+<footer>
+  <p>📡 <strong>収集元</strong>: Bloomberg Japan / NewsPicks / 日本経済新聞 / Techmeme / TechCrunch / Slashdot ─ 6媒体すべて Exa MCP（web_search_exa / web_fetch_exa）経由で記事URLと本文を取得。TechCrunch・Techmeme・NewsPicksは当日記事直接取得成功。Bloomberg Japan本体はTechmemeとPower On転載経由・日経は12日付1面「香港AUM首位」を採用・Slashdotは前日既報中心のため本日分は他5媒体で構成。</p>
+  <p>※ 前日（2026-07-11）に取り上げた記事（Apple v OpenAI提訴、Meta Muse Image撤回、OpenAI家族向けPM、China CASC海上ロケット回収、CISA Post-Mortem、VW 4工場閉鎖、Google Pricerunner $2B判決、テックCEO雇用トーンダウン、SmartHR IPO見送り、Bluesky Schneider CEO、Fizz vs Sidechat、FRB半期報告のAI三重要因、SK Hynix Nasdaq上場初日、Circle OCC最終承認、日経平均週間、米イラン水面下会談、片山発言週間市場総括）と同一URL・実質同一トピックは除外。ホルムズ海峡封鎖宣言（本日IRGC正式宣言＋米軍3回目攻撃で急展開のため「前日からの続報」タグ付き）とApple M6/M7ロードマップ（Bloomberg Power On 7/12配信、Apple v OpenAI提訴と併せた"AIハードウェア戦略"の新展開）、Micron $100B SCA構造（SK Hynix上場・FRB報告の翌日フォロー詳細）は"本日新規展開"として採用。</p>
+</footer>
+
+</div>
+</body>
+</html>
