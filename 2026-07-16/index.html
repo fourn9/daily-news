@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-16(木)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月16日(木)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems" target="_blank" rel="noopener"><span class="lede">本日最大</span>中国Moonshot AI「Kimi K3」公開 ─ 2.8兆パラメータで史上最大のオープンソースモデル、Opus 4.8超え・Fable 5弱、1Mコンテキスト・Kimi Delta Attention、価格は$3/$15/Mトークン</a></h3>
+  <p class="src">参照元: VenturBeat (Michael Nuñez) / Financial Times (Zijing Wu) / Techmeme / Xinhua / OpenRouter</p>
+  <p class="summary">アリババ出資の北京Moonshot AIが7月16日、フラッグシップモデル「Kimi K3」を発表・提供開始した。総パラメータ2.8兆（DeepSeek V4 Proの約1.75倍、Xiaomi・Alibabaを大きく上回る）と史上最大のオープンソースLLMで、フルウェイトは7月27日公開予定。1Mトークンのコンテキストウィンドウ・ネイティブ視覚理解・常時ONの推論モード（thinking mode）を備え、独自の「Kimi Delta Attention（KDA）」＋「Attention Residuals」アーキテクチャで長系列デコーディングを最大6.3倍高速化、Nvidia Nemotron 3 Ultra比で1/3トークンで同等性能を達成したとする。ベンチマークではAnthropic Opus 4.8を超え、Fable 5 Max・GPT-5.6 Sol Maxに次ぐ3位圏、Frontend Code Arenaで1位（1679点）を獲得。価格は$3/$15per Mトークン（キャッシュヒット時$0.30）でSonnet 5相当かつ大幅安。同社は5月に$315億の資金調達を実施済で、"米国フロンティアモデルとの距離が縮まった／消失した"と業界で評価。DeepSeek R2以来のオープンモデル大転換で、Anthropic・OpenAIのIPO評価やNVIDIA CapEx依存戦略への影響が中期的テーマ化。</p>
+</article>
+
+<article>
+  <h3><a href="https://blogs.nvidia.com/blog/japan-ecosystem-2026/" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>NVIDIA×トヨタ／川崎重工／みずほ が正式発表 ─ Woven Cityで物理AI、堺工場でAIロボ造船所、DGX B200＋NemoClawで金融AIエージェント、フアンCEO「ジャパンAI」構想が具体化</a></h3>
+  <p class="src">参照元: NVIDIA公式ブログ / 川崎重工プレスリリース / みずほFG / 日経Asia / 日本経済新聞 / Japan Times</p>
+  <p class="summary">前日フアンCEOが「明日発表」と予告した日本大手企業とのAI提携が7月16日、次々と正式発表された。①トヨタとは物理AI連携を拡大、Woven by ToyotaがH100+Megatron-Coreで都市交通向け視覚言語モデル「Woven City AI Vision Engine」を開発、Omniverse/Isaac Simで工場デジタルツイン、MISRA準拠のコード生成AIをMegatron-LM/Nemotronで訓練しL2++次世代車両を開発する内容。②川崎重工は堺工場で「次世代デジタル造船所」を構築、NVIDIA Cosmos/Omniverse/Isaac/Metropolis/Jetsonスタックを溶接・塗装・検査・材料ハンドリングロボに統合、造船業の労働力不足解消を狙う。③みずほFGはNVIDIA DGX B200＋NemoClawによる安全なAIエージェント実行環境の検討開始、「Mizuho LLM」の学習・推論基盤とオンプレミスGPUクラスタ整備、金融機関向けAI利用のモデルケースを目指す。前日のNVIDIA×三菱重工に続く"NVIDIA-日本重工業-金融"の3層構造が、Warsh議長「AI投資はインフレ要因」証言・ラピダス期待表明・キオクシア好調と組み合わさり、日本製造業のAI一体化政策が本格稼働段階に入った。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-tsmc-lifts-2026-outlook-as-ai-demand-stays-hot-in-q2-2026-93CH-4794777" target="_blank" rel="noopener">TSMC Q2、売上$40.2B・純利益+77%で過去最高 ─ 2026年通年見通しを「+40%超」に引上げ、AI需要「マルチイヤーAIメガトレンドに強い確信」、CapExを$20B規模へ、2nm量産開始</a></h3>
+  <p class="src">参照元: TSMC投資家情報 / Investing.com / SEC EDGAR</p>
+  <p class="summary">TSMCが7月16日発表したQ2 2026決算は連結売上NT$1兆2703億（$40.2B、YoY+36.0%）・純利益NT$7065億（+77.4%）・粗利益率67.7%・営業利益率60.3%と、いずれもガイダンス上限と市場予想を上回った。売上構成はHPCが66%（1Q61%→拡大）、スマホ22%で、先端ノード7nm以下が77%を占める。2nmが早くも売上3%に到達（1Q0%）、C.C. Wei CEO兼会長は「2nmの急峻な立ち上げ」を強調。Q3ガイダンスは$44.6-45.8B（QoQ+12%）、通年見通しを従来「+30%台前半」から「US$ベースで+40%超」に上方修正、CapExは$18.75-20Bへ引上げ。「AI関連需要は極めて堅牢、多年AIメガトレンドへの確信はさらに高まった」「エージェントAI台頭でCPUがデータセンターで再興、シリコン需要をさらに拡大」とAI追い風を明確化、「2029-2030年まで需要は非常に強い」と長期見通しも表明。ただし2nm立ち上げで3Q粗利率は65-67%へ低下、時間外で株価-1.55%と反応。前日のグローバル半導体高の主役に続く重要ドライバー、翌日以降の東京・韓国半導体株の方向感を決める。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/" target="_blank" rel="noopener">Google、"AI Mode"に外部アプリ連携追加＋NotebookLMを"Gemini Notebook"に改名＋Vidsで本人出演AI動画生成 ─ Gemini統一ブランドで既存製品を統合、"AIエージェント時代"での自社導線拡大</a></h3>
+  <p class="src">参照元: TechCrunch × 3件</p>
+  <p class="summary">Googleが7月16日、複数のAI製品更新を発表した。①検索の"AI Mode"に外部アプリ連携機能を追加、選択したアプリと直接インタラクション可能に。②NotebookLMを「Gemini Notebook」に改名、Geminiブランドへの統合を加速（"renaming streak"の延長）。③動画生成ツール「Google Vids」に自撮り顔を使って自分自身をAI動画に出演させる機能を追加。前日Meta MosseriのAIジェネレーティブAI規制論／Anthropic広告炎上に続く"消費者向けAI競争の細分化フェーズ"の1週間で、Google側は既存製品線をGemini傘下に一気に整理して、"Perplexity/OpenAIのブラウザ・アプリ連携"に対抗する構図。SEOトラフィック侵食を進めるAI Modeに、実務アプリ連携で"検索→アクション"を一体化する方向性が鮮明化。同日発表のRoblox新AIゲーム作成機能・Beehiiv購読者チャット追加・X創作者コンテンツ盗用対策と併せ、"生成AIのプロダクト面での常態化"が続く。</p>
+</article>
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Acquisition-Offer-for-Delivery-Hero/default.aspx" target="_blank" rel="noopener"><span class="lede">本日最大</span>Uber、Delivery Heroを$148億で買収合意 ─ €41.50/株の現金公開買付、5月案を26%上回る改善、SSW Partners が14市場を$16億で分離取得、Uber対応市場は79→99へ拡大</a></h3>
+  <p class="src">参照元: Uber IR / TechCrunch (Kirsten Korosec) / TT News / Bloomberg / tech.eu</p>
+  <p class="summary">Uberが7月16日、ドイツ・ベルリン拠点のフードデリバリー大手Delivery Heroとの企業結合契約を正式発表。1株€41.50の現金公開買付で企業価値$148億（既取得分控除で$137億）、5月の初期提示から26%上乗せの水準。合意後の対応国は79→99市場、合計モビリティ＋デリバリー市場は34→58に倍増、両社の2025年GMV合計は$2360億に達し、China域外で世界最大のデリバリー基盤が誕生する。既にUberはDelivery Heroの24.77%の議決権+11.74%の経済的エクスポージャーを保有、Prosus（17%）も応募の不可撤回契約に合意で経済的持分は約53%に達する見込み。並行してNY拠点SSW Partnersが14市場（Uber Eatsと重複するオーストリア・ノルウェー・スペイン・スウェーデンなど）を$16億で買収、独禁対応の緩和策。UberはドイツHQを2029年まで維持、独市場に€20億（自動運転・自動車業界提携含む）を5年で投資する追加コミット、€140億のブリッジ融資を確保済。閉鎖予定は2027年後半、規制承認が焦点。DoorDash-Deliveroo・Prosus-Just Eat Takeaway合意に続く"世界フードデリバリー3強再編"の最終幕で、Uber One会員のクロスプラットフォーム化が長期差別化に。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUC153LQ0V10C26A7000000/" target="_blank" rel="noopener">三菱商事、$120億の米エーソン買収を完了 ─ 上流ガス権益取得で"ガスメジャー"化、日本のLNG需要の1/4に相当、営業CF年2700-3000億円・純利益+700-800億円寄与見込み</a></h3>
+  <p class="src">参照元: 日本経済新聞 / 三菱商事IR / ロイター</p>
+  <p class="summary">三菱商事が7月16日、1月に発表した過去最大の米天然ガス開発会社エーソン（Aethon）の買収完了を確認した。買収総額は約$120億（負債$23億引受含む）、対価$52億で全株式を取得、テキサス州・ルイジアナ州のヘインズビル・シェール盆地で域内2位の生産量と最大級の埋蔵量を握る。中西勝也社長は「競争力のためなら上流のガスを持たないと」と語り、従来のLNG液化（マレーシア・豪州など5カ国）に加え米国内でも上流→中流→下流を一貫展開する体制へ。ピーク時の生産はLNG換算年1800万トン規模で日本のLNG需要の約1/4に相当、2027年度時点で営業CF年2700-3000億円・純利益+700-800億円の寄与を見込む。国際協力銀行（JBIC）は3800億円の融資で支援、中東リスク低減の経済安保案件としても位置付け。トランプ政権のLNG輸出規制緩和方針が追い風、経営戦略2027の3.3兆円営業CF計画達成の要となる。前日のNippon Steelトンあたり利益世界首位に続く"日本の実物資源・重工業セクター"の海外資源獲得ラウンドで、AI/半導体一辺倒の相場に対する"エネ・素材"の反攻材料が積み上がる。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/16/oil-giant-bp-shutters-its-corporate-venture-arm-after-20-years/" target="_blank" rel="noopener">BP、20年続いたコーポレートVC部門を閉鎖 ─ 石油メジャー"低炭素離れ"の象徴、脱炭素投資への熱冷めと株主の還元圧力が交錯</a></h3>
+  <p class="src">参照元: TechCrunch (In Brief)</p>
+  <p class="summary">英石油メジャーBPが7月16日、20年間運営してきたコーポレートベンチャー投資部門（BP Ventures）を閉鎖すると発表した。同社は近年、脱炭素移行戦略を段階的に後退させており、"低炭素領域から中核事業＝石化燃料への回帰"の姿勢を鮮明にしてきた。Ventures部門は電動モビリティ・水素・バイオ燃料・カーボン管理などのスタートアップ投資を担ってきたが、株主からの資本還元圧力・原油高需要ピーク後ろ倒し観測・グリーン投資収益の低迷が重なり、外部スタートアップ経由でのイノベーション取り込み体制自体を解体することを選択した。前月のShell・TotalEnergiesも研究費の"石化寄せ"を強化中、Occidental・Chevronも同傾向で、"エネルギー多国籍のCVCが再生可能・気候テック向けアーリー投資から手を引く"局面が明確化。前日のNippon Steel EBIT/粗鋼世界一・三菱商事エーソン完了と並び、"AIバブルの陰で進む重厚長大セクターの資本配分再構築"の一断面。日本の三井物産・伊藤忠等の総合商社が気候テック投資を維持している状況とは対照的で、日欧米の資本主義観の差異も浮き彫りに。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUC154YN0V10C26A7000000/" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>ニチレイ、17日から冷蔵倉庫の入出庫業務を順次復旧 ─ 個人情報漏洩の可能性は継続調査、低温物流の9割がグループ外受注で影響が食品・小売・外食全域に</a></h3>
+  <p class="src">参照元: 日本経済新聞</p>
+  <p class="summary">ニチレイは7月16日、13日発生の不正アクセスによるシステム障害について、7月17日から冷蔵倉庫の入出庫業務を順次復旧させると発表した。ただし情報漏洩の可能性は依然調査中で、システム障害発生前への完全復旧の時期は「メドがついていない」状態。ニチレイは国内冷蔵倉庫首位で、低温物流事業の受託先の約9割がグループ外の食品メーカー・小売業・外食チェーンで占められる基幹インフラで、KFCの一部店舗休業・イオン/くら寿司への配送影響拡大に加え、他の食品事業者への波及も進行中。前日15日の"個人情報漏洩の可能性発表"に続く復旧フェーズへの移行だが、木原官房長官も同日午前の会見で「企業はサイバー攻撃対策を」と改めて呼びかけ、政府はサイバーセキュリティ対策計画の改定を進める見通し。前月のアサヒビール系攻撃・IBM Q2ショック（顧客のセキュリティ懸念でCapEx再優先）と併せ、日本の"生活インフラ企業"のサイバーレジリエンス問題が経済安全保障論の主戦場に浮上。東証食品・物流セクターの見直し材料として継続的に注視される。</p>
+</article>
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/16/founders-fund-hires-former-openai-exec-ryan-beiermeister-and-not-because-of-her-mafia-skills/" target="_blank" rel="noopener">Founders Fund、OpenAI元幹部Ryan Beiermeisterを起用 ─ 5月に過去最大$60億のGrowth IVを1年で調達、Anthropic $12.5億・Anduril $10億の"12社集中投資"戦略が拡大局面へ</a></h3>
+  <p class="src">参照元: TechCrunch (Julie Bort) / Value Add Pulse / Startups World News</p>
+  <p class="summary">Peter Thiel創業のFounders Fundが7月16日、OpenAIで対政府・戦略パートナーシップを主導していたRyan Beiermeister氏を新パートナーとして起用したとTechCrunchが報じた。Founders Fundは4月2025にGrowth III $46億を調達・ほぼ1年で全額展開（Anthropic $12.5億、Anduril $10億、SpaceX/OpenAI/Stripe/Ramp/Cognition AIに残額）、5月2026にGrowth IV $60億という20年で最大規模ファンドを閉鎖済で、AUMは$200億超に到達。今後2-3年で約12社に"1社当たり$6億平均"の超集中投資を行う戦略の中で、AI・防衛のフロンティア領域を強化する人事。同日発表のFora（AI旅行エージェンシー・$60Mでユニコーン化）・Sheryl Sandberg率いる$10M AI車両検査Ravin AI投資・Ultrahuman元VP $5.5M（AIエージェント制御デバイス）と併せ、"AI×既存産業"実装案件へのVCマネー加速が鮮明。前日のAnthropic×Blackstone「Ode」$15億JV・Chai Discovery $4億・Miles Wang創薬AI独立に続く"OpenAI/Anthropic出身者×大型VC×既存産業"のバリューチェーン再編が2026年下半期のスタートアップ資金の中心テーマに。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/" target="_blank" rel="noopener">AI旅行エージェンシーFora、$60M調達でユニコーン化 ─ 消費者×AIサービス実装領域の新星、旅行業界のホワイトカラー再編を象徴</a></h3>
+  <p class="src">参照元: TechCrunch (In Brief)</p>
+  <p class="summary">AI活用型旅行エージェンシーのForaが7月16日、$60Mの追加ラウンドを実施しユニコーン企業（評価額$10億超）入りしたとTechCrunchが報じた。Foraは独立系旅行アドバイザーとAI推奨エンジンを組み合わせ、"人＋AI＋高利益率"モデルで従来のオンライン旅行代理店（Expedia、Booking等）とは差別化される消費者×プロフェッショナル・ハイブリッド型サービス。前日のAnthropic+Blackstone「Ode」（AI実装ブティック）、TravelPerk、Mindtrip等の"AI旅行×人間キュレーション"領域の急拡大局面での勝ち抜けで、AI浸食にさらされるホワイトカラー職種を"AIツール装備の個人事業主化"で救う逆説的モデルが機能した事例。同時に日経のニュース解説「AIが侵食し始めた日米の若者雇用（テック上半期解雇11.36万人）」と対照的な"AI恩恵側"の1事例として位置付けられ、"AIで置換される仕事 vs AIで武装できる仕事"の分岐点として注目される。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/16/sheryl-sandberg-leads-10-million-investment-in-ai-powered-vehicle-inspection-service/" target="_blank" rel="noopener">Sheryl Sandberg、AI車両検査Ravin AIに$10M投資リード ─ 元Metaトップの投資家転身、"AI×既存業界"に軸足移す</a></h3>
+  <p class="src">参照元: TechCrunch (Sean O'Kane)</p>
+  <p class="summary">Meta（旧Facebook）元COOのSheryl Sandberg氏が、AI活用の車両検査サービス提供企業（Ravin AI）に$10Mのラウンドをリード投資したとTechCrunchが7月16日報道。Ravin AIはスマホや検査場の設備でクルマの外装損傷を自動検出し、レンタカー・保険・中古車販売業界向けにクレーム査定を高速・低コスト化するサービスを展開。Sandberg氏は2022年にMeta退任後、投資活動と社会活動に注力しており、消費者インターネット→"AI×既存レガシー業界"への戦略シフトを反映した投資。前日のOpenAI Miles Wang（$20億創薬AI）・BlackstoneのOde AI実装事業・Anthropic中東関連投資と並び、"シリコンバレーの大物人材＋大型資本＋AI実装領域"の交差点が急速に厚みを増す事例。テスラ運転手のフロアアクセル100%事故（NTSB確認）で自動車業界の安全性再検証が進む文脈でも、"AI検査ソリューション"の重要性が浮上している。</p>
+</article>
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUB164ZG0W6A710C2000000/" target="_blank" rel="noopener"><span class="lede">本日最大</span>日経平均-1915円(-2.79%)の急落 ─ 6万6835円、韓国KOSPIも-7%超で1日でサーキットブレーカー、SOX前日下落を引継ぎAI・半導体全面安、TSMC決算発表前の利益確定</a></h3>
+  <p class="src">参照元: 日本経済新聞 / 産経新聞 / 時事通信</p>
+  <p class="summary">7月16日の東京株式市場は日経平均株価が3営業日ぶり反落、終値は前日比1915円97銭（2.79%）安の6万6835円54銭。下げ幅は一時2200円を超え、6万7000円割れ。前日15日の米市場でフィラデルフィア半導体指数（SOX）が大幅下落した流れが波及、東京市場でもAI・半導体関連が軒並み安に。アドバンテスト・東京エレクトロン・ソフトバンクグループ・キオクシアの4銘柄だけで指数を約1500円押し下げ。同時進行で韓国KOSPIも下落率が7%超に達する場面あり、"米中韓日のAI・半導体株の共振下落"を象徴。背景は中国半導体メモリー大手の上海IPO控えでの生産能力増強懸念（マイクロンが牽引下落）、TSMC決算発表前のリスク回避、前々日から続いた急騰後の利益確定売り集中。TOPIXは-1.12%と半導体ウエイトの薄いセクターは相対的に堅調で、サイゼリヤは値上げ検討報道でストップ高。円相場は162円14-15銭と円安傾向継続。TSMCの好決算＋通年見通し上方修正が翌日以降の反転材料になるかが焦点で、Warsh議長の"AI関連投資はインフレ要因"証言と併せて"AI CapExバブルの中長期持続性"議論が再燃する局面に。</p>
+</article>
+
+<article>
+  <h3><a href="https://slashdot.org/story/26/07/16/1544241/tech-ceos-shift-narrative-on-ai-and-jobs-from-doomsday-to-productivity" target="_blank" rel="noopener">テックCEOのAI失業論、"終末シナリオ"→"生産性向上"へシフト ─ Sam Altman/Dario Amodei/Bezosが1年で発言軌道修正、EY調査でも大幅減員予想CEO割合46%→20%へ半減</a></h3>
+  <p class="src">参照元: Slashdot / Wall Street Journal / EY-Parthenon調査</p>
+  <p class="summary">Wall Street Journal報道をSlashdotがまとめた記事によると、この1〜2か月でテックCEOのAI×雇用論が明確に軌道修正されている。①OpenAIのSam Altman氏は5月末の会議で「我々は技術予測はおおむね正しかったが、社会・経済への影響予測はかなり間違っていた」と反省、CNBCで「業界は我々が人間を中心に据え続けられる程度を過小評価していた」と述べる。②AnthropicのDario Amodei氏は2025年5月に「AIはエントリーレベル職の半数を消滅させ得る」と警告していたが、1年後には「同リソースで同じことをやり、人員削減する道もあるが、同リソースでもっとやる道もあり、そちらは創造性が必要」と両論併記に。③Amazon創業者Jeff Bezos氏は6月に「AIは労働不足を生む可能性」と発言、"AIが職を奪う"論を"賢い人々が繰り返し言うから人々が怯えている"と反論。EY-Parthenon調査でも大幅減員を予想するCEOの比率は2025年1月46%→2026年5月20%へ半減。MIT労働経済学のDavid Autor氏は「労働市場が予想ほど急激には(内破)しない現実に気付いたからか、"我々の素晴らしい新製品が経済を破壊する"と言うのは商売として不味いと悟ったからか」と冷笑的分析。前日のニチレイAPT攻撃・IBM ショックのCEO級会議で"AIを守勢に使う"論調が広がる中の"世論寄り"シフトで、AI規制論・IPO評価・企業のAI投資判断に幅広く影響。日経の同日「AIが侵食し始めた日米若者雇用（テック上半期解雇11.36万人）」の実データとの対比が焦点。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUB088TA0Y6A700C2000000/" target="_blank" rel="noopener">日本国債に個人マネー流入 ─ 金利上昇で投資妙味、政府もNISA枠拡大等で後押し、"金融安保"を金融庁が新責務化する時代のマクロ資金再配分</a></h3>
+  <p class="src">参照元: 日本経済新聞</p>
+  <p class="summary">日本国債に対する個人投資家の資金流入が加速している。長期金利の上昇（前日20年債入札好調・骨太ショックの余波）が投資妙味を高め、政府も"貯蓄から投資"の一環で個人向け国債の販売拡大やNISA枠での国内債利用拡大を検討・後押しする方針。同日、金融庁を"金融安全保障"の司令塔として位置付ける新責務化の記事も掲載、規制監督だけでなくシステム防衛・国内資本流出防止への役割拡大が構想されている。GPIF構成比率修正論議（Bloomberg：財務相・厚労相が言及、片山氏は"国債版NISA"に意欲）と併せ、政府主導で"日本人資本の日本国債への還流"を促す政策パッケージが形成されつつある。高市政権の骨太方針最終案（21日閣議決定予定）と対応し、"金利上昇×財政拡張×国内資本回帰"の連立方程式を家計・機関投資家双方に押し付ける構図。円安162円台継続・訪日客5年ぶりマイナス・中国からのレアアース輸出制限継続とセットで、"国内経済安保 vs. グローバル投資リターン"の緊張が高まる。中国中小企業の値上げ困難など海外要因も並行して悪化するなか、日本国債の需給改善は円債下落止めの重要ドライバー。</p>
+</article>
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://english.kyodonews.net/articles/-/80020" target="_blank" rel="noopener"><span class="lede">本日最大</span>利根川進さん死去、86歳 ─ 日本人初のノーベル生理学・医学賞受賞（1987年）、抗体多様性の遺伝子原理発見、MIT教授として脳の記憶メカニズムでも歴史的貢献</a></h3>
+  <p class="src">参照元: NHK WORLD / 共同通信 / 毎日新聞 / 京都大学 / MIT</p>
+  <p class="summary">日本人として初めてノーベル生理学・医学賞を受賞した分子生物学者・利根川進マサチューセッツ工科大学教授が7月11日（土）に死去、7月15日にMITが公表し16日に日本のメディアが報じた、86歳。1987年に「抗体多様性の生成に関する遺伝子原理」の発見で単独受賞、免疫システムが数十億種の抗体を作り分ける仕組みを分子レベルで解明する画期的成果を挙げた。京都大学理学部卒（1963年）→カリフォルニア大学サンディエゴ校で博士号（1968年）→スイス・バーゼル免疫学研究所→MITというキャリアで、後年は脳の記憶メカニズム研究へ転じ、"エングラム細胞"の発見等でも第二の学術的黄金期を築いた。1984年文化勲章。京都大学湊長博総長は同日「哀悼の意」と、"若い研究者時代の議論での強烈な熱量に圧倒された記憶"を追悼で語った。米国科学アカデミー会員として日米科学交流の橋渡し役を長年務め、遺骨は私的葬儀の後、京都に埋葬される。日本人ノーベル生理・医学賞の系譜（山中伸弥・大隅良典・本庶佑・大村智）の礎を築いた開拓者として、日本の科学界・免疫学・神経科学に大きな影響を残した。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGN152NZ0V10C26A7000000/" target="_blank" rel="noopener">トランプ大統領、対イラン覚書「30日期限」で威嚇に回帰 ─ イラン側「交渉の予定なし」と拒絶、ホルムズ海峡タンカー攻撃・空母2隻展開に続く緊張の第3ラウンド</a></h3>
+  <p class="src">参照元: 日本経済新聞 / Bloomberg</p>
+  <p class="summary">米トランプ大統領が7月15日〜16日にかけて、対イラン外交で新たな覚書に署名、「30日期限」を設定して合意に至らなければ追加軍事行動の可能性を示唆する"威嚇に回帰"する姿勢を明確化した。日経報道によると、トランプ氏は「イランが交渉に応じなければ、我々には最大限の圧力を加える手段が全て残っている」と述べ、Bloombergは「イランに合意迫るトランプ氏、期限最大15日／中東に空母2隻配備」を追加報道。イラン側は「交渉の予定なし」と拒絶姿勢を維持、ホルムズ海峡でのUAEタンカー攻撃（乗組員1人死亡・8人負傷）・トランプ氏の"20%通航料"表明に続く緊張の第3ラウンドとなった。国民新党を含む米議員団は"限定攻撃検討"の情報開示を要求、湾岸情勢は「原油高＝インフレ第2波」（Warsh議長警戒）の重要因子として市場も注視。前日ロシア産原油購入5カ国への100%関税法案と併せ、"通商政策×安全保障"の二正面威嚇が同時多発、下半期の地政学リスクとして継続的な監視対象。円相場（162円台）や日経平均への"リスクオフ"圧力にも影響。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUA150JW0V10C26A7000000/" target="_blank" rel="noopener">国民会議、新給付制度を2029年度に全面導入 ─ 子育て世帯手厚く、消費税減税結論の"8月頭"表明に続く社会保障・税制の具体化フェーズ</a></h3>
+  <p class="src">参照元: 日本経済新聞</p>
+  <p class="summary">高市早苗首相直属の国民会議が7月15日〜16日、新給付制度の2029年度全面導入方針を決定した。給付は"子育て世帯に手厚く"配分する設計で、児童手当拡充・教育費支援・所得再分配機能の強化を段階的に組み合わせる方向。前日の党首討論での「消費税減税の結論は8月冒頭であれば間に合う」（高市首相）表明と対を成す社会保障・税制改革の具体化フェーズで、高市政権の"強い経済"路線の分配側面を明示化する動き。ただし玉木代表の「気合と根性でマーケットは動かない」批判の反映として財政運営の信認確保が課題で、20年債入札好調・GPIF論議・"国債版NISA"構想と併せて、財政拡張と資本市場の綱引きが本格化。日本国債個人マネー流入の増勢にも影響する制度改正で、家計サイドの受給・拠出バランスの再設計が国民生活に直結。骨太方針最終案（21日閣議決定予定）の中心テーマの1つで、参院選後の実行段階での与党内論争を左右する制度設計となる。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUD0838G0Y6A700C2000000/" target="_blank" rel="noopener">手足口病、乳幼児に感染拡大 ─ 前年比13倍ペースで27都府県で警報レベル、コロナ後の免疫ギャップと海外由来ウイルスで小児医療現場に負荷</a></h3>
+  <p class="src">参照元: 日本経済新聞 / 厚生労働省 / 各都道府県衛生研究所</p>
+  <p class="summary">乳幼児を中心に感染する手足口病が全国で急拡大している。日経報道によると、2026年の患者数は前年同期比13倍のペースで推移、7月中旬までに27都府県で"警報"レベルに達した。原因は主にエンテロウイルス71型（EV71）およびコクサッキーA6型で、コロナ禍で免疫獲得機会が減少した乳幼児層に感染が広がる"免疫ギャップ"効果に加え、東南アジアから海外由来株の流入が疑われる。手足口病は通常軽症で自然治癒するが、EV71は神経症状（髄膜炎・脳炎）を伴うリスクがあり、乳幼児の重症化・入院増加で小児科医療現場の負荷が深刻化。保育園・幼稚園でのクラスター発生や共働き家庭の看護休暇取得負担にも影響、企業の労務管理・地方自治体の保育行政の焦点課題に。同日、厚労省は感染予防（手洗い・タオル共用回避）の徹底を改めて周知、地方衛生研究所と連携した監視強化を継続。夏休み前のピーク接近で、家庭・園・医療の3者連携が急務となる。</p>
+</article>
+</section>
+
+<footer>
+  <p>📡 <strong>収集元</strong>: Bloomberg Japan (WebFetchで403、Exa経由でトップ確認)  / NewsPicks (WebFetchで403、Exa経由で確認したが日本語主要ピックの多くは前日既出) / 日本経済新聞 (Exa経由・トップ複数記事採用) / Techmeme (Exa経由・Kimi K3が本日最大トップ) / TechCrunch (Exa経由・Uber-DH／Google更新／Founders Fund等を採用) / Slashdot (Exa経由・"AI失業論シフト"を採用、Pricerunner記事は7月1日ルーリングの再掲のためスキップ)</p>
+  <p>※ 前日（2026-07-15）に取り上げた記事（NVIDIAフアンCEO来日「ジャパンAI幕開け」・Apple Intelligence中国承認・Thinking Machines Inkling・Microsoft Patch Tuesday 570件・Stripe+Advent PayPal $53.4B・Anthropic+Blackstone Ode $15億JV・OpenAI初ハードウェア・OnePlus米欧撤退・India政府$65億+$133億・Miles Wang $20億創薬AI独立・Nippon Steelトンあたり利益世界首位・Warsh FRB議長初議会証言・グローバル株高KOSPI/日経/SOX・SpaceX IPO価格割れ・ニチレイ個人情報漏洩・米新対ロ制裁法案・高市首相党首討論・改正金融商品取引法・訪日客5年ぶりマイナス）と同一URL・実質同一トピックは除外。NVIDIA×トヨタ/川崎重工/みずほは"予告→本日正式発表"の新展開で「続報」タグ採用、ニチレイも"17日から復旧開始／官房長官発言"の新展開で「続報」タグ採用。SpaceX/OneLine撤退等の同題記事は今回除外。</p>
+  <p>Kimi K3 (2.8T史上最大オープンモデル)・NVIDIA×トヨタWoven City/川崎重工造船所/みずほ DGX B200正式発表・TSMC Q2$40.2B & 通年+40%超見通し・Google AI Mode/Gemini Notebook/Vids本人出演・Uber $14.8B Delivery Hero買収合意・三菱商事エーソン$120億買収完了・BPコーポVC 20年で閉鎖・ニチレイ17日順次復旧（続報）・Founders Fund Ryan Beiermeister起用・Fora AI旅行$60Mユニコーン・Sheryl Sandberg Ravin AI投資リード・日経平均-1915円半導体全面安・テックCEO AI失業論シフト・日本国債個人マネー流入・利根川進さん死去・トランプ対イラン30日覚書威嚇回帰・新給付制度2029年全面導入・手足口病27都府県警報──いずれも本日16日新規展開として採用。</p>
+</footer>
+
+</div>
+</body>
+</html>
