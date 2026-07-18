@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-18(土)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月18日(土)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html" target="_blank" rel="noopener"><span class="lede">本日最大</span>Meta、Anthropicへ$100億規模のコンピュート賃貸で交渉中 ─ NYT報道、Metaが"クラウド事業"参入シグナル、Anthropicは自社学習需要にMeta余剰GPU活用、"AI電力・計算資源の受発注市場"の主役交代</a></h3>
+  <p class="src">参照元: New York Times (Mike Isaac / Elita Journo) / Financial Times / Bloomberg / CNBC / WSJ / Techmeme</p>
+  <p class="summary">7月17日夕方、New York Timesのスクープでメタとアンソロピックが2年間で$100億規模のコンピュート賃貸契約について協議中と報道された。Metaが自社データセンターの余剰計算容量をAnthropicに貸出す形で、Metaにとってクラウドコンピューティング事業の"初めての大口顧客"となる可能性がある。Anthropicは前日のFireworks AI $175億評価と併せ、"IPO準備段階での計算リソース争奪"に本格対応。同日Wall Street Journalは、Dave Brown氏（AWSのComputing / AI / Platform担当SVP）がMetaへ移籍しデータセンター事業を担当と報道。前月まで「AI CapEx過剰投資」の主要な批判対象だったMetaは、"投資回収の新ビジネスモデル"を得た形で、株主圧力の受け皿として位置付けられる。前日のFounders Fund Ryan Beiermeister起用、General Compute $4億推論チップ担保ローンと合わせ、"AIインフラの資本市場・受注市場化"が実質的にAWS/Google Cloud/Microsoft Azureの3強寡占構造を切り崩す局面。Bloombergの独立報道でも「今後2週内に合意見通し」との示唆があり、来週の四半期決算期入りに向けて話題は継続。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/" target="_blank" rel="noopener">Databricks、$1880億評価で新規調達を発表 ─ Coatueがリード、規模$30億見込み、2月$1340億→7月$1880億の5カ月で40%アップ、Unity AI Gateway/Genie等の"AIプラットフォーム"投資を加速</a></h3>
+  <p class="src">参照元: TechCrunch (Julie Bort) / MarketScale / VC情報</p>
+  <p class="summary">Databricksが7月17日、$1880億評価での新規ラウンドを発表した。Coatueがリード、調達額は他媒体が"約$30億"と報道。同社は2月に$1340億でSeries L $50億、9カ月前の$1000億評価から順次拡大しており、AIの"halo effect"を受けた急速な評価倍化の代表例。5カ月間で+40%の評価上昇率は、Meta-Anthropic $100億案件と並ぶ"AIインフラ資本流入"の証左。Databricksは既にAIラボではないが、Unity AI Gateway・Genie（AIエージェント）・Lakebase（AIネイティブ・データベース）などの投資で"データ×AI"のプラットフォーム地位確立を狙う。TechCrunch記事では「サンドイッチチェーンのJersey Mike'sもS-1で『AI』を22回言及する時代」との皮肉も付記され、AI追い風で評価倍化する企業群の代表格として位置付けられている。前日のFireworks AI $175億・Baseten $50億・Together $83億等と合わせて、"エンタープライズ AI インフラ層"に集中投資される資本フローの1週間の総決算。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.marketscale.com/industries/software-and-technology/etched-targets-a-20-billion-valuation-with-back-to-back-rounds-as-inference-chip-demand-hits-1-billion" target="_blank" rel="noopener">Etched、$100億／$200億の"ダブル評価"ラウンド並行進行 ─ Jane StreetがリードのA枠$200億とSequoiaリードのB枠$100億、AI推論専用チップに$10億のカスタマー先行需要、"背中合わせ増資"がAI投資サイクルの新常識に</a></h3>
+  <p class="src">参照元: Wall Street Journal (Kate Clark / Anissa Gardizy / Robbie Whelan) / MarketScale</p>
+  <p class="summary">サンノゼ拠点のAI推論チップスタートアップEtchedが7月18日、$100億評価（Sequoiaリード）と$200億評価（既存投資家Jane Streetリード）の2つのラウンドを並行して交渉していると Wall Street Journalが報道。両ラウンドとも7月17日時点で未成立、条件変更の余地は残る。同社の前回評価は$50億で、今回の$200億は4倍増となる。Etchedは「推論専用」チップに特化しており、既に$10億の顧客先行需要を確保、Harvard中退のGavin Uberti・Chris Zhu・Robert Wachen 3氏が2022年創業。既存投資家にStripes・Peter Thiel・Ribbit Capital・Primary Venture Partners。"背中合わせラウンド"（同時期に2つの異なる評価で資本調達）は2026年のAI投資サイクルの新常識となりつつあり、投資家がAllocation獲得のために評価を吊り上げる構造を象徴。前日のGeneral Compute $4億推論チップ担保ローンに続き、"NVIDIA以外の推論チップ"に対する資本市場の熱量が続いている。</p>
+</article>
+
+<article>
+  <h3><a href="https://thenewstack.io/musk-spacexai-grok-open-source/" target="_blank" rel="noopener">SpaceXAI、Grok Buildをオープンソース化 ─ 秘密裏のコードベースアップロード発覚後の反応、Anthropicは月$12.5億をSpaceXAIに支払い、Anthropic/Google/Reflection合計 月$23億の"敵に燃料を売る"戦略</a></h3>
+  <p class="src">参照元: The New Stack (Matthew Burns) / winbuzzer / Simon Willison / Slashdot</p>
+  <p class="summary">Elon MuskのSpaceXAIが7月15日、ターミナルコーディングエージェント「Grok Build」をApache 2.0でオープンソース化した。Claude Code / OpenAI Codexへの直接攻撃で、開発者向けハーネスを無料化して競合の価格防衛を強要する狙い。7月18日にThe New Stackが背景解説を公開: BloombergによればAnthropicはSpaceXAIに月$12.5億のコンピュート支払い、Anthropic/Google/Reflection AIを合計するとSpaceXAIは月$23億の推論クラウド売上を得ている。つまり"Muskは自社Claude競合を売り物にしながら、Anthropicが競う機械を貸している"構造で、Grokが勝たなくてもSpaceXAIは儲かる。オープンソース化の直接の契機は、7月12日にユーザーの@a_green_beingがGrok Build v0.2.93がSSH鍵・パスワードマネージャーDB・写真・ドキュメントなど"ホームディレクトリ全体"をSpaceXAIクラウドにアップロードしていることを発見、12GB規模の転送を実測（5.10 GiB storage channel）した事件。Muskはデータ削除を約束、7月13日以降アップロード機能停止済。ただしGCP storage plumbingは依然残存（無効化済）、公開履歴は1コミットのみで過去挙動の検証は困難。Grokの一部コードはOpenAI CodexとOpenCodeから移植されており、Simon Willison氏が指摘。Anthropic Claude Fable 5は7月20日からMax/Team Premiumで通常制限の50%枠に組み込まれる発表もあり、AIコーディングエージェント争奪戦は激化。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.bloomberg.com/news/articles/2026-07-18/china-national-ai-industry-investment-fund-gains-voting-rights-in-deepseek-round" target="_blank" rel="noopener">DeepSeek $74億調達 ─ 中国国家AI産業投資基金が"議決権"獲得、TencentとJDは議決権なし、中国政府のAIコントロール戦略が資本層で具体化、上海WAICのXi演説と表裏一体</a></h3>
+  <p class="src">参照元: Bloomberg / Techmeme / South China Morning Post</p>
+  <p class="summary">Bloombergが7月18日、中国AI大手DeepSeekの$74億ラウンドに関する詳細を報道。中国の"National AI Industry Investment Fund"（国家AI産業投資基金）が今回議決権付株式を取得、一方Tencent・JDなど他の民間投資家は無議決権株式のみと。Hangzhou本社のDeepSeekは今年3月にビデオ会議で4時間の投資家プレゼンを実施、最終評価は$710億とTechCrunchが別報道。同時にSouth China Morning Postは、中国国家データ管理局のデータで「中国の1日あたりAIトークン消費量が2026年3月時点で140兆に達し、2025年12月の100兆・2024年初の1000億から急伸」と報じた（バイトダンス社員は1日約10億トークン消費）。前日のXi Jinping WAIC演説「オープン系AIとグローバル南援助」と一体化した"中国国家AIリソース掌握"の構造が明確化。中国国内ではAlibaba・Tencentの高性能AIモデルへのグローバルアクセス制限を検討中との複数報道もあり、"開放派AI"の内実は"中国政府コントロール下のオープンウェイト"という第2幕の準備が進んでいる。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.wired.com/story/san-francisco-sends-cease-desist-letters-apple-google-deepfake-nude-apps/" target="_blank" rel="noopener">San Francisco市、Apple/GoogleにAIディープフェイクヌード生成アプリ13本の削除要求 ─ 市検察局がCease and Desist通告、Googleは既に5本削除、"nudify"アプリの成人・未成年被害拡大</a></h3>
+  <p class="src">参照元: Wired (Matt Burgess) / Techmeme</p>
+  <p class="summary">San Francisco市検察局が今週、AppleとGoogleに対しApp Store / Google Playで販売中の13本のAIディープフェイクヌード生成（nudify）アプリの削除を要求するCease and Desist Letterを送付した。市は「両社がこれらのアプリから利益を得るのを止めるべき」との立場で、Googleは既に5本を削除、他は継続審議中。同アプリ群は服を着た人物写真から人工的にヌード画像を生成でき、被害は成人女性・未成年双方に拡大、"深刻な性的搾取ツール"として全米地方自治体が対応急ぐ。同日、the Slashdotで「Realbotix + Woz Ed（Steve Wozniak財団）が小中高でAI RealDoll系ロボットの教育用試験配置」が報道され炎上、AI人形と学校教育の隔たりが議論。同じくCalifornia州のAIコンパニオン規制法案審議も本格化、AI倫理領域の新戦線が拡大。</p>
+</article>
+
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://news.yahoo.co.jp/articles/c47e5edf1267eff702e5eed9c804e837ffbdffe5" target="_blank" rel="noopener"><span class="lede">本日最大</span>Apple、iPhone/Apple Watch/AirPodsを日本で一斉値上げ ─ iPhone 17標準モデル¥129,800→¥142,800（+10%）、17 Pro Max 2TBは¥329,800→¥354,800、円安162円台をほぼ反映（税抜約1ドル157円→162円）、米国は据置</a></h3>
+  <p class="src">参照元: Bloomberg / 産経新聞 / CNET Japan / 読売新聞 / 朝日新聞 / ITmedia / 共同通信</p>
+  <p class="summary">Appleは7月18日未明（米17日）、iPhoneシリーズを日本国内のみで全モデル一斉値上げした。事前告知なし、値上げ幅はモデル・容量で¥8,000～¥25,000。標準モデルiPhone 17（256GB）は¥129,800→¥142,800（+10%）、廉価版17e（256GB）は¥99,800→¥107,800で10万円台突破、17 Pro Max 2TBは¥329,800→¥354,800（最大幅+¥25,000）。Apple Watch・AirPodsも大半が対象。米国では価格据置のため、Apple価格から逆算した想定為替は¥142→¥162と修正され、"円安162円台の実勢値をほぼ反映した為替調整"と評価される。6月25日のMac/iPad/HomePod一斉値上げ（15-25%）は"AI需要でメモリー高騰"がロジックで全世界共通の値上げだったが、今回は"円安のみが原因の日本限定"。9月発表予定のiPhone 18 Proシリーズでは米国価格が$200-300上昇と観測、日本ではさらに¥53,000程度の上昇が見込まれる。前日のApple $4.9兆で世界1位復帰と表裏一体の"収益力強化"施策で、円安下の"日本消費者の負担転嫁"戦術が鮮明化。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUC1745C0X10C26A7000000/" target="_blank" rel="noopener">キオクシアHD、米連邦地裁で $2.29億（371億円）の賠償評決 ─ 衛星通信企業Viasat特許侵害でテキサス西部地区、"消費電力抑制・信頼性向上"のフラッシュメモリ技術、2021年11月提訴の5年係争、17日株価ストップ安の主因</a></h3>
+  <p class="src">参照元: 日本経済新聞 / 時事通信 / ITmedia / ロイター</p>
+  <p class="summary">キオクシアホールディングスは7月17日、米テキサス州西部地区連邦地方裁判所が16日、キオクシアと米国子会社Kioxia Americaが米衛星通信企業Viasat（バイアサット）の特許を侵害しているとして$2.29億（約371億円）の賠償評決を下したと開示した。Viasatは衛星向け誤り訂正システム設計過程で、消費電力を抑えつつメモリのエラー訂正技術を開発、キオクシアのフラッシュメモリ製品がこの特許を侵害と主張。キオクシア側は「特許は無効」と反論、2021年11月からの5年係争。同社は「到底容認できるものではない」として控訴含むあらゆる法的手段を講じる方針。17日の東京市場でキオクシアHD株は寄付き直後から急落、午前9時半にストップ安の¥52,110へ（前日比-¥10,000）、6月22日の上場来高値¥112,700から半値以下、時価総額は60兆円→28兆円と1カ月弱で32兆円消失。同社の日経平均寄与度が最大級のため、日経平均-2694円急落の主因の1つとなった。ViasatはWestern Digitalに対しても同様訴訟を提起中で、"米国訴訟リスク"の追加燃料に。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.techmeme.com/260718" target="_blank" rel="noopener">Dave Brown元AWS Compute/AI/Platform担当SVP、Metaに移籍決定 ─ 数週間内に着任、Meta"データセンター建設"担当、AWS→Meta移籍でAI人材争奪の最前線移動、Meta-Anthropic $100億案件と一体</a></h3>
+  <p class="src">参照元: Wall Street Journal (Anissa Gardizy) / The Information / Techmeme</p>
+  <p class="summary">Wall Street Journalが7月17日、AWSでCompute/AI/Platform担当SVPだったDave Brown氏（数カ月前の退任発表）がMetaに移籍することを報道。Metaの"データセンター建設"を担当予定で、Zuckerbergの"Metaクラウド事業立ち上げ"戦略の中核人材と位置付けられる。同時期のMeta-Anthropic $100億コンピュート契約交渉、Meta 過剰投資批判への対応策としての"AIインフラ受託ビジネス"構想と完全に符合。The Informationも「MetaはAWS幹部を採用してクラウドプッシュを検討中」と補足報道。ハイパースケーラー人材の移籍としては、2023年のJeff Wilkeらの動きと同種の"AI・データセンター資本主義"の第2幕を象徴する動き。AWSは同月にAWS請求ポータル $1.5兆バグ事件（一部顧客に$25億表示）を発生させたばかりで、"Amazon技術インフラの品質と組織問題"が続く格好。競合Metaの受注拡大シナリオが現実味を帯びる。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.calcalistech.com/ctechnews/article/rju00wdlxg" target="_blank" rel="noopener">Cribl、AI脅威検知スタートアップCardinalOpsを約$1億で買収 ─ テルアビブに新オフィス開設、AI-poweredな検知エンジニアリング事業を強化、テレメトリー企業の"AI脅威対応"パズル完成</a></h3>
+  <p class="src">参照元: CTech (Meir Orbach) / Techmeme</p>
+  <p class="summary">米データインフラスタートアップCribl（クリブル）が7月18日、AIを活用した脅威検知エンジニアリング企業CardinalOps（イスラエル、テルアビブ）を約$1億で買収したと発表した。CardinalOpsは調達累計$4000万のシリーズA/B系スタートアップで、SIEMシステム内の検知ルールをAIで自動生成・最適化する技術を提供、企業のセキュリティ運用効率化に貢献。Criblはこれを機にテルアビブに新オフィスを開設、イスラエルのAIサイバーセキュリティ人材にアクセスする。Criblは元々Splunkの代替として台頭したデータパイプライン企業で、"AIによるセキュリティ検知エンジニアリング自動化"をポートフォリオに加えることで、企業のセキュリティテレメトリー市場での地位を強化。Cribl・Splunk・Datadogの3社体制がAI時代の"データ観測性"市場でさらに競合を深める予兆となる案件で、7月中旬の他のセキュリティ M&A（Risk Ledger £24M Series Bなど）と併せて、"AI×セキュリティ運用"がエンタープライズソフトウェア買収の主戦場化。</p>
+</article>
+
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://devcuration.com/articles/instalily-raises-60m-series-b-to-expand-enterprise-ai-workflows" target="_blank" rel="noopener">InstaLILY、$60M Series B調達 ─ Energize Capitalリード、Insight Partners・Home Depot Ventures・United Rentals参加、"AI Forward Deployed Engineer"のLily展開、累計$1億へ、"物理・規制産業のオペレーション"を狙う</a></h3>
+  <p class="src">参照元: DevCuration (Jesse Landry)</p>
+  <p class="summary">ニューヨーク拠点のエンタープライズAIスタートアップInstaLILYが7月18日、$60M Series Bを発表。累計調達は約$1億に到達。2023年にAmit Shah・Sumantro Das氏が創業、"Lily"というAIエージェントを"AI Forward Deployed Engineer"（AIによる現場駆動エンジニア）としてローンチ。企業ERP・CRM・メール・内部アプリを跨いで業務プロセスをAIが学習・実行する仕組みで、"デモ向けアシスタント"から"物理・規制業界のオペレーション処理"へ資本が動く象徴的事案。Energize Capitalがリード、既存投資家Insight Partners、戦略投資家として住宅DIYチェーンHome Depot Ventures・重機レンタルUnited Rentalsが参加。両戦略投資家は"AIオペレーション自動化"の実業界での需要を裏付ける。DevCurationのDBによると過去30日でエンタープライズAI分野は23件・累計$977Mが計上され、同日にはThira $21Mも実施済み。ハンズオフ実装重視のカテゴリが2026年下期のスタートアップ資金の中心軸に。</p>
+</article>
+
+<article>
+  <h3><a href="https://pulse2.com/sable-raises-45-million-to-build-ai-employee-for-customer-interactions/" target="_blank" rel="noopener">Sable、$45M調達 ─ Sequoia CapitalとPalantirファウンダー系8VCがリード、AIエンプロイー"Aidan"を展開、リアルタイムでコンピュータ操作・製品デモ・顧客応対を実行、BoxGroup・SV Angel・Valor Atreides AI Fund参加</a></h3>
+  <p class="src">参照元: Pulse2 (Amit Chowdhry)</p>
+  <p class="summary">Sableが7月18日、$45Mの調達をSequoia Capitalと8VC共同リードで発表。参加投資家はBoxGroup・SV Angel・Valor Atreides AI Fund・Sabrina Hahn・Evan Hahn。同社のAIエンプロイー「Aidan」は、リアルタイムでソフトウェア画面を操作しながら質問応答、製品デモを実施できる"AI社員"型サービス。顧客とのやり取りをsoftware navigationレベルで実施する点が差別化ポイント。Sequoia パートナーShaun Maguire氏とPalantir共同創業者Joe Lonsdale氏が両社の投資を主導、共に取締役会に参加。同社は資金でAidanのリアルタイム・コンピュータ操作能力の高度化、精度向上、エンタープライズ顧客拡大に投入予定。同日発表のThira $21M seed（Apptio共同創業者のIT向けAI エージェント）・InstaLILY $60M・Etched $10-20B・Databricks $1880億と併せて、"AIエージェントが実業務を代行する"カテゴリへの資本集中が明確化。前日のRunta a16z $20M seedとも通底する2026年下期の代表テーマ。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.techmeme.com/260718/p2" target="_blank" rel="noopener">Thira、Madronaリードで$21M seed調達 ─ Apptio共同創業者Sanjay Puri氏らが創業、"AIエージェントがIT support・バックオフィス業務を代行"、Apptioは既存Datadog系企業ソフトの実績、CIO向けAIワークフォース市場を狙う</a></h3>
+  <p class="src">参照元: Todd Bishop / GeekWire / Techmeme</p>
+  <p class="summary">Todd Bishop氏（GeekWire）が7月18日、"Apptio共同創業者らが立ち上げたAIスタートアップThira"が $21M seedをMadrona Venture Groupのリードで調達したと報道。Apptioは元IBM傘下（2023年 IBM $46億で買収）のIT財務・SaaS運用管理大手で、そのDNAを持つ経営陣が"IT support・その他バックオフィス業務"をAIエージェントで自動化する事業を新規開始。CIOを主顧客とし、既存の企業内IT運用ツールに"AI Workflow"を差し込む戦略で、前日のRunta（a16z $20M）と類似の"AIエージェント基盤"カテゴリだが、Thiraは"垂直特化"側の位置付け。Madronaは西海岸を中心とする老舗VCで、Amazon・Smartsheetなど有名エグジット案件を持つ。ITオートメーション市場でServiceNow・Atlassianに続く"AIファースト"の新規カテゴリ形成を意図した資本フロー。</p>
+</article>
+
+<article>
+  <h3><a href="https://fintechglobal.com/2026/07/18/feathery-secures-30m-series-a" target="_blank" rel="noopener">Feathery、$30M Series A調達で金融サービス向け"AI Operating & Decisioning System"展開 ─ 保険・貸出・投資業界に特化、書類自動処理と意思決定AIの融合で"金融バックオフィスAI"の主流に</a></h3>
+  <p class="src">参照元: FinTech Global / Techmeme</p>
+  <p class="summary">FinTech Globalが7月18日、金融サービス業界向け"AI Operating & Decisioning System"を提供するFeatheryが累計$30M（内訳: 最近完了したSeries A）を調達したと報道。同社は保険・レンディング・投資・銀行のバックオフィス業務での意思決定AI・書類自動処理を統合したプラットフォームを提供、AIエージェントが実際の金融判断（顧客審査・与信・保険料算定）を代替する層のスタートアップ。前日のFireworks AI・Fora・a16z Runta・本日のInstaLILY・Sableに続く"垂直特化型AIエージェント"の資本流入例。金融業界のAI導入は前月のBlackRock独自AIエンジン発表、ゴールドマン独自Copilot導入と併走しており、"金融AIバックオフィス"市場でスタートアップと既存大手の分業関係が問われる局面。同日Cribl（$1B超の企業価値）がCardinalOpsを$1億で買収し、金融向けにも波及するデータ・セキュリティAI統合も進む。</p>
+</article>
+
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://topics.smt.docomo.ne.jp/article/reuters/business/reuters-20260718018" target="_blank" rel="noopener"><span class="lede">本日最大</span>米国株、続落 週間ベースでも下落 ─ NY Dow -406.55ドル(52,146.42)、Nasdaq -361.70(25,520.24)、フィラデルフィア半導体指数(SOX)は月初来-18%と1年超ぶり大幅週間安、AI・M7銘柄売り拡大 (Metaは-2.7%・Alphabet -3.2%)、Netflix -7%</a></h3>
+  <p class="src">参照元: ロイター (Stephen Culp / Ragini Mathur) / Fisco / 47News / TBS NEWS DIG</p>
+  <p class="summary">7月17日（現地）のNY市場は主要3指数が続落で取引を終了、週間ベースでも全指数がマイナスとなった。Dow -406.55ドル、Nasdaq -1.4%相当の-361.70pt、S&P 500も下落。フィラデルフィア半導体指数（SOX）は取引時間中に大きく下落、7月月初来累計-約18%と1年超ぶりの大幅週間安を記録した。ただし年初来ではSOXは依然+65%とS&P 500の+9%を大きく上回っており"バブル型調整"のシグナル。マグニフィセントセブンのうちアップル除く全てが下落、Meta -2.7%、Alphabet -3.2%が最も大きな下げ、Netflix -7%（前日Q2決算+AI 300タイトル公表を嫌気）。エネルギー株は唯一プラスでイラン戦争激化に伴う原油急伸（Brent +4%超で$86.34超）が追い風。Carson Groupの Ryan Detrick氏は「市場は半導体疲れに陥っている」と指摘。一部アクティブファンドマネジャーはAI・半導体エクスポージャーを既に縮小し始めている。来週22日から米国はAlphabet・Texas Instruments・Intel等のAI/半導体企業決算が続くため、"AI Capex overheating vs 実収益"の議論は決着に向かう。日本市場は7月20日（月・海の日）休場後、22日から3連休明けで反応。</p>
+</article>
+
+<article>
+  <h3><a href="https://kabutan.jp/news/marketnews/?b=n202607180153" target="_blank" rel="noopener">国内株式市場、来週の焦点はAlphabet・TI・Intel等の米AI/半導体決算 ─ 東京は22日から3連休明け、日経平均先物は夜間で+960円と反発示唆、6月企業物価指数を受け9月日銀利上げも視野、内需ディフェンシブへの資金シフト継続</a></h3>
+  <p class="src">参照元: フィスコ / 株探 / 47News</p>
+  <p class="summary">来週の東京市場は7月20日（月・海の日）休場、22日火曜からの3連休明けとなる。今週の日経平均は前週末比-4416.61円（-6.4%）と大幅安で終了したが、17日夜間の日経平均先物は日中終値比+960円の¥65,020と反発示唆。フィスコの見通しレポートによれば、来週の相場のカギは①米国AI・半導体決算（22日 Alphabet, Texas Instruments, Intel他、22日 IBM/ServiceNow、日本情報サービスセクターも連動）、②22-23日開催のECB理事会（今回据置予想、ラガルド総裁の9月追加利上げ示唆に注目）、③24日発表の6月全国CPI（日銀9月利上げ論に直結）の3つ。国内では小売・食品・医薬品・ゲーム・情報サービスなど"内需ディフェンシブ系"への資金シフトが継続傾向で、業種別では今週半数以上のセクターがプラス側で終了しており、"弱気一辺倒"ではないとの評価。日銀会合は7/30-31、FOMCも同時期、いずれも政策金利変更なしが本命だが、6月企業物価指数の大幅上昇で9月利上げの可能性が高まってきた。米ハイパースケーラー株は6月下旬から反発基調に転じており、Kimi K3の脅威に対する警戒感の"持続性"がAI関連株リバウンドの試金石。</p>
+</article>
+
+<article>
+  <h3><a href="https://news.yahoo.co.jp/articles/c47e5edf1267eff702e5eed9c804e837ffbdffe5" target="_blank" rel="noopener">円相場、162円台前半で推移 ─ Apple iPhone日本値上げの想定レート約1ドル162円、6月30日に約40年ぶり安値 一部市場参加者は"200円台の最悪シナリオ"意識も、4/28-5/27に11.73兆円介入も効果は限定的</a></h3>
+  <p class="src">参照元: Bloomberg / みずほ銀行 / 各社為替情報</p>
+  <p class="summary">円相場は7月18日時点で対ドル162円台前半で推移。前週17日には片山財務相の"為替介入辞さず"発言、高市首相のGPIF国内投資推進表明で一時162円10銭台まで円高進行したが、恒常的な円安圧力は続く。6月30日に約40年ぶりの安値となる162円台に到達、4月28日-5月27日に日本の通貨当局は過去最高の11兆7300億円に及ぶ円買い介入を実施したが、反発は一時的だった。これまで現実味に乏しいとみられてきた"1ドル200円台"の最悪ケースを意識し始めた市場参加者も出始めている。Apple社の18日iPhone値上げは、ドル建て価格は据置ながら円建て価格を162円レートで再算出したもので、"円安の海外価格転嫁が始まった"事例と評価される。みずほ銀行国際為替部の田中潤平次長氏は「GPIFの運用姿勢に何らかの変化が起こる可能性、これまでのように円安一辺倒で考えない方が良い」と指摘、機動的な円買い方向のリバランス可能性を認識。ただし短期的には米イラン戦争激化・原油高が新たな円安圧力になる可能性が高く、来週の骨太方針最終案（21日閣議決定予定）の"財政持続可能性"表現も焦点。</p>
+</article>
+
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://apnews.com/article/iran-us-hormuz-strait-war-july-18-2026-5adfef67554652580963684d9a663af2" target="_blank" rel="noopener"><span class="lede">本日最大</span><span class="cont">前日からの続報</span>米イラン全面戦争リスク急伸 ─ 米兵2名がヨルダンで戦死＋1名行方不明（開戦以来16名戦死・420名超負傷）、Iran最高指導者Khamenei"Trump署名は全く無価値"、Iran正式に暫定合意を停止、7夜連続CENTCOM空爆、Kuwait脱塩プラント破壊で1万人が断水、サウジ初警報</a></h3>
+  <p class="src">参照元: AP News / BBC / DW / Al Jazeera / The Independent / Al-Monitor / Reuters</p>
+  <p class="summary">米中央軍（CENTCOM）は7月18日、金曜のヨルダン基地への Iran ballistic missile / drone 攻撃で米兵2名が戦死、1名が行方不明、4名が入院と発表した。開戦（2月28日）以来の米兵犠牲者は16名戦死・420名超負傷に。数分前にIran最高指導者Mojtaba Khamenei（就任以来公表姿現さず）が国営TVで文書声明を発表、「米側の繰り返しの合意違反により、Trump大統領の署名は全く価値がなく信頼性を欠くと明白になった」「米国が戦争を求めるなら、Iran国民と抵抗の枢軸から忘れ難い教訓を用意している」と警告。Iran副外相Kazem Gharibabadi氏は「米側は暫定合意（イスラマバードMoU）の全条項に違反、我々も義務を停止し、国家防衛に専念する」と暫定合意の正式停止を宣言。CENTCOMは17日夜（7夜連続）の空爆で"監視サイト・軍事物流インフラ・地下兵器保管所・海上能力"を攻撃と発表、南部ホルモズガン州のBunji脱塩プラントを完全破壊し1万人が断水、Qeshm島の脱塩プラント損害。Iranは報復でKuwait脱塩プラント（Iranから2日連続、全水道90%依存）とKuwait Petroleum Corporationの石油施設に打撃、Bahrain・Sheikh Isa空軍基地・Jordan・Al Azraq基地攻撃で米戦闘機2機破壊主張、Saudi ArabiaのAl-Kharj/Yanbuで初のミサイル警報発令。原油Brentは+4%以上上昇で$85超、Trumpは中間選挙控えて政治的圧力に。イラン軍のMajor General Rezaei氏は「米空爆が数日続けば全面攻撃段階に移行、政治的国境は安全ではない」と警告。米国の戦略的島嶼（Abu Musa、Greater/Lesser Tunb）への攻撃で、米陸兵の大規模投入の可能性も再議論。前日のCENTCOM攻撃を上回る"開戦最大の週末"に。</p>
+</article>
+
+<article>
+  <h3><a href="https://news.yahoo.co.jp/pickup/6588419" target="_blank" rel="noopener">「高市離れ」加速 ─ 内閣支持率49.0%(前月比-5.3pt)で発足後最低、無党派層は39.6%(-7.8pt)、"リーダーシップ"評価は21.3%に低下、60代で最も激減（39.9%）、自民党支持も20.8%(-2.0pt)で衆院選2月の30.1%から9pt超減、副首都創設法案審議強行が引き金</a></h3>
+  <p class="src">参照元: 時事通信（特別解説委員・高橋正光）/ Yahoo!ニュース / 日本経済新聞</p>
+  <p class="summary">時事通信社の7月世論調査（10-13日実施・全国18歳以上2000人個別面接方式・有効回収率57.1%）で、高市早苗内閣の支持率が49.0%（前月比-5.3pt）と2025年10月の政権発足以来、初めて5割を下回った。18日18時にYahoo!ニュース経由で解説記事が拡散。無党派層（全体の約6割を占める）の内閣支持率は39.6%（前月比-7.8pt）と大幅低下、"支持政党のない有権者の高市離れ"が加速。自民党支持層に限れば内閣支持率は依然86.5%（-1.6pt）と高水準で、無党派層離反が全体支持率を大きく押し下げた構造。年代別で最も減少したのは60代で39.9%（前月63.7%）、不支持率33.3%（同15.1%）と急速な逆転。自民党支持率も20.8%（-2.0pt）で政権発足後最低、衆院選直後の2月30.1%から5カ月で9pt超減少。「支持政党なし」は59.5%（+3.1pt）で、政権離脱有権者が野党でなく無党派に回帰する構造。与党が終盤国会で「副首都」創設法案などの審議を強行し野党が一時審議拒否した経緯が支持率低下の一因。この週は高市首相が国民会議での消費減税結論を「8月上旬までに」表明、GPIFの国内投資推進、"骨太方針"での財政健全化文言変更などを次々発表しており、"施策の実行フェーズ"のリスクとしての政権基盤揺らぎが顕在化。10月には政権発足1周年、外交・防衛・エネルギー・税制など全方位の政策実装期に入る中で"高市離れ"の底打ちは大きな政治テーマ。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.reuters.com/technology/artificial-intelligence/humansfirst-data-center-protests-2026-07-18/" target="_blank" rel="noopener">HumansFirst、米国125地点でデータセンター建設反対の同時デモ ─ 7月18日実施、"説明責任なきAIインフラ拡張"に抗議、NY州50MW以上凍結モラトリアム・California/Virginia自治体規制強化と連動、AI電力バックラッシュ拡大</a></h3>
+  <p class="src">参照元: Reuters / Techmeme / HumansFirst公式</p>
+  <p class="summary">草の根組織HumansFirstが7月18日、米国内125地点以上でデータセンター建設の急速拡大に反対する同時デモを実施したとReutersが報じた。参加者は"AIインフラ拡張の説明責任欠如"を批判し、"住民との事前協議なきメガデータセンター建設は民主的正統性を欠く"と主張。今月14日にNew York州Hochul知事が50MW以上の新規データセンター建設全面凍結を緊急令として発表（全米初）、CaliforniaのSacramento郡やVirginiaのLoudoun郡でも規制強化議論が進行中で、AI電力需要への公的バックラッシュが本格化する局面での大規模抗議行動。同日、Ohio州の商工会議所連合がデータセンター誘致を推進、EPA緊急指令で加速的環境審査を推進、Illinois州は連邦補助金争奪など"州間差"も鮮明化。AIハイパースケーラー（Microsoft・Google・Meta・Amazon）はSpaceX-DOD対Anthropic-Meta等の新契約でさらに規模を拡大しつつあり、"AI電力・水資源対応"がインフラ資本主義の最前線に。前日のNVIDIA Vera Rubin AIファクトリー（電力140MW）と対比した"米国内AIインフラの社会的コスト"議論が国政に浮上する予兆。</p>
+</article>
+
+</section>
+
+<footer>
+  <p>📡 <strong>収集元</strong>: Bloomberg Japan (Exa経由・BNN Bloomberg等の派生報道で市場・企業情報を確認、直接アクセスは403) / NewsPicks (直接アクセス403のためExa経由でカバー・独自スクープは限定的) / 日本経済新聞 (Nikkei電子版 / Kabutan・47News経由の派生報道で個別記事URLを確認、直接アクセスは403) / Techmeme (Meta-Anthropic $100億・Databricks $1880億・Etched dual round・Dave Brown AWS→Meta・DeepSeek議決権・San Francisco AI deepfake CDL・HumansFirstデータセンター抗議 を採用) / TechCrunch (Databricks $188B、Sable $45M、Fora $60M関連を採用) / Slashdot (SpaceXAI Grok Build open-source・Kimi K3・Woz Ed Realbotix classroom AI続報を採用、直接アクセス困難のためExa経由)</p>
+  <p>※ 前日（2026-07-17）に取り上げた記事（Kimi K3世界市場波及・Xi WAIC演説・Fireworks AI $1.5B・General Compute $4億推論チップ担保ローン・Patreon AI遮断・Zoox smoke recall・AWS billing bug・Apple→OpenAI元従業員法的警告・Netflix Q2-9%・a16z Runta・Z.ai ARR $10億・Thinking Machines Inkling外部提供開始・セブン&アイ Zabka Poland・ニチレイ復旧・Noetra正式始動・日経平均-2694円 correction入り・日銀1.0%維持・高市首相GPIF・米国株 Apple $4.9兆首位復帰・イランCENTCOM攻撃・参院5法案可決・関東大雨避難指示）と同一URL・実質同一トピックは除外。米イラン戦争は前日の"CENTCOM新規攻撃"から本日"米兵2名戦死+1名行方不明、Iran最高指導者Khamenei声明、暫定合意正式停止、7夜連続空爆、Bunji脱塩プラント破壊、サウジ初警報"へと重大な質的変化があり「続報＋本日最大」タグ採用。iPhone 日本値上げは前日Techmemeで既報だがCNET/Bloomberg/共同通信の詳細価格改定内容公表を受けて本日18日を"日本市場への影響が具体化した日"として独立採用。米国株続落・国内市場見通しは前日の"correction入り"から本日は"米AI決算対策と3連休明け反応"の新展開でカバー。</p>
+  <p>Meta-Anthropic $100億コンピュート契約交渉・Databricks $1880億評価・Etched dual $10-20B・SpaceXAI Grok Build open-source（Anthropic $12.5億/月の"敵に燃料"戦略）・DeepSeek China Nat'l AI Fund議決権獲得・San Francisco AI deepfake nude CDL・Apple iPhone日本+10%一斉値上げ・キオクシアHD Viasat特許371億円賠償評決・Dave Brown元AWS SVPがMeta移籍・Cribl-CardinalOps ~$1億M&A・InstaLILY $60M Series B・Sable $45M Sequoia+8VC・Thira $21M seed Madrona・Feathery $30M Series A・米国株NY Dow -406/Nasdaq -1.4%/SOX月間-18%・国内市場見通しAlphabet他 AI決算注目・円162円台Apple値上げの実勢反映・米イラン戦争拡大（米兵2名戦死+1名行方不明・Kuwait/Bahrain/Jordan/Saudi警報・Bunji脱塩プラント破壊・Khamenei"Trump署名無価値"）・時事7月調査"高市離れ"加速で内閣支持49%発足後最低・HumansFirst 125地点データセンター抗議 ── 本日18日の新規展開として採用。</p>
+</footer>
+
+</div>
+</body>
+</html>
