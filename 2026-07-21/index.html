@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-21(火)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月21日(火)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/" target="_blank" rel="noopener"><span class="lede">本日最大</span>Google、Gemini 3.6 Flash / 3.5 Flash-Lite / 3.5 Flash Cyber を同時発表 ─ 3.6 Flash は出力トークン17%削減で$1.50/$7.50 M、Cyber は Anthropic Mythos に対抗する自動脆弱性検知・パッチ生成モデルで政府＋trusted partnerに限定提供、Gemini 4 の「これまでで最も野心的な事前学習ラン」開始も同時公表、3.5 Pro は依然延期中</a></h3>
+  <p class="src">参照元: Google公式ブログ / CNBC (MacKenzie Sigalos) / 9to5Google (Abner Li) / Techmeme / SQ Magazine / BigGo Finance</p>
+  <p class="summary">Googleが7月21日、Geminiシリーズの新モデル3本を同時発表。①<strong>Gemini 3.6 Flash</strong>：入力$1.50/百万トークン、出力$7.50/百万トークンで3.5 Flash比17%出力トークン削減、コーディング・ナレッジワーク・マルチモーダル性能を全面強化。②<strong>Gemini 3.5 Flash-Lite</strong>：$0.30/$2.50、350トークン/秒でLite化。③<strong>Gemini 3.5 Flash Cyber</strong>：CodeMender（Google脆弱性検知・自動パッチエージェント）に組み込まれる専用モデルで、"デュアルユース技術"のリスクから政府＋trusted partnerに限定した限定パイロット提供。CNBCは「Gemini 3.5 Flash Cyber は Anthropic の Mythos が牽引するAIサイバーセキュリティ分野への Google の最も明確な回答」と評価。同時に「Gemini 4 のこれまでで最も野心的な事前学習ラン開始」も告知（Logan Kilpatrick）。一方、5月I/Oで6月投入を約束した旗艦 Gemini 3.5 Pro は3度目の目標も未達、「soon」表明にとどまり Alphabet 株は取引時間中0.8%安。Pichai CEO は「エンタープライズはGeminiにワークロードを移せば年間$10億超のコスト削減が可能」と価格戦略を再強調、Artificial Analysis データでも Anthropic Mythos / OpenAI GPT / 中国製モデル群を対コストで下回るとされる。前日の対中AIモデル禁止議論（Kimi K3）・Bloomberg報道の Z.ai 1GW中国製チップ専用データセンター稼働開始と併せ、"米中フロンティアAI × セキュリティ特化モデル"が同時多発する2026年7月最終週の最大ニュース。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/" target="_blank" rel="noopener">Jack Dorsey（Block / Bluesky / Twitter創業者）、"人間＋AIエージェント共存型チャット" Buzz を発表 ─ Slackへの真正面挑戦、AIエージェントを人間メンバーと同等の"チャネル参加者"として扱う設計思想、Salesforce Slack + AI Agents（Slackflow）と直接競合</a></h3>
+  <p class="src">参照元: TechCrunch / Techmeme</p>
+  <p class="summary">Twitter・Square/Block・Bluesky創業者Jack Dorsey氏が7月21日、新プロジェクト "Buzz"（AIエージェント時代のチームチャット）を公開。既存のSlack・Discord・Microsoft Teamsが「人間ユーザー」を第一級市民として設計されたのに対し、BuzzはAIエージェントを「チャネルの一員」として一等市民扱いする再設計。人間開発者がツール仕様やチャネルガイドを与えると、エージェントが自律的にタスク実行・進捗報告・他エージェント連携を行う。Salesforce傘下Slackが同月投入したAgent-in-Slackflow機能と直接対峙、"Agentic Workspace"分野の主導権争いが本格化。Dorsey氏は同分野でBluesky（分散SNS）に続く新規プロダクトで、Anthropic MCP / OpenAI Realtime API / Google A2Aといった"エージェント間通信プロトコル"の対応も表明。前日Natural $30M（AIエージェント決済インフラ）・Infinity $15M（CUDA代替）に続き、"AIエージェント時代のインフラ・ワークフロー再定義"が7月最終週の連鎖テーマに。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.musicbusinessworldwide.com/sony-music-files-new-lawsuit-against-ai-platform-udio-asserting-over-30000-sound-recordings-a-judge-barred-it-from-adding-to-its-original-case/" target="_blank" rel="noopener">Sony Music、AI音楽Udioを"2度目の提訴" ─ 30,117録音を無許諾学習利用と主張、法定損害賠償の上限は$45億（$150,000×30,117）、UMG・WMG離脱後の"最後の孤高メジャー" 、YouTube スクレイピングツールYT-DLPでの stream ripping と DMCA 技術保護回避、Hellerstein判事が原訴訟への追加を拒否したため別訴訟</a></h3>
+  <p class="src">参照元: Music Business Worldwide (Murray Stassen) / Billboard (Rachel Scharf) / Complete Music Update / The Verge / Law Commentary / Techmeme</p>
+  <p class="summary">Sony Music Entertainmentが7月20日、AI音楽生成のUdioに対する2件目の著作権侵害訴訟をSDNY連邦地裁に提訴。原訴訟の333曲から30,117曲に拡大、法定損害賠償の上限は原訴訟$5,000万から$45億まで跳ね上がる可能性。2024年6月の当初提訴以来、Universal Music (UMG)・Warner Music (WMG) はUdioと"walled garden"型ライセンス合意を成立させて撤退したが、Sonyのみが訴訟継続。Hellerstein判事が6月29日「30,000曲の後付け追加は被告への実質的損害」として原訴訟への追加を却下、「別訴訟の権利は否定しない」と付記したことを根拠に別途提訴。特徴は①stream ripping：YouTubeからYT-DLPで無許諾ダウンロード、②DMCA技術保護回避、③"synthetic musical outputsが市場を機械生成音楽で飽和させ人間音楽を駆逐"という市場希薄化論、④UMG/WMG/Kobalt/Merlin/Believe/NMPAとの既存ライセンス市場の存在を fair use "市場害"要素に対抗する材料として明示。前日Anthropic $15億著作権集団訴訟が最終承認された流れの中で、"AI学習の fair use vs 海賊版取得"の司法二分論が音楽業界にも延焼する典型例。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>米国、中国製AIモデルへの制裁を"IP窃取"を根拠に威嚇 ─ 前日Axiosスクープ「モデル禁止検討」から24時間で公式トーンに格上げ、同時にFT「中国側も先端AI・半導体技術の対米輸出規制強化検討、国内AI各社を諮問」報道、米中双方が同じ日に対称的"AI鎖国"を制度化</a></h3>
+  <p class="src">参照元: TechCrunch / Financial Times / Bloomberg (Z.ai 1GW中国製チップ専用データセンター稼働) / Techmeme</p>
+  <p class="summary">TechCrunchが7月21日、米国が中国製AIモデルに対する制裁措置を"知的財産窃取"を法的根拠として威嚇する段階に入ったと報道。前日20日のAxios（Maria Curi）「Entity List・調達規則・大統領令・FUD戦略の4本立て」から公式トーンへ格上げ。同時にFinancial Timesが「中国当局が先端AI・半導体技術の対米輸出規制強化を検討中、国内AI大手を諮問」と対称的な報道、Bloombergは「Z.aiが1GW規模で中国製チップのみを用いた大型データセンター建設を完了、複数の10K+チップクラスタを既に運用」と続報。米中双方が同じ7月21日に対称的な"AI鎖国"制度化に動いた歴史的分岐点。前日既報のトランプ政権対中AI規制検討・習近平WAIC演説（"AIは国際協力のシンフォニー"）とセットで、"米国クローズド枠 vs 中国オープン + グローバルサウス連合"の二極化が制度装備を伴い加速。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/21/trumps-latest-ai-czar-has-already-resigned/" target="_blank" rel="noopener">トランプ政権のAI政策"数カ月で崩壊" ─ Sriram Krishnan元大統領補佐官後任のAIツァーが早期辞任、対中ホーク派 vs シリコンバレー派の内部対立が可視化、David Sacks（外部顧問）・Bill Gurley・Aaron Levieらが公然と反発する"open-weights vs 国家安全保障"の派閥闘争、政策継続性が事実上ゼロ</a></h3>
+  <p class="src">参照元: TechCrunch / Techmeme</p>
+  <p class="summary">TechCrunchが7月21日、トランプ政権が3月に任命したSriram Krishnan元大統領補佐官の後任として起用した"最新のAIツァー"が既に辞任したと報道。詳細は非公表だが、対中AIモデル禁止議論を巡って対中ホーク派（Peter Navarro路線）とシリコンバレー派（David Sacks / Bill Gurley / Aaron Levie / Yann LeCun / Chamath Palihapitiya）が公然と対立する内部抗争を反映。同日発表の"中国製AIモデル制裁威嚇"と表裏一体で、"米国AIツァー職の実質的空席化"は米連邦政府のAI政策継続性を極めて脆弱化させる。政策骨格が数カ月単位で変転する状況は、Google Gemini 3.5 Flash Cyber（政府＋partner限定パイロット）のような"米連邦調達依存モデル"の展開にも直接影響。UK Andy Burnham新首相が同日DSIT解体＋AIツァー閣内昇格を打ち出したのと真逆の"米国AI政策後退"が浮き彫りに。</p>
+</article>
+
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://news.microsoft.com/2026/07/21/microsoft-and-mistral-ai-multibillion-dollar-partnership/" target="_blank" rel="noopener">Microsoft × Mistral AI、数十億ドル規模の欧州データセンター建設＋モデル統合の複数年契約 ─ Foundry / Copilot Studio / Azure Local 全レイヤに Mistral モデル統合、フランス発フロンティアラボの"欧州主権AI × Azure販売"相互依存、EU Sovereign Cloud 要件の追い風</a></h3>
+  <p class="src">参照元: Microsoft公式 / Techmeme / 複数報道</p>
+  <p class="summary">Microsoftとフランス発フロンティアAIラボMistral AIが7月21日、数十億ドル規模の複数年戦略提携を発表。①Mistralの欧州データセンター建設をMicrosoftが支援、②Mistralのフロンティアモデル群をAzure AI Foundry・Copilot Studio・Azure Local（オンプレ・エッジ）の全レイヤに統合、③MistralはAzure顧客への販売網を獲得。前日20日のトランプ政権対中AIモデル禁止議論・習近平WAIC "AI主権競争ではなく国際協力"演説と併せ、"米国AI × EU主権AI × 中国オープンモデル"の三極化が制度・商流両面で完成局面。EU AI Act および Sovereign Cloud 要件（欧州データ・欧州モデル・欧州インフラ）が Mistral への追い風となり、Microsoftは「Azure が欧州公共・重要インフラで選ばれるためには Mistral が不可欠」と判断した形。前日 Anthropic Mythos の輸出規制対応・Google Gemini 3.5 Flash Cyber の政府限定提供と併せ、"AI覇権 × 主権規制 × 米欧同盟"の実装レイヤが7月最終週の産業構造テーマ。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/21/apple-teams-up-with-klarna-to-launch-a-lease-to-own-program-for-iphones-ipads-and-macs/" target="_blank" rel="noopener">Apple × Klarna、iPhone / iPad / Mac の"lease-to-own"（リース購入）プログラム開始 ─ Klarnaの分割決済インフラをApple製品購入に統合、iPhone Upgrade Program（自社月額）に加え第三者金融を全面採用、AI Bubble下での高額端末需要を分割金融で下支え</a></h3>
+  <p class="src">参照元: TechCrunch / Apple公式 / Klarna公式</p>
+  <p class="summary">Appleとスウェーデン発BNPL（Buy Now Pay Later）大手Klarnaが7月21日、iPhone・iPad・Mac向けの"lease-to-own（リース購入）"プログラムを共同で開始。既存のiPhone Upgrade Program（Apple自社月額）に加え、Klarnaの分割決済インフラをApple公式店舗・オンラインで採用。狙いは①AI時代のiPhone高価格化（新モデル $1,500〜、折り畳みiPhoneは$2,500想定）に対する家計負担の平準化、②Apple Card + Apple Pay Later が2025年に米国以外で立ち上げ苦戦したことへの対策、③欧州・南米・アジア市場でKlarnaの認知を活用する販路拡大。前日Samsung Galaxy Card（Visa/Barclays 5%キャッシュバック、Galaxy Unpacked 2026直前）とセットで、"AI高額端末 × 第三者金融"がハードウェア大手の新たな販売戦略に。Apple $30B Broadcom米国製ワイヤレスチップ契約（2026/7/8）と連動し、"米製造復帰 × 消費金融"のセット販売が本格化。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.samsung.com/us/samsung-galaxy-card/" target="_blank" rel="noopener">Samsung、初の米国発行クレジットカード "Samsung Galaxy Card" 発表 ─ Barclays発行のVisaブランド、Samsung直接購入で5%キャッシュバック、Galaxy Unpacked 2026（数日後）直前のブランド強化、Apple Card への直接挑戦</a></h3>
+  <p class="src">参照元: Samsung公式 / Techmeme / 複数報道</p>
+  <p class="summary">Samsungが7月21日、初の米国発行クレジットカード "Samsung Galaxy Card" を発表。Barclays発行のVisaブランドで、Samsung Direct（Samsung.com / Samsung Experience Store）での購入に5%キャッシュバック、その他の購入にも段階的リワード。Galaxy Unpacked 2026（新Galaxy S・折り畳み・Galaxy AI 4.0発表イベント、数日後開催）直前の"ロイヤリティ + 販路直接化"戦略。Apple Card（Goldman Sachs→当初、後にJPMorgan Chase / Barclays検討中）への直接挑戦で、"スマホ×金融×リワード"エコシステム競争が本格化。Apple × Klarna lease-to-ownと同日発表で、"AI時代の高額端末 × 消費金融ネイティブ化"がハードウェア大手の共通戦略に。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/21/colossal-biosciences-reportedly-in-talks-to-raise-new-capital-at-20b-30b-valuation/" target="_blank" rel="noopener">Colossal Biosciences（マンモス復活・絶滅動物遺伝子復元）、$200-300億評価で資金調達交渉中 ─ 前回$100億評価から2-3倍、"生物多様性IP × バイオコンピュテーション"の市場拡大、Meta創業者Peter Thielら支援</a></h3>
+  <p class="src">参照元: TechCrunch (Julie Bort推定)</p>
+  <p class="summary">絶滅動物復活バイオテックのColossal Biosciences（マンモス・ドードー・タスマニアタイガー等の遺伝子復元）が、$200-300億評価での新規資金調達交渉中とTechCrunchが7月21日報道。前回2024年評価$100億から2-3倍。同社は米コロラド拠点で、CRISPRベースの遺伝子編集＋人工子宮＋バイオコンピュテーションで"絶滅動物ゲノム再構築＋近縁種代理母出産"を進める。ビジネス化のポイントは①生物多様性IP（絶滅動物ゲノム自体の特許・使用ライセンス）、②新規遺伝子デリバリー技術のヒト医療応用（希少遺伝疾患）、③遺伝子多様性保全プラットフォームサービス。前日Samsung Biologics $30億Polypeptide Group買収（GLP-1ペプチドCDMO）と併せ、"バイオ×AI×創薬インフラ"のディールが7月最終週で連鎖。Peter Thiel・Chris Hemsworth・Kim Kardashian等の著名投資家、Ben Lamm CEOのメディア戦略が高評価につながる。</p>
+</article>
+
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://www.ant-intl.com/en/news/detail/?id=ant-international-raises-approx-USD1_2-billion-in-series-a-equity-financing-to-boost-cross-border-payments-agentic-commerce-solutions-for-global-businesses" target="_blank" rel="noopener">Ant International（アリペイ国際版）、$12億 Series A ─ Ant Group / Alibaba / 国際金融機関が参画、既存$100億評価からの引き上げ観測、香港IPO準備の資本強化、越境決済 Antom / WorldFirst / Bettr / Alipay+ の4事業を"agentic commerce"軸に拡張</a></h3>
+  <p class="src">参照元: Ant International公式 / Reuters / Caixin Global / The Standard (HK) / Gurufocus</p>
+  <p class="summary">Ant Group傘下のシンガポール拠点Ant Internationalが7月21日、$12億のSeries Aを調達完了。Ant Group・Alibaba Group・複数の国際金融機関が参画。既存評価は$100億で、香港IPO準備の資本強化と見られる。事業は①Antom（300+決済手段、100+通貨対応の加盟店決済）、②WorldFirst（越境貿易決済）、③Bettr（AI搭載デジタル貸出・財務管理）、④Alipay+（越境デジタルウォレット・ネットワーク）の4本柱で、2024年売上高$30億→2025年+25%と拡大中。同日Techmemeで"agentic commerce"（AIエージェントが小売・決済を自律実行する経済）向けの拡張が名目、前日Natural $30M（AIエージェント決済）と競合する構図。中国当局が2020年に上場を差し止めたAnt Groupが、シンガポール籍・独立ガバナンスの海外事業として再上場を目指す象徴案件。前日20日のEU AliExpress €5.5億制裁と同日でも、"アリババ系のグローバル決済インフラ"が中国リスクを回避する枠組みで進む。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/21/bucking-ev-slowdown-sila-raises-300m-to-expand-battery-materials-factory/" target="_blank" rel="noopener">Sila Nanotechnologies、$300M ─ EV減速の逆風下、Titanシリコンアノード素材工場（ワシントン州モーゼスレイク）拡張、Mercedes-Benz EQG / Panasonic への出荷計画</a></h3>
+  <p class="src">参照元: TechCrunch</p>
+  <p class="summary">米EV/家電向けバッテリー素材Sila Nanotechnologies が7月21日、$300Mの新規資金調達を発表。米EV市場減速（トランプ政権IRA大幅縮小＋関税影響）の逆風下でも、ワシントン州モーゼスレイクの"Titan"シリコンアノード素材工場を拡張する意向。同社独自のシリコン主体アノード技術は既存グラファイトアノード対比で20-25%のエネルギー密度向上を実現、Mercedes-Benz次世代EQG SUV・Panasonicの円筒形セル向けに実装。同日Einride $38M（EV充電拡張）と併せ、"米EV減速下でも技術的差別化のあるバッテリー材料は投資継続"がテーマ。中国CATL/BYDのLFP優位に対する米国戦略資源としての位置付けも。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/" target="_blank" rel="noopener">Gritt、$34M でステルス脱却 ─ 太陽光発電所建設用ロボット、ソーラーパネル敷設・杭打ち・配線を自動化、Physical AI × 建設ロボットの新カテゴリで NVIDIA Cosmos 3 Edge / Boston Dynamics Atlas / Figure 03 と補完的</a></h3>
+  <p class="src">参照元: TechCrunch (Rebecca Bellan)</p>
+  <p class="summary">米建設ロボットスタートアップGrittが7月21日、$34Mの資金調達とステルス脱却を発表。狙いは太陽光発電所建設現場での杭打ち・パネル敷設・配線接続の自動化ロボット群。米国では建設労働力不足（IRA解体後もクリーン電力税額控除は残存）と太陽光発電所案件の急拡大が並行、労働生産性向上が至上命題。将来的には道路・住宅・データセンター等の建設に横展開する意向。前日Jensen Huang日本ツアーで発表された"Physical AI × Cosmos 3 Edge"モデルの44社連合、Boston Dynamics AtlasやFigure 03等のヒューマノイド系とは異なる"タスク特化型建設ロボット"の新カテゴリで、AI × 労働代替の産業実装が本格化。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/21/bluecore-energy-raises-10m-to-build-portable-nuclear-reactors-on-barges/" target="_blank" rel="noopener">Bluecore Energy、$10M ─ 移動式（バージ搭載）小型原子炉、AIデータセンター向けオフグリッド電源供給、"Data centers 2035年に電力4倍"見通しの直接的解</a></h3>
+  <p class="src">参照元: TechCrunch</p>
+  <p class="summary">米Bluecore Energyが7月21日、$10Mの新規調達を発表。狙いは"バージ（barge、平底船）搭載型の移動式小型原子炉"の開発で、AIデータセンター向けにオフグリッド電源を機動的に供給する新型ビジネスモデル。同日TechCrunch"Data centers expected to use 4x more electricity by 2035"（データセンター電力需要が2035年に4倍に）の直接的な解として位置付け。米原子力規制委員会（NRC）承認プロセスの短縮と、"陸上立地の反対運動・送電網制約"を回避する海上・港湾配置がキーポイント。前日AWS Cost Explorer請求バグ（数兆ドル膨張推定）や米ビッグテック5社の"見えざる債務"$268兆円と併せ、"AI電力需給"の物理制約が新カテゴリのVC投資を呼ぶ構図。</p>
+</article>
+
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOFL2179J0R20C26A7000000/" target="_blank" rel="noopener"><span class="lede">本日最大</span>日経平均株価、3営業日ぶり大幅反発 前週末比＋2,091円高の66,232円 ─ 先週後半の連日大幅安（累計4,500円超）の反動、AI・半導体関連株の買い戻し主導、韓国株の大幅上昇も後押し、原油83ドル台・円162円台半ばで中東警戒くすぶる</a></h3>
+  <p class="src">参照元: 日本経済新聞 / TBS NEWS DIG / テレ朝NEWS / Bloomberg（Yahoo!ニュース経由）/ ロイター</p>
+  <p class="summary">21日の東京株式市場で日経平均株価は前週末比+2,091円（+3.26%）高の66,232円で取引を終え、3営業日ぶりに大幅反発。先週後半にAI・半導体関連株の急落で連日-2,600円超・累計-4,500円余りの下落があった反動で、AI・半導体を中心に幅広く買い戻し。20日の米国市場でフィラデルフィア半導体株指数が4営業日ぶりに反発したこと、21日の韓国市場の大幅上昇も追い風。市場関係者は「先週末の日本株急落と、韓国株の同時上昇が投資家心理を改善」「ただ中東情勢悪化への懸念も残る」と分析。為替は米イラン軍事衝突再燃を受けた"有事のドル買い"で朝方に対ドル162円台半ば、米原油先物は1バレル83ドル近辺で高止まり、原油高でインフレ懸念が再燃し国内債券は売り優勢。今週から本格化する米テック大手決算（GoogleがGemini 3.6発表と同時期に決算控え）を控え、様子見ムードも残る。前日"米ビッグテック見えざる債務$268兆円"、"AWS Cost Explorer請求バグ"と連続した"AI CapExバブル警戒"下での反発として位置付けられ、Bloomberg日本市場記事も同日"AI中心に株上昇、円・債券軟調"とセットで解説。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUA2100Z0R20C26A7000000/" target="_blank" rel="noopener">高市早苗政権、初の"骨太方針"閣議決定 ─ AI・半導体等の成長分野に投資枠、PB（プライマリーバランス）黒字化目標を明示的に掲げず、"成長を通じた財政改善"に移行、経済財政諮問会議・成長戦略会議合同開催</a></h3>
+  <p class="src">参照元: 日本経済新聞 / 政府公式</p>
+  <p class="summary">政府が7月21日、「経済財政運営と改革の基本方針（骨太方針）」を閣議決定。高市早苗政権として初の経済・財政政策基本指針となり、AI・半導体など成長分野への投資を最重視。基礎的財政収支（PB）の黒字化目標を明示せず、"成長を通じた財政改善"を新方針に。同日午前に経済財政諮問会議と日本成長戦略会議を合同開催、骨太方針と成長戦略を同時取りまとめ。長期金利2.9%・162円台円安・企業物価前年比+7.1%（インフレ）という"金利上昇・円安・国債安の三重奏"（forex.com「日本売り」トレード進行）を背景に、財務・厚労省管轄のGPIF（運用資産293.6兆円、外貨建て資産48.4%）国内回帰の議論も並行、"財政拡張×AI投資×金融政策正常化"の綱渡りが本格化。市場は骨太文言にGPIF・家計資産の具体的言及があるかを注目していたが、明示的な資産配分言及は限定的で、"介入に代わる円買い"の即効性は限定と評価される見通し。前日日経Deep Insight（秋田浩之）"米朝ディールで日本置き去り"シナリオ警告と併せ、"高市政権のフィスカル・ドミナンス"が国際的テーマに。</p>
+</article>
+
+<article>
+  <h3><a href="https://topics.smt.docomo.ne.jp/article/reuters/business/reuters-20260721002" target="_blank" rel="noopener">米ガソリン全米平均、1ガロン $4.003 で"$4ドル大台"再突破 ─ ホルムズ海峡混乱でエネルギー価格再高騰、2月末の米イスラエル対イラン攻撃以降30%超上昇、11月中間選挙控えるトランプ政権に直接打撃</a></h3>
+  <p class="src">参照元: 全米自動車協会（AAA）/ ロイター / StoneX</p>
+  <p class="summary">全米自動車協会（AAA）のデータで、7月20日の全米平均ガソリン小売価格が1ガロン当たり$4.0030となり、米消費者の家計負担が重くなる目安の$4ドルを再度突破。米国とイランの攻撃応酬激化でホルムズ海峡通航が滞留、輸送コスト高騰が主因。2月末の米イスラエルによるイラン攻撃以降、全米平均ガソリン価格は30%超上昇。ストーンXエネルギー市場戦略幹部Alex Hodes氏は「ホルムズ海峡の混乱が続けばインフレの一因となる。世界的に精製能力が減少しアジアや中東で極めてひっ迫」「11月中間選挙までに価格が再上昇すれば対策圧力が高まり、トランプ大統領がガソリン価格抑制策を打ち出す可能性が高い」と指摘。3月下旬にイランによるホルムズ海峡封鎖後に4ドル突破→6月の米イラン戦闘終結覚書後に一度割り込み→7月上旬の停戦崩壊→再上昇の"戦争経済"サイクルが実体化。前日既報の米兵イラン連日戦死・トランプ"何倍もの代償"発言・フーシ派サウジ海上封鎖宣言と連動、7月21日は"エネルギー価格 → 米内政 → Fed利下げ観測後退 → AI投資バブル警戒"の連鎖点として意識される。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/21/data-centers-expected-to-use-4x-more-electricity-by-2035/" target="_blank" rel="noopener">データセンター電力需要、2035年までに4倍見通し ─ IEA / Rystad等の分析、米中AI投資競争 × 中国製チップ大型データセンター × 電力インフラ制約が同時進行、"AI電力ボトルネック"が新資本循環テーマに</a></h3>
+  <p class="src">参照元: TechCrunch / IEA・Rystad系レポート</p>
+  <p class="summary">TechCrunchが7月21日、複数エネルギー研究機関の分析を統合し、世界のデータセンター電力消費量が2025年比で2035年までに4倍程度になる見通しと報道。米AIハイパースケーラー5社の設備投資（前日既報の"見えざる債務"$268兆円）、中国Z.aiによる1GW中国製チップ専用データセンター稼働（Bloomberg 7/20）、Jensen Huang日本ツアーでのVera Rubin AI Factory（140MW×2028年）等が全球で並行進行。既存電力インフラ・送電網は追随できず、Bluecore Energy $10M（バージ搭載小型原子炉）のような新カテゴリ投資、AWS再エネPPA、Google/Microsoft/Amazon/OpenAIが競う原子力再稼働（Constellation Three Mile Island / Amazon Talen X-Energy等）が本格化。原油83ドル・ガソリン$4/gal・電力インフラ制約という"物理制約下のAIバブル"が2026年後半のマクロ・産業横断リスク軸に。</p>
+</article>
+
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://www.bbc.co.uk/news/articles/cz97x8k4zqzo" target="_blank" rel="noopener">英国、Burnham新政権が発足初日にDSIT（科学・イノベーション・技術省）を解体 ─ 業務は"Department for Business, Innovation, Science and Trade"に統合、Kanishka Narayan AI大臣を英国初の閣内AI大臣に昇格、Liz Kendall技術相ら旧Starmer政権幹部を更迭、"AI政策を経済省庁の中心に据える"賭け</a></h3>
+  <p class="src">参照元: BBC / The Next Web / Financial Post（Bloomberg配信）/ Technology Magazine / Techmeme</p>
+  <p class="summary">Andy Burnham新英首相（前マンチェスター市長、労働党内閣改造で7月20日就任）が7月21日、就任翌日にDSIT（科学・イノベーション・技術省、2023年Sunak保守党政権時に創設）を解体。業務はJonathan Reynolds商工相率いる新省庁"Department for Business, Innovation, Science and Trade"に統合、オンライン安全・デジタル業務はLisa Nandy率いる"Department for Digital, Culture, Media and Sport"へ移管。同時にKanishka Narayan AI大臣（Vale of Glamorgan選出、旧AI・オンライン安全ジュニア大臣、UK AI Security Institute担当）を英国初の閣内AI大臣に昇格。前技術相Liz Kendall、科学大臣Patrick Vallance卿（前政府主席科学顧問、2016年以来）が退任。UK Startup Coalition（Dom Hallas代表）は「DSIT解体は明らかに悪材料だが、Narayanは閣内で最もスタートアップとエコシステムを理解する人物」と評価。国別のAI閣内大臣はフランス（Clara Chappaz）・カナダに続き英国が3カ国目のG7で、"AI政策を専門庁ではなく経済省庁の中心に据える"賭け。同日米国でトランプ政権のAIツァー辞任と対比され、英国の"AI主権政策の集約 vs 米国の政策継続性欠如"が国際的に対照的として扱われる。前日既報のUK Burnham Digital ID廃止（数百万人反対を受けた撤回）に続く新政権の"技術政策リセット"第2弾。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.bloomberg.com/jp/news/articles/2026-07-20/trump-iran-warning" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>トランプ大統領、過去数日で米兵3人死亡を受けイランに「報いを受けることになる」と警告、米軍イラン標的攻撃 ─ 仲介国が新停戦案提示、米原油先物83ドル台高止まり、11月中間選挙控えたトランプ政権に打撃</a></h3>
+  <p class="src">参照元: Bloomberg / ロイター / 日本経済新聞</p>
+  <p class="summary">Bloombergが7月20日〜21日にかけて詳報、トランプ米大統領が過去数日で米兵3人が死亡（7/17ヨルダン2名＋7/19イラク1名）したことを受けて、イランは「報いを受けることになる」と警告し、米軍がイランの標的を攻撃した。仲介国（トルコ・オマーン等）が新たな停戦案を提示したものの、米原油先物は1バレル83ドル近辺で高止まり、全米ガソリン価格は4ドル大台を再突破。同日日本市場ではAI・半導体関連買い戻しで日経平均+2,091円反発、一方で為替はドル買いで円162円台半ば、原油高でインフレ懸念が再燃し国内債券は売り優勢の"リスクオン・オフ交錯"。前日既報の"米兵イラン連日戦死＋フーシサウジ封鎖宣言＋トランプ20%ホルムズ通過税"の第3幕として位置付けられ、Fed利下げ観測は年内後退、11月中間選挙控えるトランプ政権への打撃が可視化。BCA Research の"2026年後半〜2027年に紛争再燃60%"予想が現実味を帯び、米政権の"AI輸出規制 × 対中モデル禁止 × 中東戦争"が同時進行する"多重戦争経済"局面。</p>
+</article>
+
+</section>
+
+<footer>
+  <p>📡 <strong>収集元</strong>: Bloomberg Japan <span class="fail">(直接アクセスは403)</span> / NewsPicks <span class="fail">(直接アクセスは403、トップストーリーは吉野家ラーメン計画・NP編集部関連が中心で本日新規大型独自ネタは限定)</span> / 日本経済新聞 (日経平均+2,091円反発 / 高市政権初骨太方針 / 米朝ディール前日Deep Insightの後追い解説等をカバー) / Techmeme (Google Gemini 3.6 Flash / 3.5 Flash Cyber・Microsoft-Mistral・Burnham英政権DSIT解体・Kanishka Narayan AI大臣昇格・Sony Music Udio 2次提訴・Ant International $12億をトップに集約) / TechCrunch (Google Gemini新モデル / Jack Dorsey Buzz / Sony Music Udio 2次提訴 / 米対中AIモデル制裁威嚇 / Trumpの最新AIツァー辞任 / Apple × Klarna lease-to-own / Colossal Bio $200-300億評価 / Sila $300M / Gritt $34M / Bluecore Energy $10M / データセンター電力4倍 / Anthropic $15億著作権和解最終承認等を採用、直接アクセス403のためExa経由) / Slashdot <span class="fail">(直接アクセスは403、本日のトップ独自スクープは限定でTechmeme・TC集約分に含まれる範囲)</span></p>
+  <p>※ 前日（2026-07-20）に取り上げた記事（Trump対中AIモデル禁止Axios初報・Xi WAIC + WAICO 29カ国連合・Jensen Huang日本 Noetra / Vera Rubin AI factory・Hugging Face侵害 + AI防衛・YouTube AIスロップ3類型・Paramount-WBD $110B合併停止・EU AliExpress €5.5億制裁・Samsung Biologics Polypeptide $3,000億買収・Craneware米医療billing大量流出・Natural $30M AIエージェント決済・Infinity $15M CUDA代替・米ビッグテック"見えざる債務"$268兆円・AWS Cost Explorer請求バグ・米兵イラン連日戦死・日経Deep Insight米朝ディール "日本置き去り"・UK Burnham Digital ID廃止）と同一URL・実質同一トピックは除外。米対中AIモデル制裁威嚇は前日Axios続報として"IP窃取根拠"の格上げ・中国側輸出規制検討・Z.ai 1GW中国製データセンターの3点セットで採用、米イラン軍事衝突は前日既出のためトランプ「報いを受ける」＋米軍イラン標的攻撃＋原油83ドル・ガソリン4ドル再突破の新展開として続報採用。UK BurnhamはDigital ID廃止（既出）とは別のDSIT解体＋Kanishka Narayan閣内AI大臣昇格として新規採用。</p>
+  <p>Google Gemini 3.6 Flash / 3.5 Flash Cyber (Anthropic Mythos対抗)・Jack Dorsey Buzz (Slack対抗の人間＋AIエージェント共存型チャット)・Sony Music Udio 2次提訴 $45億損害賠償想定・米対中AIモデル制裁威嚇 (前日続報)・トランプ最新AIツァー辞任・Microsoft-Mistral欧州DC＋Foundry統合・Apple × Klarna lease-to-own・Samsung Galaxy Card (Barclays/Visa)・Colossal Bio $200-300億評価・Ant International $12億 Series A (香港IPO準備)・Sila $300M・Gritt $34M建設ロボ・Bluecore Energy $10M バージ原子炉・日経平均+2,091円反発・高市初骨太方針 AI/半導体×PB黒字化見送り・米ガソリン $4大台再突破・データセンター電力2035年4倍・英Burnham DSIT解体 + Kanishka Narayan AI大臣昇格・トランプ「イランは報いを受ける」＋米軍攻撃 (前日続報) ── 本日21日(火)の新規展開として採用。</p>
+</footer>
+
+</div>
+</body>
+</html>
