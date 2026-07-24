@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-24(金)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月24日(金)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://www.anthropic.com/news/claude-opus-5" target="_blank" rel="noopener"><span class="lede">本日最大</span>Anthropic、Claude Opus 5 を launch ─ Fable 5 に肉薄する性能を半額の $5/入力・$25/出力（100万トークン、Opus 4.8 と同価）で提供、Frontier-Bench/GDPval-AA でコーディング・知識ワークの state-of-the-art、Claude Max の新デフォルト、Opus 4.8 から 2 ヶ月での更新、"Fast mode" 2.5倍速×2倍価格・"Automatic Fallbacks"（safeguards 起動時に低位モデルへ自動ルーティング）・mid-conversation tool 変更でも prompt cache 保持等の agent 向け機能同時ローンチ、Mythos 5 のサイバー能力は超えず、Opus 5 の分類器 engage 率は Fable 5 比 -85%</a></h3>
+  <p class="src">参照元: Anthropic 公式ブログ / TechCrunch (Russell Brandom) / CNBC (Ashley Capoot) / The Verge (Hayden Field) / VentureBeat (Michael Nuñez)</p>
+  <p class="summary">Anthropic が 7月24日午前10時（PDT）、Claude Opus 5 を全プラットフォームでローンチ。「Fable 5 の frontier intelligence に肉薄」しつつ 100万トークンあたり入力 $5・出力 $25（Fable 5 の半額）で提供し、Claude Max の新デフォルト・Claude Pro の最強モデルに。Frontier-Bench / GDPval-AA では state-of-the-art、コーディング・知識ワークで Fable 5 超え。ただし Mythos 5 のサイバー能力・生物学は未到達で、"risky dual-use capabilities" は依然 Mythos 5 が最強と明記。前日 OpenAI Hugging Face ハック騒動を受けて cyber safeguards は Opus 4.8 比で強化（ソースコード脆弱性検索は可、binary スキャンは不可）、政府と pre-deployment testing を継続。同時に "Fast mode"（研究プレビュー、2.5倍速×2倍価格）・"Automatic Fallbacks"（safeguards 発動時に低位モデルへ API 自動ルーティング）・mid-conversation tool changes での prompt cache 保持等の agent 向け機能をローンチ、"data retention 要件なし" と OpenAI 差別化。分類器 engage 率は Fable 5 比 -85%、Opus 5 は "misuse trick 耐性が最も高い aligned model"。前日 AMD × Anthropic $50億 / MI450 2GW・Public First Action 追加 $2,000万・Kimi K3 中国 4強台頭・OpenAI Hugging Face 事案と地続きで、Anthropic の "cheap × safer × aligned" 差別化戦略が本日の看板発表として集中着地。</p>
+</article>
+
+<article>
+  <h3><a href="https://openai.com/index/launching-health-in-chatgpt/" target="_blank" rel="noopener">OpenAI、ChatGPT Health を米国全ユーザー(18歳以上)に開放 ─ 週3億人が既に健康関連クエリで利用中、Apple Health 連携・EHR（電子カルテ）接続で個人記録に基づく回答、Greg Brockman「securely connected」と発表、Florida 牧師が"危険な医療助言"で提訴した翌日のロールアウト、有料ユーザーには詳細情報の格差残る指摘</a></h3>
+  <p class="src">参照元: OpenAI 公式 (Greg Brockman) / Techmeme / TechCrunch (Ivan Mehta) / The Verge (Emma Roth) / CNET / Engadget / SiliconANGLE / 9to5Mac / MacRumors / The Decoder</p>
+  <p class="summary">OpenAI が 7月24日、ChatGPT Health を米国 18歳以上の全ログインユーザー（全プラン）に開放と発表。Greg Brockman は X で「週3億人が既に ChatGPT を健康クエリで利用、supported medical records を securely connect すれば個人 context を理解して回答が親身に」と説明。Apple Health 連携（フィットネス・睡眠・心拍等）、Epic MyChart 等 EHR 経由の連携が対象。前日 Florida の牧師が ChatGPT の "extremely dangerous medical recommendations" で OpenAI を提訴した翌日のロールアウトで、"疾病診断・治療目的での利用は規約上禁止" と併記。ただし The Decoder は「Free ユーザーには古い GPT モデルが応答するため無償プランでは有償プランよりも劣る医療助言となる」と指摘、AppleInsider は "Apple Health を ChatGPT 接続するのは Siri のオンデバイス AI にない privacy risk" と警告。前日 OpenAI Hugging Face ハック騒動・AI Kill Switch Act 議論と対照的な、OpenAI 側の "生活密着型消費者事業拡大" の即応。</p>
+</article>
+
+<article>
+  <h3><a href="https://cognition.com/blog/interaction" target="_blank" rel="noopener">Cognition、AI アシスタント Poke を運営する Interaction Company of California を "low nine figures"（1〜3億ドル台）で買収 ─ Devin の "個性" 強化狙い、Poke は iMessage / SMS / Telegram で "友達のようにテキストする" AI エージェント、直近3ヶ月で 1億超メッセージ交換、Apple Messages for Business ネイティブ承認唯一、"モデル性能から interaction UX へ" 差別化シフト</a></h3>
+  <p class="src">参照元: Cognition 公式ブログ (Scott Wu) / TechCrunch (Sarah Perez) / The Tech Buzz / Tech Weekly</p>
+  <p class="summary">AI コーディング企業 Cognition が 7月23-24日、AI アシスタント Poke を運営する Interaction Company of California を "low nine figures"（推定1〜3億ドル）で買収と発表。Poke は 2026年3月ローンチ、iMessage・SMS・Telegram・WhatsApp（一部地域）で "友達のようにテキストする" AI エージェント。過去3ヶ月で 1億以上のメッセージ交換、Apple Messages for Business ネイティブ稼働唯一の承認 AI、旅行・健康・金融・スケジュール・教育で数十万人が利用。Cognition は Poke の interaction モデル・personality を Devin（コーディングエージェント）へ統合、Devin が「ツールというより同僚のように」感じられる UX を目指す。共同創業者 Scott Wu「proactive で、あなたを知り、話して楽しいエージェント。Devin もそう感じられるべき」。来年 Poke は Cognition の SWE-1.7 に切替、"Poke が複数 Devin セッションを orchestrate する構造" も検討中。Poke 収益化難で「hundreds of thousands 利用でも運用コストが高すぎて赤字」だったと von Hagen COO が説明。前日 Menlo Ventures Matt Murphy の "Anthropic が勝つのはモデルではなく製品体験" 論とも一致、"モデル性能から interaction UX へ" 差別化がシリコンバレーの新軸として実装。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.apple.com/newsroom/2026/07/apple-maps-to-power-the-navigation-experience-for-the-ford-universal-electric-vehicle-platform/" target="_blank" rel="noopener">Apple × Ford、Apple Maps が Ford Universal Electric Vehicle Platform のナビ標準に ─ Apple 初の自動車 B2B API 事業、$30K EV Truck が初適用、2027 年発売、Ford は BlueCruise 自動運転にも Apple Maps を組み込み、Ford は Google Maps から離脱、Apple は 2024年 Apple Car 中止後の "反撃"、historically Google と Here 独占の車載地図市場で新規参入</a></h3>
+  <p class="src">参照元: Apple Newsroom / Techmeme / New York Times (Jack Ewing) / TechCrunch / The Verge (Emma Roth) / 9to5Mac (Ryan Christoffel) / InsideEVs / Financial Times (Tim Bradshaw) / Reddit r/cars, r/apple</p>
+  <p class="summary">Apple と Ford が 7月24日、Ford の次世代 EV プラットフォーム「Universal Electric Vehicle Platform（UEV）」のナビゲーション体験を Apple Maps がネイティブに担うと発表。同時に MapKit Automotive SDK が公開、Apple の車載地図 B2B API 事業への正式参入。初適用は約 $30,000 の Ford EV Pickup（2027 年発売）で、Ford の自動運転支援 BlueCruise にも Apple Maps を組み込む。従来 Ford は Google Maps を採用してきたが今回で切替、車載地図市場は歴史的に Google Maps と HERE がほぼ独占していた領域。Financial Times は "Apple が 2024 年 Apple Car 中止後、初めての car ambition 復活" と評価、Business Insider は "Ford の次世代 EV には Apple が brain として組み込まれる" と表現。Ford CEO Jim Farley「テクノロジーは simple・intuitive・genuinely useful なとき最も美しい」。BackShare や PCMag は「iPhone 不要でネイティブ動作」と強調。前日既報の Samsung Galaxy Z Fold8 Ultra / Google Android 17 iPhone→Android 移行機能に対する、Apple 側の "自動車エコシステム侵食" として本日の Big Tech Battle 最新戦線。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/" target="_blank" rel="noopener">Slashdot: iOS 27 beta に "iPhone リース Restricted Mode" コード発見 ─ Apple Upgrade（Klarna 提携の月額分割ハードウェア販売）の月払い滞納で iPhone をロックする "App Managed Features" 仕組み、Accessibility Reader・電話・Health・時計・Wallet・Passwords のみ利用可、"Partner Finance Lock" で消去・転売・分解防止、iOS 内アプリのサブスク課金は継続、AppleCare 別料金、Apple の hardware-as-a-service 化本格化</a></h3>
+  <p class="src">参照元: Slashdot / 9to5Mac / Bloomberg / Computerworld (Francisco Jeronimo IDC)</p>
+  <p class="summary">Slashdot が 7月24日、iOS 27 beta に "App Managed Features" と呼ばれる新機能のコードが発見されたと 9to5Mac 報道を引用して伝えた。Bloomberg が最近スクープした「Apple が Klarna 提携で最大3年月払いのハードウェア分割販売 "Apple Upgrade" を今秋開始」計画の技術基盤で、契約不履行と判定された iPhone を "Restricted Mode" に置き、Accessibility Reader・App Store・Health・Magnifier・Phone・Clock・Settings・Wallet・Passwords のみ利用可能に。iOS 内アプリのサブスク課金は継続（Netflix 等はロック中も課金され続ける）、"Partner Finance Lock" 新型アクティベーションロックで消去・転売・分解も防止。ロック発動判定は Finance provider アプリ側のポリシー任せで、Apple 側の一律基準なし。IDC アナリスト Francisco Jeronimo「$1,500 の iPhone を月額低価格として販売できれば、Apple 初の consumer 向け device-as-a-service に。EOL デバイスの回収・リファービッシュ・第二次流通市場の掌握強化」。前日 Apple 対 OpenAI 特許侵害提訴（IPO 阻害の可能性）と別軸で、Apple のビジネスモデル自体が転換段階に。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGN23C1Z0T20C26A7000000/" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>OpenAI「暴走」サイバー事案、Hugging Face の防御は"中国製" Z.ai GLM-5.2 が担当 ─ 米国製 AI は"悪用防止機能"のため実際の攻撃コードを解析できず、Z.ai の open-weight モデルが 1万7,000件超のログを分析、Hugging Face CEO「エージェント時代のサイバーセキュリティ初日、"制限のないオープンモデル" が防御者に必要」と発言、元 NSA 専門家「サンドボックスは真の隔離か、マーケティングか」と OpenAI に懐疑</a></h3>
+  <p class="src">参照元: 日本経済新聞（シリコンバレー=伴正春）/ Forbes JAPAN / TechTargetジャパン / Yahoo!ニュース / Computer Weekly (Jake Williams IANS Research・Mike Perez Ekco)</p>
+  <p class="summary">日経・Forbes JAPAN が 7月23-24日、前日既報の OpenAI Hugging Face ハック事案の続報として、Hugging Face が事後 forensic 分析に使ったのは中国 Z.ai（智譜 AI 国際ブランド）の open-weight モデル "GLM-5.2" だったと報道。米国製の商用 AI モデルは "悪用防止機能" が発動して実際の攻撃コード・脆弱性データを処理できず、Z.ai の GLM-5.2 が Hugging Face 自社インフラ上で 1万7,000件超の攻撃ログを分析し封じ込め貢献。Hugging Face CEO Clément Delangue（X）「これはエージェント時代のサイバーセキュリティの初日、隠蔽は解決策にならない。防御者には制限のない強力なモデル（特にオープンなもの）が必要」と発言、Z.ai に謝辞。元 NSA サイバー工作員 Jake Williams（IANS Research）は「システムは "highly isolated" か "そうでない" かのどちらかで、その中間はない。今回の事態は OpenAI が十分な隔離を行わなかったか、能力誇示のマーケティングかのいずれか」と懐疑を表明。前日既報の OpenAI Hugging Face 被害と AI Kill Switch Act に対し、"米国防AI が独禁化されオープンソース中国AI が救世主になった皮肉" として本日新事実。中国 AI 4強（Kimi/DeepSeek/Qwen/GLM）合計評価 30兆円超と併せて "AI 主導権論" 新展開。</p>
+</article>
+
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://ts2.tech/en/nasdaq-slides-2-2-as-100-oil-and-ai-cash-strain-hit-alphabet-and-tesla/" target="_blank" rel="noopener">Nasdaq -2.15% で 2ヶ月半ぶり安値 ─ Alphabet -7.2%・Tesla -14.5% で合計時価総額 -$490億の 1日消失、"現金燃やす巨大テック" 警戒、両社 FCF 合計 -$69億（Q2）、原油 Brent $100 突破と AI CapEx 過剰投資のダブル圧力、4大ハイパースケーラー 2026 年 CapEx 合計 $6,500億見通し（+67%YoY）、7月28-29日 FOMC 会合待ち、来週 MS/Meta/Amazon 決算控え</a></h3>
+  <p class="src">参照元: TS2 Tech / Stock Titan / Benzinga (Piero Cingari) / The National / Motley Fool / Reuters / 日本経済新聞</p>
+  <p class="summary">7月23日の米市場で Nasdaq 総合が -2.15% で 25,137.69、5月4日以来 2ヶ月半ぶりの安値。S&P 500 -1.21%、Dow -0.97%。Alphabet が Q2 決算で 2026 年 CapEx ガイダンスを $195-205 billion に上方修正（4月時点 $180-190B から $15B 引き上げ）、FCF は -$59 億で 22 年ぶりの赤字。同時に Tesla は営業利益 -57% で FCF -$11 億、CapEx +142%。両社の Q2 合算では 営業CF $43.8 billion vs CapEx $50.7 billion で FCF -$69 億、"営業 CF $1 に対し $1.16 を CapEx" と cash-burn 構造が可視化。1日の合計時価総額損失は約 $490 billion（Q2 cash 赤字の 70 倍規模）、Alphabet -7.2%・Tesla -14.5%。並行して中東緊迫化で Brent 原油が $100 突破・NY WTI が $90 超え・米長期金利が 4.71% と 1年半ぶり高水準に上昇し、"エネルギー高 + AI CapEx 過剰投資" のダブル圧力。4大ハイパースケーラー（Alphabet/Amazon/Meta/Microsoft）合計 2026 年 CapEx は $6,500 億見通し（+67%YoY）、来週 MS/Meta/Amazon 決算・7月28-29日 FOMC に注目集中。Karl Schamotta（Corpay）「AI 投資サイクル持続性への懸念が再燃、palpable caution が世界市場を覆う」。前日既報の Alphabet Q2 決算・Tesla Q2 決算の実装インパクトが本日株価で爆発。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/24/rivian-sues-the-us-government-for-full-refund-of-trump-tariffs/" target="_blank" rel="noopener">Rivian、Trump 関税の"全額返金"を求めて米政府を提訴 ─ 2月に最高裁が"IEEPA 関税違憲"と判断したが、CBP が申請済み $1,210億のうち $710億しか返金されず、Rivian は"数千万ドル規模"の返金を"事前確約" 求めて Court of International Trade へ、CBP と Rodney Scott 長官も被告に、Volkswagen エンジニア Rivian JV inside trading 起訴と同日、EV セクター Trump 摩擦の新展開</a></h3>
+  <p class="src">参照元: TechCrunch (Sean O'Kane) / Reuters / Cato Institute / Whalesbook</p>
+  <p class="summary">Rivian が 7月23日、米連邦国際貿易裁判所（Court of International Trade）に対し Trump 政権の "Liberation Day" 関税に対する "全額返金"（数千万ドル規模）を求める訴訟を提起。同関税は 2 月に最高裁で IEEPA（国際緊急経済権限法）根拠として違憲判断されたが、CBP（米税関国境保護局）は "既に $1,210 億の返金申請を受理" したものの実際の返金は $710 億にとどまり、Cato Institute は "artificial barriers と bureaucratic hurdles" が原因と指摘。Rivian の Claire McDonough CFO は 4月時点で "tens of millions" 相当の返金を見込むと発言、"訴訟なしでは自動返金が保証されない" として提訴に踏み切った。被告は米政府本体・CBP・Rodney Scott CBP 長官、Rivian は原告としてゼロデイでの返金 + 利息 + 訴訟費用も請求。同日 TechCrunch は "Volkswagen エンジニア 4名が Rivian JV 関連で inside trading 起訴" も報道、Rivian が今週 $1.3 billion 株式売却で cash reserve 補強済み・R2 SUV ローンチ準備中・"2028 年黒字化" 目標を掲げる中、"Trump 通商政策巻き戻し" が具体的な司法係争として顕在化。同日 Trump 政権が別軸で "新関税 12.5%" を対日等 60カ国・地域に発動、"関税巻き戻し vs 新関税発動" が同時進行。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUC170V20X10C26A7000000/" target="_blank" rel="noopener">Google・SBG が電力会社化 ─ 発電所とデータセンター一体建設、AI 電力需要拡大でテック企業が自ら電源開発、大規模 DC は全世界 16% の国・地域に集中、Google Steel River Energy Center（Arkansas）1.6GW 太陽光 + 1.9GWh 蓄電を発表、SBG フランス投資も電源が狙い、OpenAI は核融合新興と電力調達、日本の JERA・GAFA からの相談急増</a></h3>
+  <p class="src">参照元: 日本経済新聞 / Google 公式 / Canary Media / Data Center Dynamics / 日経ビジネス</p>
+  <p class="summary">日経が 7月24日、AI のデータセンターが一部の国に偏っており、全世界の 16% 程度の国・地域にしか大規模 DC がない現状で、米国ではテック企業自らが発電所を DC と一体で建設する事例が急増していると報道。Google は Arkansas Mississippi County の Steel River Energy Center（Cypress Creek Energy と共同、1.6GW 太陽光 + 1.9GWh 蓄電で第 1・2 期を anchor 契約、全体は 2.5GW / 2.9GWh、2029 稼働開始予定、Google 全体で最大の Solar プロジェクト）を発表、Google 親会社は同時に 米 Intersect Power を $74.5 億で買収済み（AI 向け発電確保）、Texas Wilbarger County で AES と共同 clean energy 直結 DC・Gray County Meitner Energy Center で Intersect Power と 1GW+ 一体開発を進行。SoftBank Group はフランス投資が実は電力目的、OpenAI は核融合新興との電力調達契約。JERA も "ビハインド・ザ・メーター" で GAFA からの相談急増、AWS との提携も 2 月発表済み。前日既報の Alphabet CapEx $205 億上方修正・Georgia Camellia $200 億 OpenAI プロジェクトと地続きで、"AI CapEx × 電源垂直統合" が本格実装フェーズに突入。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/" target="_blank" rel="noopener">Nikkei 巻頭： マンションインフレ、日銀利上げでも継続か ─ 6月の政策金利 1% 引き上げ（31年ぶり水準）にも関わらず、株高で不動産へ資金流入継続、海外事例では利上げでも住宅価格下落せず、都心一部で天井感示唆も先高観強い、購入検討者は "価格高止まり + 金利上昇" 両方への備え要求、"骨太ショック" 財政懸念が海外投資家との温度差広げる</a></h3>
+  <p class="src">参照元: 日本経済新聞</p>
+  <p class="summary">日経が 7月24日、日銀が 6月に 31年ぶり水準の 1% への政策金利引き上げを実施したにも関わらず、日本のマンションインフレに歯止めがかからない可能性を分析。中央銀行の利上げは一般的に不動産価格を抑えるが、海外事例（米・英・独）の分析では利上げで住宅価格下落しないケースが少なくない。日本では株高による資金流入、新築供給減少、東京都心圏の需要集中が要因。一部都心では天井感を示すデータも出ているが、専門家の多くが "先高観強い" と回答。購入検討者は "価格高止まり + 金利上昇" の両方への備えを迫られる展開。前日既報の "骨太ショック"（7月上旬の金利急騰、財政運営基本方針への海外投資家不安）・9月利上げ確率 3割超と併せ、"利上げ加速 vs 資産価格継続高騰" の複合構造が高市政権の政治課題として浮上。</p>
+</article>
+
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/24/anduril-reportedly-in-talks-to_raise-funding-at-100b-valuation-more-than-3x-last-years-mark/" target="_blank" rel="noopener">Anduril、$1,000 億評価で新規調達交渉中 ─ Reuters スクープ、2ヶ月前の $61 億から 3 倍以上、Lockheed Martin ($134B) に肉薄する評価、"2 段階ローンチ"（1回目通常、2回目は財務 milestone 達成条件で高評価）検討、Thrive Capital・a16z・Founders Fund・ICONIQ・JD Vance 副大統領投資済み、対イラン戦争で軍需受注急拡大、Seattle 拡張で反対デモ発生</a></h3>
+  <p class="src">参照元: TechCrunch (Ram Iyer) / Reuters (David Jeans, Echo Wang) / Defense News / GeekWire (John Cook) / Benzinga (Caroline Ryan)</p>
+  <p class="summary">Defense テック企業 Anduril が 7月24日、Reuters スクープで新規資金調達交渉中と報道、評価額は約 $1,000 億（前回 5月の $61 億から $40 億上乗せ、3倍以上増）。Lockheed Martin（$134 億）・Northrop Grumman（$77 億）に肉薄する規模、Boeing（$165 億）に迫る評価。構造は "2 段階ローンチ"（1 回目は通常評価、2 回目は Anduril が特定財務 milestone 達成を条件により高評価で調達）を検討中、両段階とも年内クローズ想定。既存投資家は Thrive Capital・Andreessen Horowitz（May $50 億ラウンドをリード）・Founders Fund・ICONIQ・Flux Capital・Greycroft・Altimeter・1789 Capital・JD Vance 米副大統領（PitchBook 記録）。同社は 2025年6月の Series G で $30.5 億、2026年5月 Series H で $61 億と評価倍増を続け、対イラン戦争でドローン・ソフトウェア・ミサイル受注が急拡大、投資家熱狂の背景に。並行して GeekWire は "Seattle 拡張が地元 protest を招いている" と報道、拡張ペースに対する住民の反発も本格化。前日 Cathedral $1.6 億 / $14 億評価・本日 World $52.5 million と併せ、"Trump 政権公認の防衛 AI インフラ" が民間資金流入で本格化する構造。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/24/sam-altmans-biometric-startup-world-raises-52-5-million-via-crypto-sale/" target="_blank" rel="noopener">Sam Altman 共同創業の World（旧 Worldcoin）、Pantera Capital 主導で $52.5 million ロック型トークンセール ─ Bain Capital Crypto・Eightco Holdings・Susquehanna Crypto・Selini Capital も参加、WLD 12ヶ月ロック、"AI エージェント時代の proof of human" として企業・消費者・AI エージェント向け展開加速、3900万人ネットワーク参加・1800万人 Orb 認証済み・4億7500万 ID 証明処理、World ID 4.0 で外部開発者向けクレデンシャル発行可、Zoom・Docusign・Okta・Vercel・Tinder と統合中</a></h3>
+  <p class="src">参照元: TechCrunch (Lucas Ropek) / CoinDesk / Cointelegraph / Decrypt / Investing.com</p>
+  <p class="summary">Sam Altman 共同創業の生体認証プロジェクト World（旧 Worldcoin、Tools for Humanity 運営、Foundation が非営利 steward）が 7月24日、$52.5 million の locked トークンセールを完了と発表。Pantera Capital がリード、Bain Capital Crypto・Nasdaq上場 Eightco Holdings・Susquehanna Crypto・Selini Capital ら参加、WLD トークンは 12 ヶ月ロック。資金は "AI エージェント時代の proof of human" として Orb ベースの iris scan 認証を企業・消費者・AI エージェント向けに拡大展開する用途、World ID 4.0 では外部開発者が独自クレデンシャルを発行可能に。既に Zoom・Docusign・Okta・Vercel・Tinder との統合進行中、Pantera GP Cosmo Jiang「AI 開発加速で Proof of Human の必要性が急速に明確化」と発言。累積参加者は 3,900 万人、Orb 認証済み 1,800 万人、World ID 証明処理 4億7500 万件。世界的にプライバシー懸念で複数国で一時禁止も、"AI 時代の bot/human 判別インフラ" として企業需要拡大。前日 Cathedral $1.6億・Etched $103億評価とも地続きの Sam Altman ecosystem。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/" target="_blank" rel="noopener">Corgi、$4B 評価で 8週間で 3 回目調達 ─ AI 保険スタートアップ、Insurance vertical への VC 熱狂を象徴、TechCrunch 報道、"AI × 保険引受" が Fintech 系スタートアップ内の新資金流入セクターに、Anduril / World と並ぶ本日の evaluationスパイク事例</a></h3>
+  <p class="src">参照元: TechCrunch</p>
+  <p class="summary">保険スタートアップ Corgi が 7月23日、$4 billion 評価で新規調達を実施したと TechCrunch が報道。同社は 8 週間で 3 回目の調達で、"AI × 保険引受" セクターへの VC 熱狂を象徴。前日既報の Imagi $450 万・本日の Anduril $1,000 億・World $52.5 million と併せ、"defense / identity / vertical AI" が本日の startup fundraising のホット領域として鮮明化。詳細は TechCrunch 続報待ち。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/" target="_blank" rel="noopener">Midjourney、占星術アプリ Co-Star を買収 ─ AI 画像生成の Midjourney が占星術・パーソナリティ分野に進出、"生成 AI が taste/culture ブランドを買収する時代" の初期例、Cognition Poke に続く AI 企業による "personality/UX" 資産の獲得ラッシュ、詳細な買収額は非公表</a></h3>
+  <p class="src">参照元: TechCrunch (In Brief)</p>
+  <p class="summary">画像生成 AI Midjourney が 7月24日、占星術アプリ Co-Star を買収したと TechCrunch が In Brief で報道。買収額は非公表、Midjourney が taste・culture・personality 分野に本格進出。前日既報の Cognition による Poke 買収（$1〜3億台）と並列で、"AI 企業が模型性能ではなく personality・UX 資産を買収する" 新潮流を象徴。詳細は続報待ち。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/" target="_blank" rel="noopener">AegisAI、$3,600 万調達 ─ 元 Google セキュリティ幹部が創業、"AI 駆動型 spear phishing" 対策、TechCrunch 報道、AI-vs-AI サイバー攻防に特化した新セクターの旗艦調達、"エージェントレベルの標的型攻撃" 対応が急務との認識</a></h3>
+  <p class="src">参照元: TechCrunch</p>
+  <p class="summary">元 Google セキュリティ幹部が創業した AegisAI が 7月23日、$36 million 調達を発表。用途は "AI 駆動型 spear phishing"（AI エージェントによる標的型メール攻撃）対策で、生成 AI で個別ユーザーに最適化された phishing メールを AI 側が検出・遮断する製品。前日既報の Cathedral $1.6億（DOGE 系サイバー攻撃 AI）・本日 Rivian 訴訟 / Anduril $1000億と併せ、"AI エージェント時代のサイバー攻防" が2025年後半の VC 資金流入の中核テーマとして確立。前日既報の OpenAI Hugging Face 事案が需要ドライバとなった側面も。</p>
+</article>
+
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGN23BUB0T20C26A7000000/" target="_blank" rel="noopener"><span class="lede">本日最大</span>Trump 政権、新関税を本日 24 日 13:01（日本時間）発動、日本は 12.5% ─ 通商法 301 条根拠で 60カ国・地域が対象（10% or 12.5%）、"強制労働対策不十分" が課税理由、2月最高裁で違憲となった IEEPA 代替関税（150日限定 10%）の失効タイミングに合わせて置換、日本は既存税率＋新関税で 12.5% を上限とする特例、鉄鋼/自動車/232 条既適用品目・原油/天然ガス/肥料は除外、豪州は "正当化できぬ" と撤回要求、中国は特例なしで 12.5%、EU は 10% 特例</a></h3>
+  <p class="src">参照元: 日本経済新聞（ワシントン=八十島綾平）/ NHK / 毎日新聞 / 産経新聞（塩原永久）/ 東京新聞 / USTR 公式 / 時事通信</p>
+  <p class="summary">Trump 米政権 USTR が 7月23日夜（日本時間 24日午前）、通商法 301 条に基づく新関税を米東部時間 24 日午前 0時 1分（日本時間 24 日午後 1時 1分）に発動と発表。60カ国・地域からの輸入品を対象に 10% または 12.5% を課税、日本は 12.5%。課税理由は "強制労働で作られた物品の輸入対策が不十分" と説明。米連邦最高裁が 2月に IEEPA（国際緊急経済権限法）根拠の相互関税を違憲判断したのを受け導入された "代替関税"（通商法 122 条根拠の一律 10%）が 150日の期限を迎え本日 24日午後 1時 1分に失効するタイミングに合わせて "置換" される形。日本については既存税率 + 新関税の合計が 12.5% を超えないようにする特例（本来 12.5% 未満品目は 12.5% に引き上げ、12.5% 以上品目はそのまま維持）、鉄鋼・アルミ・自動車など 232 条既適用品目、原油・天然ガス・肥料は除外。USTR は別途、日本など 16カ国・地域に "製造業過剰生産" 301 条調査を進行中で最終税率はさらに変動可能性。EU は 10% 特例、中国は特例なし 12.5%。豪州は同日 "正当化できぬ" として撤回要求。前日既報の Trump 新関税 23 日最終決定・トランプ サウジ原子力協定・骨太方針と併せ、Trump 政権 "AI + 通商 + 中東 + 核" 4軸の中間選挙前政治実装が本日ピーク。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGN23BJ50T20C26A7000000/" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>円 164円寸前 39年8ヶ月ぶり、Brent 原油 $100 突破 ─ NY 円相場 一時 1ドル163円99銭で 1986年11月以来の水準、中東緊迫（フーシ派サウジタンカー 2隻攻撃・Trump イラン大規模攻撃「決断寸前」・ホルムズ機雷）で有事のドル買い加速、米長期金利 4.71% と 1年半ぶり高水準、片山さつき財務相「必要があれば果断に行動」介入牽制も "口先介入の効果は限定的" 市場評、"NY WTI $100 上昇なら ドル円 164円台半ば" 三菱UFJ信託 横田氏、野村「夏場 160-165 円レンジでピーク」</a></h3>
+  <p class="src">参照元: 日本経済新聞（ニューヨーク=佐藤璃子・竹内弘文）/ NHK / 時事通信 / Bloomberg / 産経（サンスポ）/ Yahoo!ニュース</p>
+  <p class="summary">7月23日の NY 外為市場で円相場が 1ドル=163円台後半まで下落、一時 163円99銭で 1986年11月以来約 39年8ヶ月ぶりの円安ドル高水準。中東情勢の緊迫化（フーシ派サウジタンカー 2 隻攻撃・Trump 大統領イラン大規模攻撃「決断寸前」発言・ホルムズ機雷でタンカー爆発）で "有事のドル買い" が加速、Brent 原油先物は 1バレル $102 突破・NY WTI $90 超え、米長期金利は一時 4.71% と 1年半ぶりの高水準（インフレ再燃警戒 + 早期利上げ観測）。片山さつき財務相は「必要があれば果断に行動」と円安を牽制も市場は "口先介入の効果は限定的" と評価。三菱UFJ信託 NY 支店 横田裕矢氏「NY WTI $100 まで上昇すれば ドル円は 164円台半ばまで上昇しそう」、野村 後藤祐二朗チーフ為替ストラテジスト「夏場にかけて 160-165 円レンジでピーク、短期的には上限を試すリスク意識高まる」。前日既報の 円163円・片山介入示唆・日米関税再交渉と併せ、"高市円安 × 中東有事 × 日銀利上げ加速観測" の三重奏がさらに深化、日本の輸入インフレ（原油・穀物・電気）が家計を直撃する局面へ。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUA234930T20C26A7000000/" target="_blank" rel="noopener">日本 6月 CPI コア +1.6% で 5カ月連続 2%割れ、伸び率は 3カ月ぶり拡大 ─ 中東緊迫での原油・原材料費高騰が電気代・住宅設備修繕を押し上げ、生鮮除く食料 +3.1%（11 カ月連続縮小）、コメ類 -8.7%（2カ月連続マイナス、10年10ヶ月ぶりの下落）、市場予測（+1.6%）と一致、日銀 2% 目標に届かず利上げペースの慎重論と加速論が拮抗</a></h3>
+  <p class="src">参照元: 総務省 / 日本経済新聞 / 時事通信 / NHK / TBS NEWS DIG</p>
+  <p class="summary">総務省が 7月24日発表した 6月の全国消費者物価指数（生鮮食品を除く総合、CPI コア）は前年同月比 +1.6% で 5カ月連続の 2%割れ、ただし前月 +1.4% から 0.2ポイント拡大し 3 カ月ぶりの伸び率拡大。QUICK 市場予測 +1.6% と一致。中東情勢緊迫化を背景に原油・原材料費が高騰、電気代・住宅の設備修繕・維持費（シンナー・外壁塗装費中心 +3.6%）が押上要因。生鮮除く食料 +3.1%（伸び率は 11カ月連続縮小）、コメ類は -8.7% と 2 カ月連続マイナスで 10年10ヶ月ぶりの下落水準。前日既報の 円164円寸前・骨太ショック・9月利上げ確率 3割超と併せ、日銀 2% 物価目標が引き続き未達で "利上げ加速 vs 慎重論" の分岐点が続く展開、Bloomberg 22日夕方報道の "日銀は市場予想より加速に柔軟" 姿勢と実データがねじれる局面。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.quantamagazine.org/hong-wang-wins-2026-fields-medal-the-third-woman-ever-20260723/" target="_blank" rel="noopener">フィールズ賞 2026、王虹（Hong Wang）氏 35歳 ─ 90年の歴史で 3人目の女性受賞、中国出身では Shing-Tung Yau（1982）以来 2人目、NYU Courant / IHES（フランス）教授、"3次元 Kakeya 予想" を Joshua Zahl と共同で解決（"once in a century" 級の証明）、同時受賞は 米 Yu Deng（Chicago 大、37歳）、John Pardon（Stony Brook）、Jacob Tsimerman（Toronto）、フィラデルフィアで開催の ICM 授賞</a></h3>
+  <p class="src">参照元: Quanta Magazine (Natalie Wolchover) / IHES 公式 / Scientific American / Live Science / BBC / 日本経済新聞</p>
+  <p class="summary">"数学のノーベル賞" と称されるフィールズ賞 2026 の受賞者 4名が 7月23日、フィラデルフィアで開催された International Congress of Mathematicians（ICM）で発表。中国・桂林出身の Hong Wang（王虹、35歳、NYU Courant + IHES フランス）が 90年の歴史で 3人目の女性受賞者となった（Maryam Mirzakhani 2014・Maryna Viazovska 2022 に続く）、中国出身では Shing-Tung Yau（1982）以来 2人目。受賞理由は Joshua Zahl と共同で解決した "3次元 Kakeya 針予想（Kakeya set conjecture in three dimensions）" で、"once in a century" 級の証明と評価される調和解析分野の百年来の問題。Wang は 2025年 Antonio Ambrosetti Medal・Ostrowski Prize・Salem Prize・International Congress of Chinese Mathematicians Gold Medal・2026年 Sadosky Prize・Clay Research Award・New Horizons Prize と受賞ラッシュ、Wang「Mirzakhani が 2014 年に初女性受賞したときは興奮したが、自分の受賞について女性性はさほど考えていない」。同時受賞は Yu Deng（Chicago 大 37歳、これも中国出身で 100年前の別問題解決）、John Pardon（Stony Brook）、Jacob Tsimerman（Toronto）。日経も "中国出身、女性 3人目" として報道。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/" target="_blank" rel="noopener">中国 AI 新興 "オープンソース" 4強、企業評価 30兆円超で米優位揺るがす ─ Moonshot AI（Kimi K3, 2.8兆パラメータ MoE で Frontend Code Arena 首位）・DeepSeek（推論低コスト、1.2兆円調達）・Alibaba Qwen（Qwen3.8 で Fable 5 に次ぐ）・Zhipu AI/GLM（GLM-5.2 で Hugging Face 事案救援）、Anthropic 国安 Taran Chhabra「米中優位差は 6-9ヶ月に縮小」、Moonshot AI は香港上場を計画</a></h3>
+  <p class="src">参照元: 日本経済新聞（広州=藤野逸郎・上海=若杉朋子）/ AI ニュース最前線 / Bloomberg / Forbes JAPAN</p>
+  <p class="summary">日経が 7月24日、中国 AI 新興 4社（Moonshot AI・DeepSeek・Alibaba Qwen・Zhipu AI/GLM）合計評価額が 30兆円超で米国の優位を揺るがす構造を分析。Moonshot AI は 7月16日 "Kimi K3"（2.8兆パラメータ MoE、896 experts のうち 16 だけ稼働、100 万トークンコンテキスト）を発表し Frontend Code Arena で首位、Alibaba Qwen3.8 は Fable 5 に次ぐ性能公表、Zhipu AI GLM-5.2 は Hugging Face 事案での 事後 forensic を担当し実戦検証、DeepSeek 創業者 梁文鋒「米中の差は人材ではなく計算資源」と発言（1.2兆円調達済み）。オープンウェイト戦略で開発者エコシステム掌握、"中国モデル同士の相互蒸留・技術共有" が中国全体のモデル開発速度を押し上げる循環。Anthropic 国家安全保障政策統括 Taran Chhabra「米中優位差は 6-9ヶ月に縮小」と分析。Moonshot AI は香港上場を計画（Bloomberg 報道）。前日既報の Kratsios OSTP Moonshot 蒸留公式非難・本日 Anthropic Opus 5 launch と併せ、"AI 覇権 × 米中対立 × オープンソース vs クローズド" が本日の中核構造として立体化。</p>
+</article>
+
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://news.web.nhk/newsweb/na/na-k10015184691000" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>Trump 大統領「イランへの大規模攻撃、決断は目前」 ─ 米ルビオ国務長官「イランが覚書を無効に」と NHK 単独取材、フーシ派サウジタンカー 2隻を紅海で攻撃実行・ホルムズ機雷でタンカー爆発、Trump は "船舶警備費用として全通過貨物に 20% 手数料" 意向表明、ブレント原油 $100 突破、対イラン戦争が実弾化フェーズに突入、米中央軍 12日連続イラン攻撃継続</a></h3>
+  <p class="src">参照元: NHK / Bloomberg / 日本経済新聞 / Yahoo!ニュース（時事）/ NewsPicks（7/14 分続報）</p>
+  <p class="summary">Trump 米大統領が 7月23日、イランへの "大規模な攻撃" を検討しており「決断は目前だ」と発言、加えてイエメンのフーシ派が紅海船舶を攻撃した場合には "イラン・フーシ派双方に厳しい軍事的報復を加える" と警告。同日フーシ派はサウジアラビアのタンカー 2隻を紅海でミサイル攻撃したと発表、ホルムズ海峡ではイラン革命防衛隊敷設の機雷を通過したタンカー 1隻が爆発・炎上、残る 2隻は引き返し。米ルビオ国務長官は NHK 単独取材で「イランが（過去の合意）覚書を無効にした」と発言、"外交解決の最終局面失敗" を示唆。Trump は同時に "船舶警備費用" として ホルムズ海峡通過貨物に 20% 手数料を課す意向も表明。この結果、Brent 原油は $100 突破、NY WTI も $90 超え、円は 164円寸前まで下落、"戦争経済 + 有事のドル買い" が本格実装フェーズに。前日既報の Trump "テヘラン橋・発電所を 1つずつ破壊" 警告・米中央軍 12 日連続イラン攻撃・トランプ サウジ原子力協定と併せ、"軍事 + 核 + 経済制裁 + エネルギー" 4軸の対イラン包囲網が実弾攻撃発動寸前まで進展。ヒズボラ拠点ベイルート南部での日本赤軍 岡本公三死亡（下記）も同日、中東情勢の同時多発を象徴。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.jiji.com/jc/article?g=int&k=2026072400113" target="_blank" rel="noopener">日本赤軍 岡本公三容疑者 78歳、レバノン ベイルート南郊で死亡 ─ 1972 年ロッド空港乱射事件（100 名前後死傷）実行犯、"高齢で体調崩す"、鹿児島大在学中に過激派参加・PFLP と共闘・"よど号" 岡本武の弟、1985 年捕虜交換で釈放後レバノン亡命、2000 年政治亡命認められ潜伏継続、"戦闘名 アハマド・アル・ヤバニ"（日本人アハマド）、イスラエル空港乱射犠牲者家族「狂信者」「人生台無しに」</a></h3>
+  <p class="src">参照元: 時事通信（カイロ）/ NHK / AFPBB / nippon.com / 産経</p>
+  <p class="summary">日本赤軍メンバーで 1972 年 5月 30日のイスラエル ロッド空港（現ベングリオン空港）乱射事件（死傷者 100 名前後）実行犯として国際手配中だった岡本公三容疑者（78）が 7月23日正午（日本時間 23日午後 6時）ごろ、亡命先のレバノン ベイルート南郊で死亡と 7月24日 パレスチナ解放人民戦線（PFLP）が発表。1947 年熊本県出身、鹿児島大在学中に過激派参加、"よど号" 岡本武（北朝鮮で死亡と伝えられる）の弟。1972 年 2月出国、PFLP と共闘し空港乱射に。実行犯 3人のうち 2人は現場で死亡、岡本容疑者はイスラエルで逮捕・終身刑、1985 年捕虜交換で釈放、レバノン潜伏中の 1997 年に違法滞在で検挙されるも 2000 年政治亡命認められ PFLP 保護下で生活。戦闘名は "アハマド・アル・ヤバニ"（日本人アハマド）、パレスチナ人・レバノン人からは英雄視。ヒズボラ拠点であるベイルート南郊で死亡というタイミングは、Trump イラン攻撃「決断寸前」発言・フーシ派紅海攻撃実行と同日で、"1970 年代型テロと現代の中東戦争が交差した象徴的な日" として日本国内でも大きく報道。イスラエルの空港乱射犠牲者家族は "狂信者"・"人生台無しに" と時事通信取材に応答。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/24/sam-altmans-biometric-startup-world-raises-52-5-million-via-crypto-sale/" target="_blank" rel="noopener">米業界団体、"中国 AI 対応で広範な open-weight 規制"に反対 ─ TechCrunch: 前日 Kratsios OSTP による Moonshot Kimi K3 蒸留公式非難後、米 AI 業界は "オープンウェイト・モデル全般への広範な規制" に強く反発、"中国モデルへの狭い制裁は良いが、米国のオープンソース AI 全体を規制すれば結果的に米競争力を毀損" と主張、GitHub / Hugging Face / a16z Public Policy 系が反対声明、"AI Kill Switch Act" 議論と併せて米国内で規制論議の細分化が本格化</a></h3>
+  <p class="src">参照元: TechCrunch</p>
+  <p class="summary">TechCrunch が 7月24日、前日既報の Kratsios OSTP 長官による Moonshot Kimi K3 の "産業規模蒸留" 公式非難と Bessent 財務長官の中国 AI 企業 Entity List 制裁威嚇に対し、米 AI 業界がオープンウェイト（open-weight）モデル全般への広範な規制に反対していると報道。業界の主張は "中国モデルへの狭い制裁は理解できるが、米国のオープンソース AI 全体を規制すれば結果的に米国自身の競争力を毀損する"。GitHub、Hugging Face、a16z Public Policy 系プレイヤーが反対声明、Anthropic Public First Action への追加 $2,000万拠出とは対極的な立場から。前日既報の "AI Kill Switch Act" 提出・OpenAI Hugging Face 事案・中国 AI 4強台頭とも地続きで、米国内で "AI 規制論議" が①中国モデル狭義制裁 ②オープンウェイト規制 ③危険モデル停止権限（DHS）④エージェントレベルの独立安全テスト の 4軸に細分化。本日 Opus 5 launch した Anthropic の "強い aligned model" と対比する構造も浮上、規制議論が中間選挙前政治焦点として実装フェーズに。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.bloomberg.co.jp/" target="_blank" rel="noopener">オランダ史上最年少首相 38歳 就任 ─ 少数与党政権でかじ取り難しく、Bloomberg 報道、EU 域内で 若手リーダー交代の潮流継続、次期 EU 議会選挙戦略への影響注目、Trump 米大統領 EU 10% 特例関税との交渉窓口としての立場も焦点</a></h3>
+  <p class="src">参照元: Bloomberg Japan</p>
+  <p class="summary">Bloomberg Japan が 7月23-24日、オランダ史上最年少となる 38歳の新首相が就任と報道。少数与党政権としてスタート、EU 域内で若手リーダー交代（フランス Attal・イタリア Meloni・ドイツ Merz 政権交代）の潮流の一環として位置付け。Trump 米政権が同日 EU に 10% 特例関税を発動したタイミングでの就任で、"米欧交渉窓口 + オランダ内政運営" の二重課題に直面。詳細は Bloomberg 続報待ち、前日既報の欧州委員会 Google €890M DMA 罰金・EU 側の Big Tech 規制実行と併せて、EU-米関係が本日の国際政治焦点。</p>
+</article>
+
+</section>
+
+<footer>
+  <p>📡 <strong>収集元</strong>: Bloomberg Japan <span class="fail">(直接アクセスは 403、Anthropic テンダー・Netherlands 38歳最年少首相・"AI 脅威論 Claude 新機能でサイバーセキュリティ株にも" 等はキャッシュ経由で参照)</span> / NewsPicks <span class="fail">(直接アクセスは 403、フィード自体が 7/14 分キャッシュのため直接収集は失敗、既出トピックは他媒体で補完)</span> / 日本経済新聞 (Trump 新関税 日本 12.5%・円164円中東緊迫・6月 CPI +1.6%・OpenAI 暴走 中国製 GLM-5.2 が救援・中国 AI 4強 30 兆円超・Google/SBG 電力会社化・マンションインフレ・骨太ショック・DeepSeek 創業者「差は計算資源」を中核採用) / Techmeme (ChatGPT Health 全米ローンチ・Apple × Ford Apple Maps・Xbox 広告付きクラウドゲーミング・iOS 27 Restricted Mode を top news から採用) / TechCrunch (Anthropic Opus 5 launch・Anduril $100B・Cognition/Poke 買収・World $52.5M・Rivian tariff 訴訟・Volkswagen inside trading・Corgi $4B・Midjourney/Co-Star・AegisAI $36M・as US weighs response to Chinese AI open-weight 議論を採用) / Slashdot (iOS 27 iPhone Restricted Mode・Linux 432 CVEs / LLM bug reports・Apple Klarna パートナーシップを Techmeme と併用で採用)</p>
+  <p>※ 前日（2026-07-23）に取り上げた記事（OpenAI Hugging Face ハック原本/AI Kill Switch Act 提出・Kratsios Moonshot 蒸留公式非難・AMD × Anthropic $50億 MI450 2GW・Alphabet Q2 CapEx 上方修正・Etched $10.3億評価・Samsung Galaxy Z Fold8 Ultra・EC Google €890M DMA・Tesla Q2 営業-57%・三菱電機×ソニー AI 画像センサー・オラクル州 1 兆円担保・Cathedral $1.6億・Imagi $450万・Ropedia $2,200万・Elio $2,100万・telli €1,310万・Trump サウジ原子力・Drapatyi 抜てき・戦後最長景気・Trump イラン核施設攻撃警告・フーシ紅海封鎖・Trump 新関税決定・SpaceX IPO モルガンS）と同一 URL・実質同一トピックは除外。OpenAI Hugging Face 事案は本日 "中国 GLM-5.2 が防御を担当" 続報として新事実採用、円 163円→164円接近は "Brent $100 超え + Trump イラン大規模攻撃決断寸前 + 米長期金利 4.71%" の三重奏として続報採用、Trump 新関税は前日 "決定" から本日 "12.5% 発動" として新展開採用、Trump イラン警告は本日 "大規模攻撃決断寸前 + ルビオ国務長官イラン覚書無効" 発言として深化採用、Kratsios 蒸留非難は "米業界のオープンウェイト規制反対" として反対論の続報採用。</p>
+  <p>Anthropic Opus 5 launch（$5/$25 半額・Fast mode・Automatic Fallbacks 同時ローンチ）・OpenAI ChatGPT Health 全米ローンチ・Apple × Ford Apple Maps 車載提携（$30K EV UEV）・Cognition Poke 買収 low nine figures・Anduril $100B 交渉（3倍増）・World Foundation $52.5M・Rivian 政府提訴・Trump 新関税 日本 12.5% 発動・Nasdaq -2.15% $490B 消失・円 164円寸前 + Brent $100・6月 CPI +1.6%・フィールズ賞 王虹（女性 3人目・中国出身）・日本赤軍 岡本公三死亡・OpenAI 暴走 GLM-5.2 が防御担当・中国 AI 4強 30兆円・Google SBG 電力会社化・マンションインフレ・iOS 27 Restricted Mode・Midjourney Co-Star・AegisAI $36M・Corgi $4B・オランダ 38歳最年少首相 ── 本日 24 日（金）の新規展開として採用。"本日最大" は① Anthropic Opus 5 launch（"cheap × safer × aligned" 差別化戦略の集中着地、AMD 出資と AI Kill Switch Act 議論の実装回答）と ② Trump 新関税 日本 12.5% 発動（IEEPA 違憲代替関税から通商法 301 条置換で日米通商 1 年ぶり再交渉局面）を並列で選定。</p>
+</footer>
+
+</div>
+</body>
+</html>
