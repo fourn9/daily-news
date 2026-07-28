@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-07-28(火)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年7月28日(火)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/28/apple-launches-upgrade-device-leasing-program-in-partnership-with-klarna/" target="_blank" rel="noopener">Apple、"Apple Upgrade" 米国でローンチ ─ Klarna と提携した端末リースサービス、iPhone 17e 月 $17.99 から / MacBook Air 月 $27.99 / Apple Watch 月 $8.99、iPhone Upgrade Program (2015年〜) を後継、リース終了時に返却 or 買取選択、12/24/36ヶ月契約・0% 金利、ハードウェア価格上昇局面での "as a service" 転換、iOS 27 の Restricted Mode コード発見 (前日既報) と連動、Android サイドも "leasing 化" を注視する構造転換シグナル</a></h3>
+  <p class="src">参照元: TechCrunch (Aisha Malik) / 9to5Mac (Ryan Christoffel) / The Verge (Jess Weatherbed) / Wall Street Journal (Joseph De Avila) / CNBC / New York Times / Techmeme</p>
+  <p class="summary">Apple が 7月28日、米国で新たな端末リースプログラム "Apple Upgrade" を Klarna との提携で正式ローンチ、11年続いた iPhone Upgrade Program (Citizens One 提携) を刷新。iPhone・iPad・Mac・Apple Watch が対象で、iPhone 17e が月 $17.99 から、MacBook Air が月 $27.99、Apple Watch SE が月 $8.99、Ben Bajarin の試算では iPhone 17 Pro + MacBook Air + Apple Watch のセットが月 $61 で組める。契約期間は 12/24/36ヶ月から選択、0% 金利、終了時に (a) 返却して次世代機に移行、(b) 買い取り、(c) 継続利用の 3択が可能。所有ではなくアクセス権を売る Model として "iPhone as a Service" 転換を象徴、Cult of Mac は「あなたは何も所有せず、幸せになる」と評、企業経費計上を軸に受け入れ拡大の見方も。前日 Slashdot が既報の iOS 27 beta 内 "Restricted Mode / Partner Finance Lock" コードは今回プログラムのバックエンド、支払遅延時に一部アプリ以外をロックする仕組み。値上げ環境下で "hardware 販売から subscription 収益" へビジネスモデルを転換した象徴的動き、Android Authority は "Android 陣営も注視すべき動き" と警戒。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/28/data-centers-may-face-temporary-power-cuts-to-prevent-blackouts-on-largest-us-grid/" target="_blank" rel="noopener">米最大送電網 PJM、AI データセンターに "強制停電" 権限 ─ 27年6月から 50MW 以上の大規模利用者を対象に、供給不足時 30分〜数日前通知で電力遮断、需給ひっ迫解消で AI 建設ラッシュに冷や水、2035年までにデータセンターの電力消費は 4倍化予測、直近容量オークション "供給不足" が背景、ディーゼルバックアップ発電機 (年 50時間まで許容) 依存拡大の懸念、Virginia の Vantage Data Centers はディーゼル発電機の健康被害試算を否定する政治工作で炎上</a></h3>
+  <p class="src">参照元: TechCrunch (Tim De Chant) / Techmeme</p>
+  <p class="summary">米最大の電力系統運用機関 PJM Interconnection (Virginia〜Illinois の 6,700万人カバー) が、2027年6月から 50MW 以上の大規模電力利用者 (大半が AI データセンター) を対象に、需給ひっ迫時の強制停電権限を持つと 7月28日発表。従来の Demand Response プログラムの延長で、30分〜数日前の事前通知で電力遮断、遮断された利用者には対価が支払われる。直近の容量オークションで新規発電キャパシティが目標を下回り、2035年までにデータセンターの電力消費は 4倍化予測される中、grid の物理的限界が AI 建設ラッシュに冷水を浴びせる形。多くの新設データセンターはオンサイト発電源やディーゼルバックアップ発電機に依存する見込み、連邦規制は Demand Response 目的で年 50時間まで、緊急・保守で年 100時間まで使用を許可。直近では Virginia 州環境規制当局と協働して 96MW データセンターのディーゼル発電機による健康被害試算 (年数千万ドル相当) を否定する政治工作を行っていたと Vantage Data Centers が炎上、地元住民との対立が拡大。PJM 管内の卸電力価格はこの 1年で約 2倍化し、独立監視機関はデータセンターの増加を主因と指摘、電力系統がついに AI 拡大の物理制約となる転換点として注目される。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/28/waymo-robotaxi-operators-face-fresh-scrutiny-over-emergency-response-failures/" target="_blank" rel="noopener">Waymo・ロボタクシー運行者に "緊急対応法案" ─ Kevin Mullin 下院議員 (D-Calif.) 提案、"AV Emergency Response Coordination Act"、救急車・消防車の妨害・現場侵入・信号灯無視事案受け、NHTSA が全国最低安全基準策定、24時間ホットライン設置、市当局に "geofence" (エリア規制) 権限付与、SF 市長・消防長・Auto Safety 団体が支持記者会見、Waymo「連邦統一枠組みを長年支持」とコメント、消防署・救急施設前の乗降で緊急アクセスも妨害の指摘</a></h3>
+  <p class="src">参照元: TechCrunch (Kirsten Korosec) / Techmeme</p>
+  <p class="summary">米下院議員 Kevin Mullin (D-Calif.) が 7月28日、"AV Emergency Response Coordination Act" 法案を今週議会に提出予定と San Francisco の記者会見で発表、SF 市長 Daniel Lurie・SF 消防長 Dean Crispen・Advocates for Highway and Auto Safety 会長 Cathy Chase が同席。TechCrunch が今年初めに実施した調査で、Waymo 車両が救急車や消防車を妨害・現場に侵入・triangle・flare 等の安全信号を認識できない事案が多発していたことが発覚、Waymo は動けなくなった車両を初動対応者に手動運転してもらう事例も出ていた。Crispen 消防長は「消防署・救急施設の正面で乗降する robotaxi が緊急アクセスを妨害するパターンが継続」と指摘、Mullin は「不快で受け入れがたい数の事案」と非難。法案は (1) AV 会社に緊急プロトコルの明示、(2) 24時間ホットラインで公的当局に直接連絡権、(3) NHTSA による全国最低緊急対応基準策定、(4) 市・公共安全当局による "geofencing" (緊急時・安全懸念時にエリア規制可能) 権限を規定。Geofencing 規定は AV 事業者にとって基準策定と同等以上の影響、公的当局に "リアルタイムの営業停止レバー" を渡す形。Waymo は「AV の連邦統一枠組みを長年支持しており、初動対応者との標準化された関わり方の取り組みも支持」と回答。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/28/the-robot-nasa-hired-to-lift-a-orbital-telescope-is-tumbling-out-of-control/" target="_blank" rel="noopener">NASA 契約 Katalyst Space の "LINK" 衛星、制御不能で回転 ─ Neil Gehrels Swift Observatory の軌道引き上げミッション、7/3 Northrop Grumman Pegasus ロケット打上、週末に姿勢制御不良で回転開始、3つのリアクションホイールのうち 2つが故障、スラスタも異常、通信困難、代替スラスタで回転制御開始 "意図した効果を確認"、政府が民間観測衛星再配置ミッションを民間発注した初事例、Katalyst は 6月に $1,200万調達済・米軍の衛星補給・偵察用途にも投資</a></h3>
+  <p class="src">参照元: TechCrunch (Tim Fernholz)</p>
+  <p class="summary">Katalyst Space Technologies が製造した宇宙機 "LINK" が制御不能に陥り、姿勢制御不良で回転していることを NASA と同社が 7月28日発表。ミッションは NASA が民間企業に自社観測衛星の再配置業務を委託した初事例で、対象は 2004年打ち上げの Neil Gehrels Swift Observatory (突発的なガンマ線バースト観測用)。同観測機は大気ドラッグで軌道が徐々に降下しており延命のため高軌道への再配置が必要になっていた。LINK は 7月3日に Northrop Grumman の Pegasus ロケットで打ち上げられ、コミッショニング作業中の週末に姿勢制御に問題が発生、地上との通信も困難に。3つあるリアクションホイールのうち 2つが故障、スラスタシステムの 1つにも問題があると発表。管制官は代替スラスタでスピンを減速させる作業に着手し「意図した効果を確認している」とのコメント。Katalyst のチーフエンジニア Kieran Wilson は打上前に「Swift の緊急性から極めて短期間で製造せざるを得なかった、より長い開発期間と資金がある宇宙機ですら平凡な理由で失敗する事例は多い」とコメントしていた。同社は 6月に Fortitude Ventures・Geodesic Capital 主導で $1,200万調達、米軍の衛星補給・偵察用途にも投資を受けている。政府による民間宇宙機発注の "delegation of critical missions" モデルの試金石として業界が注目する事案に。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.anthropic.com/news/position-open-weights-models" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>Anthropic Dario Amodei、"オープンウェイトモデル禁止は求めていない" と反論 ─ 中国 Kimi K3・Nvidia + 37社 OSAIA を巡り「Anthropic がオープンウェイト規制を訴えている」との業界内噂に応答、"開かれた重みは公共財" と明言、3本柱を主張 (1) 中国への強力チップ・チップ製造装置の輸出禁止と密輸取締、(2) 産業規模の distillation (蒸留) 取締、(3) 十分な能力のあるモデル (open・closed 問わず) の義務的安全テスト、CCP の "生物兵器化" と "権威主義国家に対する軍事的優越" 懸念を最上位に</a></h3>
+  <p class="src">参照元: Anthropic Blog (Dario Amodei) / TechCrunch (Julie Bort) / Business Insider (Katherine Li)</p>
+  <p class="summary">前日既報の Moonshot Kimi K3 オープンウェイト公開と Nvidia 主導 "Open Secure AI Alliance" (OSAIA・37社) の続きとして、Anthropic CEO Dario Amodei が 7月27日夕方 (28日 UTC 早朝) にブログ記事 "Our position on open-weights models" を投稿、「Anthropic がオープンウェイトモデルの禁止を advocate している」との業界内の噂に真正面から反論。「危険な能力を持たないオープンウェイトモデルは公共財、compute を除いてコストがかからず、企業・開発者・研究者に価値をもたらす」と明言。真の懸念は 2点、(1) 権威主義国家 (最も能力があるのは CCP、他にも同種存在) が米国を超える強力モデルを構築し永続的軍事優越を確立、または自国民抑圧に使う、(2) 開かれたモデルは Guardrail 適用が困難で使用状況モニタリングも不可能、生物学分野で "攻撃者優位" (病原体兵器化は数時間 vs 防御は数年掛かる)。処方箋として 3点、(1) 中国への強力チップ・チップ製造装置の輸出禁止と密輸取締、(2) 産業規模の distillation 取締 (distillation はチップ制限を部分的に迂回し中国モデルを米国 frontier から数ヶ月遅れまで押し上げる)、(3) open・closed 問わず十分な能力のあるモデルの義務的グローバル安全テスト (CCP も参加、"Adolescence of Technology" で示唆した限定的協力の実現)。7/25 Jensen Huang の X 初投稿による OSAIA 支持公開書簡 (Meta・Mistral・Hugging Face・Microsoft ら署名) への対立軸を明確化、"オープンウェイト vs 中国脅威" の業界分断が鮮明に。</p>
+</article>
+
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/28/ebay-reaches-56m-settlement-with-e-commerce-newsletter-writers-it-terrorized-in-2019/" target="_blank" rel="noopener">eBay、"生きたクモ・ブタ血面マスク" 嫌がらせ事案で $5,600万和解 ─ 2019年 EcommerceBytes ニュースレター夫妻への異常な組織的嫌がらせ、$4,615万を eBay 本社が支払・元 CEO Devin Wenig 個人が $200万、SNS で成りすまし・脅迫状・生きたクモ・ゴキブリ・ポルノ雑誌・ブタ血面マスク・葬儀花輪・"配偶者死別のサバイバル本" を送付、GPS 追跡装置装着計画・"サモアギャング派遣" 計画も、2022年に元幹部 7名が有罪答弁、"我々のカルチャーを代表するものではない" と eBay 声明、企業ジャーナリスト保護と反企業ハラスメントの記念碑的判決</a></h3>
+  <p class="src">参照元: TechCrunch (Lucas Ropek)</p>
+  <p class="summary">eBay と元幹部数名が 2019年に自社を批判した EcommerceBytes ニュースレター発行者 Ina & David Steiner 夫妻に対して行った異常なターゲット嫌がらせキャンペーン (electronic commerce 業界史上最も奇妙な事件の 1つ) について、7月28日 (火) に総額 $5,600万の和解が成立した (2021年の民事訴訟の決着)。eBay 幹部は Steiner 夫妻のネガティブ報道を止めさせるため、SNS 上で複数の sock puppet アカウントで嫌がらせ、匿名脅迫状の送付、生きたクモとゴキブリ・ポルノ雑誌・ブタ血の面マスク・葬儀の花輪・"配偶者の死を乗り越える本" を郵送、実行に至らなかった計画には夫妻の車への GPS 追跡装置装着、"サモア人ギャング派遣" もあった。和解内訳は eBay 本社が $4,615万・元 CEO Devin Wenig が $200万・元幹部 Wendy Jones が $50万・元幹部 Steve Wymer が $5万で、追加分は各種非営利団体に。2022年には元 eBay セキュリティ責任者 James Baugh (5年近い懲役刑) を含む元従業員 7名が犯罪的有罪答弁済。eBay は「これは我々のカルチャーを代表するものではなく、恥ずべき、非難されるべき行為だった」と声明、Steiner 夫妻の弁護士は「本件は金銭的回復以上のもの、ジャーナリスト・出版人保護・企業不正行為抑止のためだった」と強調。企業からのジャーナリスト・独立クリエイター保護の記念碑的判決として反響を呼んでいる。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/28/saudi-prince-buys-5-stake-in-lucid-motors/" target="_blank" rel="noopener">サウジ王族 Alwaleed 王子、Lucid Motors の 5% を個人取得 ─ Kingdom Holding Company (PIF とは別)、7月23日取得・28日 SEC Schedule 13G 提出、1,951万株、Lucid 時価総額 $20億未満で取得、株価 +25% 急伸、既に PIF が 60% 保有・Uber も 4月に 11.5% 取得済、Lucid 現金不足で 7/14 に "破産 or 非公開化検討" 報道→否定→株反発の 2週間後、"サウジ王国が Lucid を潰したくない" シグナル強化、依然として年 $50億以上の追加資金が必要と分析</a></h3>
+  <p class="src">参照元: TechCrunch (Sean O'Kane) / Electrek (Fred Lambert) / Stock Titan / Techmeme</p>
+  <p class="summary">サウジ王族の HRH Prince Alwaleed bin Talal bin Abdulaziz Al Saud が Lucid Motors の Class A 普通株式 5% (1,951万3,000株) の受益所有を SEC に Schedule 13G で 7月28日開示 (取得日 7月23日)。X 投稿では "投資オフィスが Lucid 時価総額 $20億未満のタイミングで取得した" と説明、これは 7月14日に "Lucid が破産保護申請 or 非公開化を検討中" とする電気自動車ブログ報道 (Lucid は強く否定・株価反発済) が出た直後にあたる。13G は "受動的" 保有開示で、経営権や支配権への影響意図なしを認証、単独投票権・処分権を保持。今回の Alwaleed 個人は Kingdom Holding Company 経由で、既に Lucid の 60% を保有する Public Investment Fund (PIF) とは別ポケット、"同じ国からの二重の資金支援" の意味。PIF は 2018年以来約 $95億を Lucid に投入、4月には $5.5億の転換優先株を追加、直近も約 $8億のクレジットファシリティ供給。Uber も 4月に 11.5% (Gravity SUV での robotaxi $5億案件込) を保有中。Electrek は "サウジ王国は Lucid を潰したくないという明確なシグナル、これが Lucid の唯一の bull case" と評、ただし依然として年 $50億以上の追加資金が必要と分析、Air・Gravity は良質な EV だが販売台数が課題という構造は変わらず。株価は当日 +25% 急伸で $2 台後半に。</p>
+</article>
+
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/28/recursive-superintelligence-signs-400-compute-deal-with-amazon/" target="_blank" rel="noopener">Recursive Superintelligence、AWS と $4.1億 compute 契約 ─ 5月に $6.5億で stealth 脱出・valuation $46.5億、"再帰的自己改善 AI" 特化、Richard Socher (元 Salesforce Chief Scientist) 率いる 25名以下・製品ゼロ、既存 $6.5億の 63% を AWS 単独に投入、"数年内の最小規模契約" と Socher コメント、"研究に必要な人員より agent count が重要"、Anthropic の Google TPU 契約や OpenAI の $38B AWS 契約に匹敵する compute lock、Alphabet GV・Greycroft 主導・Nvidia + AMD Ventures 参加、初期成果として NanoChat・NanoGPT・SOL-ExecBench で 2年分の human record を超越</a></h3>
+  <p class="src">参照元: TechCrunch (Russell Brandom) / AWS Press Release / Unite.AI (Theo Nash) / Startup Fortune / Yahoo Finance</p>
+  <p class="summary">Richard Socher (元 Salesforce Chief Scientist・現 you.com CEO 兼任) 率いる AI スタートアップ Recursive Superintelligence が 7月28日、Amazon Web Services (AWS) と多年・$4.1億の compute 契約を発表 (AWS SF プレスリリース同時発表)。5月に stealth 脱出時 $6.5億を GV (Google Ventures)・Greycroft 主導・AMD Ventures・NVIDIA 参加で調達・valuation $46.5億、SF+ロンドン 25名超で製品ゼロの純粋研究ラボ。$4.1億は既存調達の 63% にあたり "全額を AWS 単独契約に投じる" 異例の compute-heavy 構造。Socher は「今後数年間で我々が結ぶ最小規模の契約になるだろう」「我々にとっては headcount より agent count が重要」と TechCrunch にコメント、10月頃に人が触れる初期プロダクトを発表予定 (数ヶ月単位で登場)。同社の research thesis は "再帰的自己改善 (RSI) を可能にする AI 研究ループを自動化"、初期成果として NanoChat・NanoGPT Speedrun・SOL-ExecBench の 3ベンチマークで 2年分の human leaderboard 記録を超越、Live の human-AI 協働も上回った。AWS Startups 統括 VP Jason Bennett は「自己改善 AI は compute demand が複利で爆発する、AWS の弾力性で並列 loop を回して逐次研究を並列研究に変える」、両社は "自動化 AI 研究向け専用インフラ" を共同開発予定・投資的な要素はなし (Anthropic の Google TPU 契約や OpenAI の $38B AWS 契約と対照的な純粋顧客契約)。Anthropic-AMD $5B・OpenAI-Nvidia $250B backstop 交渉に続く "frontier lab の compute lock" 事例で、"人員より compute" のパラダイム転換を象徴。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/" target="_blank" rel="noopener">Fish Audio、$5,200万 seed 調達 ─ 音声 AI (TTS・ボイスクローン)、寝室プロジェクトから 1年で ARR $2,100万・800万ユーザー到達、Coreline Ventures + Capital Today 主導、共同創業者 Shijia Liao は元 Nvidia 動画研究者・アニメ VTuber 好き、Fish Speech は GitHub 31,000 スター、S2.1 Pro は blind test で 67% 選好、5秒音声から 15秒でクローン・83言語対応、15,000超の自然言語制御パラメータ、HeyGen・LiveKit・Retell・Sanas 等の企業採用、ElevenLabs ($5億調達・$110億 valuation) の対抗馬に</a></h3>
+  <p class="src">参照元: TechCrunch (Ivan Mehta) / PRNewswire / SiliconANGLE (Mike Wheatley) / Unite.AI (Evan Mercer) / Dealroom</p>
+  <p class="summary">音声 AI スタートアップ Fish Audio (Palo Alto・法人名 Hanabi AI Inc.) が 7月28日、$5,200万の seed 調達を発表、Coreline Ventures と Capital Today 共同主導、359 Capital・Play Time・HF0・645 Ventures・Parable・Carya Venture Partners・Alphalist Partners らが参加。共同創業者兼 Chief Scientist の Shijia Liao (元 Nvidia 動画研究者・生涯 VTuber+アニメファン) が単一 GPU で音声 AI を訓練しオープンソース公開したのが起点、Fish Speech は GitHub 31,000超スター、1年で 800万ユーザー・ARR $2,100万に達成。3つの音声生成モデルはオープンウェイト公開、S2 (4B パラメータ・10M時間の音声データ・83言語・15,000超の自然言語制御) は Hugging Face で公開済、最新の S2.1 Pro は API のみで 8/31 まで無料開放、blind listening test で 67% が競合を超えて S2.1 Pro を選好。5秒音声から 15秒でクローン、初回音声出力までのレイテンシは単一リクエストで約 70ミリ秒。エンタープライズ版は HIPAA 対応・オンプレミス展開・zero-data retention 対応で、HeyGen・LiveKit・Retell・Sanas・OpenArt 等が導入。CEO Rissa Cao「seed ラベルで $5,200万は voice が product feature から infrastructure line item になったことを示す規模」。今回資金は voice-native LLM や speech-to-speech モデル開発、エンタープライズ販売強化に投入。ElevenLabs ($5億・$110億 valuation 直近) や Cartesia・Speechify・Krisp が競合、"open weights + free frontier" 戦略で開発者を囲い込みつつ有償契約に転換する model が試される 1年になる。</p>
+</article>
+
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOFL282W10Y6A720C2000000/" target="_blank" rel="noopener"><span class="lede">本日最大</span>日経平均、2,566円安の 6万2,364円で 2ヶ月ぶり安値 ─ 一時 3,000円超安・下げ幅は過去 3番目、AI・半導体総崩れ、キオクシア HD ストップ安・アドバンテスト・東京エレクトロン売り、韓国株連鎖安、"中国国有企業が半導体製造装置 (露光装置) の国産化に着手" 報道で AI 需給悪化を意識、6/25 の史上最高値 7万2,366円から約 1万円下落、円は 163円台半ばの想定外上昇、"2024年夏の令和のブラックマンデー再来" 警戒が浮上、決算好業績後の株価下落と大型増資・新規上場ラッシュで需給悪化</a></h3>
+  <p class="src">参照元: 日本経済新聞 (7/28 16:22) / 時事通信 / 株探 / 共同通信 (dメニュー経由)</p>
+  <p class="summary">7月28日の東京株式市場で日経平均株価が急反落、下げ幅は一時 3,000円を超え終値は前日比 2,566円27銭安の 6万2,364円92銭と 5月21日以来約 2カ月ぶりの安値、下げ幅は歴代 3番目の大きさに。前日の米国市場で "中国国有企業が先端 AI に続き半導体製造装置 (露光装置) の国産化に着手" と報じられ半導体関連株が下落、韓国総合株価指数の急落も連鎖して東京市場も序盤から下げ幅を拡大した。キオクシア HD がストップ安を演じ 5万円割れ、アドバンテスト・東京エレクトロンなど AI・半導体関連が総崩れ、"半導体ブーム一巡" を象徴する動き。6月25日に付けた史上最高値 7万2,366円34銭から約 1ヶ月で 1万円下落。円相場は 163円台後半で "弱含みが続いてきた円相場の想定外の上昇" (日経) がきっかけとなり、市場では "2024年夏の令和のブラックマンデー再来" (植田総裁時代の 8月 5日 4,451円安を想起) の警戒が浮上。株探解説では "主要企業がいずれも好決算を発表した後の株価下落・新規上場・大型増資も相次ぎ需給が悪化・設備投資も空前で株式と設備の両方に資金が集中し過ぎた・75日線割れで中期トレンドも終わった感"。前日 (7/27) の "NY 594ドル高で史上最高値" (前日既報) からわずか 1日で日米ムード完全反転、Big Tech Q2 決算本格化を目前に "AI 過剰投資" 警戒がグローバル化する象徴的な 1日となった。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGR261PA0W6A720C2000000/" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>黒海で攻撃激化、ロシア産穀物輸出 3割減・小麦 2年ぶり高値 ─ ウクライナは 7月に黒海航行のロシア原油タンカー・貨物船に無人機攻撃作戦開始、1カ月で約 200船舶被害、6-22日にアゾフ海・黒海で 196隻攻撃 (ウ側発表)、ロシアの 7月小麦輸出は最大 20% 減見通し、シカゴ商品取引所小麦先物は 2年ぶり高値急騰、露は世界最大の小麦輸出国 (世界の 15-20%)、ウクライナ農相 23日にオデーサ港含む黒海沿岸港湾の入港停止、中東緊張の肥料供給混乱と欧州熱波の農作物被害も重なりインフレ圧力浮上</a></h3>
+  <p class="src">参照元: 日本経済新聞 (金子夏樹) / 読売新聞 (Yahoo!経由) / ロイター / 中央日報日本語版</p>
+  <p class="summary">日本経済新聞 (7月28日 5:00 AM) が黒海の穀物輸送情勢を包括レポート、前日既報の "ホルムズ海峡 20% 手数料"・"米イラン攻撃小康" と並ぶ "海洋緊張のもう一つの主戦場"。ウクライナは 7月、黒海を航行するロシアの原油タンカーや貨物船を無人機 (ドローン) で攻撃する作戦を開始、無人機部隊発表で 1カ月で約 200の船舶が被害、6-22日にアゾフ海・黒海で穀物運搬船を含む 196隻に攻撃と主張。ロシア軍も 7月10日頃から黒海・オデーサ州への攻撃を強化、ロイター通信は 7月20日までに黒海で穀物運搬船を含む民間船約 30隻がロシア軍に攻撃されたと報じた。両国は穀物収穫期を迎えており、露有力紙コメルサント予測ではロシアの 7月小麦輸出は最大 20% 減少、ロシアは世界最大の小麦輸出国 (世界総輸出量の 15-20%)。ウクライナ農業相は 23日、船舶各社が農産物輸出のためにオデーサ港を含む黒海沿岸の港へ入港することを停止したと表明。シカゴ商品取引所の小麦先物は 24日に 2年ぶり高値まで急騰、トウモロコシ等も上昇。ブルームバーグは "中東情勢緊張による肥料供給混乱・今年の欧州熱波による農作物被害も重なり、穀物価格上昇に拍車がかかる恐れ" と警戒、日経平均急落と並行してグローバルインフレ再燃・食料安保逼迫のリスク要因が浮上した週の入り口となっている。</p>
+</article>
+
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUA2819S0Y6A720C2000000/" target="_blank" rel="noopener"><span class="cont">前日からの続報</span>高市首相、消費減税「決断する」─ 麻生副総裁・鈴木幹事長と 30分会談、"食料品消費税 27年 4月から 2年間 1%" 案を軸に 30日にも党指示、来週にも閣議決定へ、超党派国民会議 27日実務者会議で "1% 案 + 給付案併記" の中間とりまとめを大筋了承・"意見の一致に至らず"、29日親会議に報告、片山財務相「経済を徹底的に活性化して投資をブースト、成長のボタンを押し続ける」と減税に意欲、党内は "反対するなら対案が必要" とベテラン議員、給付付き税額控除の前倒し論も残存</a></h3>
+  <p class="src">参照元: 日本経済新聞 (7/28 12:37) / 時事通信 / TBS NEWS DIG / Infoseek (時事)</p>
+  <p class="summary">前日既報の "高市首相 消費減税方針を週内表明" の続き。7月28日、高市早苗首相は自民党役員会で食料品の消費税減税を巡り「私も決断するときは決断をする」と表明、鈴木俊一幹事長が記者会見で明らかにした。首相は役員会後に自民党本部で麻生太郎副総裁・鈴木幹事長と約 30分会談、食料品の消費税を 2027年 4月から 2年間 1% に引き下げる方針を協議したとみられる。複数の政府・与党関係者によれば首相は 30日にも法改正手続きを進めるよう党内に指示、来週にも閣議決定する方向で調整。国民会議の実務者会議 (7/27) は "1% 案 + 野党の給付主張併記" の中間とりまとめを大筋了承・"意見の一致に至らず" と明記、7/29 の首相出席の親会議に報告される。片山さつき財務相は「今般の消費税減税云々ということだけではなくて、経済を徹底的に活性化して投資をブーストさせて、成長のボタンを押し続ける」と減税への強い意欲を示し、具体的プロセスは国民会議の小野寺議長 (自民党税調会長) に委ねる考え。自民党内には減税慎重論も残るが "反対するならば対案を出さなければいけないが、今のところ出てくる雰囲気はない" とベテラン議員、給付付き税額控除の前倒しを求める意見も併存。7月28日の日経平均 -2,566円急落と円 163円台後半への上昇と重なり、"財政信認の低下" と "減税決断" が同時進行する複雑な政治経済フェーズに突入した。</p>
+</article>
+
+</section>
+
+<footer>
+  <p>収集元: Bloomberg Japan / NewsPicks / 日本経済新聞 / Techmeme / TechCrunch / Slashdot</p>
+  <p>本日は 6媒体すべてで内容取得成功 (WebFetch は 403 で全滅のため Exa web-fetch/web-search 経路で回収、記事詳細は個別URLで裏取り)。Slashdot 掲載の "iOS 27 Restricted Mode" は前日 (2026-07-26) 既掲載のため除外、Apple Upgrade launch 本編 (7/28) は本日新規として採用。</p>
+  <p>前日 (2026-07-27) のサマリー掲載トピック (Nvidia→OpenAI $2,500億 backstop・Nvidia→SSI $50億・Kimi K3 オープンウェイト・Microsoft MAI-Cyber-1-Flash・AI Kill Switch Act・ソフトバンク $400億ブリッジ・ソフトバンク SP.LINKS 買収・Amazon 5,105機 D2D 衛星・CXMT 上場・Enigma $7,100万・NY 高値・帝国データバンク・高市消費減税表明・飛鳥藤原世界遺産) との重複は除外済み。重要な続報のみ「前日からの続報」タグを付与 (Anthropic Amodei 開かれた重み反論、日経平均急落 + 黒海穀物、高市消費減税「決断する」)。</p>
+</footer>
+
+</div>
+</body>
+</html>
