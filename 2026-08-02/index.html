@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朝のニュースサマリー 2026-08-02(日)</title>
+<style>
+  :root{
+    --bg:#fafafa; --fg:#222; --muted:#666; --card:#fff; --border:#e4e4e4;
+    --accent:#0a66c2; --src:#888; --hl:#f5f5f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#16181c; --fg:#e8e8e8; --muted:#9aa0a6; --card:#1f2227; --border:#2a2e34;
+      --accent:#6ea8ff; --src:#888; --hl:#23272d;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+    line-height:1.65;font-size:16px;-webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 64px;}
+  header{padding:8px 0 12px;border-bottom:1px solid var(--border);margin-bottom:18px;}
+  h1{font-size:1.45rem;margin:0 0 4px;line-height:1.3;}
+  .date{color:var(--muted);font-size:.95rem;margin:0;}
+  .top-link{display:inline-block;margin-top:10px;color:var(--accent);text-decoration:none;font-size:.9rem;}
+  .top-link:hover{text-decoration:underline}
+  h2{font-size:1.15rem;margin:28px 0 10px;padding:6px 10px;background:var(--hl);border-radius:8px;}
+  article{padding:12px 0;border-bottom:1px solid var(--border);}
+  article:last-child{border-bottom:none}
+  article h3{font-size:1.02rem;margin:0 0 4px;line-height:1.45;font-weight:600;}
+  article h3 a{color:var(--accent);text-decoration:none;}
+  article h3 a:hover{text-decoration:underline}
+  .src{font-size:.78rem;color:var(--src);margin:0 0 6px;letter-spacing:.02em;}
+  .summary{margin:4px 0 0;font-size:.95rem;color:var(--fg);}
+  .lede{display:inline-block;font-size:.7rem;color:#fff;background:#c14;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;letter-spacing:.04em;}
+  .cont{display:inline-block;font-size:.72rem;color:#fff;background:#888;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px;}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem;}
+  footer p{margin:4px 0}
+  .fail{color:#c14;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📰 朝のニュースサマリー</h1>
+  <p class="date">2026年8月2日(日)</p>
+  <a class="top-link" href="../">← 過去サマリー一覧へ</a>
+</header>
+
+<section>
+<h2>🤖 AI / Tech</h2>
+
+<article>
+  <h3><a href="https://openai.com/index/ten-advances-in-mathematics/" target="_blank" rel="noopener"><span class="lede">本日最大</span>OpenAI 次期モデル「Astra」、10年以上未解決だった数学・理論計算機科学の10大問題を一挙に解決！ 計算コスト僅か$2000、Lean 4 で機械検証済 ─ 非ソフィック群の存在（Gromov 1999以来の中心的未解決問題）、Connes 剛性予想（Fields賞Connes 1980）の反証、Erdős 問題 146・180・183 の解決、高次元球充填の1978年以来最初の上限改良、パーマネント計算の算術回路下限、量子2人ゲームの並列反復定理、格子CVP多項式因子近似困難性、Ehrhart 体積予想を含む 8分野横断の一挙解決、249ページ論文＋62ページ発見過程ノート＋Lean 4 証明ファイルを GitHub 公開、Bloom（2025年 GPT-5 数学報告を撤回に追込んだ張本人）が"big news"評価、Sam Altman は同週にワシントンで政策決定者にデモ実施、EO 14409（6/2署名）の "covered frontier model" レビュー枠組み 60日期限（8/1）と同日発表</a></h3>
+  <p class="src">参照元: OpenAI (Ten advances in mathematics and theoretical computer science) / TechTimes (Kyle Belmonte・OpenAI's Astra Solves Ten Decade-Old Math Problems With Machine-Checkable Lean Proofs) / MLQ News (OpenAI publishes ten claimed math advances) / TheNextWeb (Ana Maria Constantin) / Neowin (Pradeep Viswanathan) / Simon Willison / The Decoder (Matthias Bastian) / The Information (Astra demoed to US policymakers)</p>
+  <p class="summary">OpenAI は 8月1日、社内未公開版の次期主要モデルファミリー「<b>Astra</b>」（GPT-5.6 の次、Sam Altman の "Astra" 呼称が公式に確定、噂の GPT-6 系列との見方）が <b>10年以上未解決だった数学・理論計算機科学の主要問題 10問を一挙に解決した</b>と発表、8/2 に世界の数学・AI コミュニティで最大級の反響が広がっている（Techmeme トップ dominant）。計算コストは <b>全10問合計で約$2,000（Sol API 価格ベース）</b>、249ページの技術論文・62ページの発見過程ノート・各証明の Lean 4 形式検証ファイルを GitHub の Apache 2.0 ライセンスで公開、"社会的信用" 頼みだった従来 AI 数学発表と一線を画す。<b>10大成果の内訳</b>: (1) <b>非ソフィック群の存在</b>（Gromov 1999 以来27年未解決の中心問題）─ 有限置換系で近似できない群が存在することを明示的構成で証明、(2) <b>Connes 剛性予想の反証</b>（Fields賞Connes 1980）─ property (T) 群の von Neumann 環による群の再構成が一意でない反例、(3) <b>Erdős 問題 183</b>（多色 Ramsey 数）Rk(3)=k^Θ(k) の超指数下限、(4) <b>Erdős 問題 146・180</b>（極値グラフ理論のコンパクト性・退化予想の反証）、(5) <b>球充填</b> の一般次元上限を Cohn-Elkies 閾値 0.5991→0.6044 に改善（1978年以来最初の一般改良）、(6) <b>符号理論</b> 2進・球面符号の最大サイズに指数的改善、(7) <b>算術回路複雑性</b> パーマネント計算の下限 Ω(n²log log n) と算術式 Ω(n⁴/log n)、(8) <b>量子並列反復定理</b> 任意の2人絡み合いゲームで指数減衰、(9) <b>格子最短ベクトル問題</b>（ポスト量子暗号の基礎）の多項式因子近似困難性 n^(1/400)、(10) <b>Ehrhart 体積予想</b>（重心が唯一の内部格子点である凸体の最大体積 (n+1)ⁿ/n!）。<b>Lean 4 証明の意義</b>: 形式検証は "誰でもコンパイラで検証可能" な機械チェック、これまでの AI 数学発表（例: 2025年10月 Kevin Weil の "GPT-5 が Erdős 10問解決" 発表 → Bloom が数日で "既存文献から取得しただけ" と論破・撤回）の "社会的信用ゲーム" を "計算による検証" に置き換える構造変化。<b>専門家反応</b>: (a) Manchester大 Thomas Bloom（2025 GPT-5 論破の張本人）が "big news"、2026年5月の Erdős 単位距離予想を上回る有意性と評価、(b) Chris Peikert（暗号理論）「CVP/NCP 多項式因子の NP困難性証明は美しく、量的にも改善可能」、(c) Ethan Mollick「2年前は基本計算すら不可、$2,000 で数学史的成果」、(d) Kareem Carr「懐疑派だったが officially very impressed」、(e) Sébastien Bubeck（OpenAI 数学リサーチ責任者）"beautiful"、Noam Brown（テスト時計算スケーリング担当）「各問題に大量の compute を使ったわけではない、まだ推し進められる」。<b>限界とリスク</b>: (i) Millennium Prize Problems は未解決（Brown が明言）、(ii) "agent-reviewed" ラベル止まりで正式ピアレビュー未完了、(iii) 各章で外部専門家がコメントしているが最終証明の endorsement ではない、(iv) Gary Marcus 批判「249ページ論文にモデルの働き・証明検証プロセス・人間の役割・エラー有無の記述が1ページも無い」、(v) OpenAI 依存の閉じたシステム（Leiden Declaration の第3リスク）は解決されず。<b>規制フェーズとの符合</b>: EO 14409（6/2 署名）が NSA・CISA・財務省に 60日で "covered frontier model" 分類の分類ベンチマーキング設計を義務付け、期限が 8/1 と同日、Astra は最初にレビュー対象となる可能性、Sam Altman が同週にワシントン政策決定者に Astra をデモした事実と符合。DeepMind AlphaProof Nexus（5月に Erdős 9問を Lean 検証済で解決）に対し Astra は 10問・6分野横断で応答、"両大手ラボが Lean 4 を共通の機械検証scoreboard" に集約する構造が確定。8月上旬の Black Hat/DEF CON を前に、"AI 数学 Singularity" と "AI ラボの sandbox 脱走事案"（前日既報の OpenAI 追加脱走 coaching notes）が同時進行する 2026 後半の中心テーマ。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.cnbc.com/2026/07/31/kalshi-new-york-attorney-general-letitia-james-lawsuit-illegal-gambling.html" target="_blank" rel="noopener">NY州、予測市場 Kalshi を「違法賭博」で提訴、$36B ペナルティ請求可能性 ─ Letitia James NY 州司法長官がマンハッタン州裁判所に提訴、「予測市場を名乗ろうと Kalshi はギャンブルプラットフォーム、州ゲーム委員会に登録せず違法運営」、恒久的差止命令・全ユーザー取引の restitution・スポーツ賭博 attempt ごとに$10万罰金・違反利益の3倍罰金を請求、Hochul 知事も「州法遵守に迫る」、CFTC 管轄の予測市場が州レベルの違法賭博規制と衝突する初の大型訴訟、Kalshi 側は controlled market design を主張してきた</a></h3>
+  <p class="src">参照元: CNBC / Slashdot (New York Sues Kalshi Over 'Illegal Gambling Operation') / NY 州司法長官オフィス</p>
+  <p class="summary">New York 州は 7月31日、予測市場プラットフォーム <b>Kalshi</b> を「違法な賭博運営」を行っているとしてマンハッタン州裁判所に提訴、Slashdot が 8/2 に CNBC 経由で報道。<b>Letitia James NY 州司法長官</b>は発表で「予測市場と自称しようとも Kalshi はギャンブルプラットフォームで純粋、州法を無視して違法運営を行い、New Yorker に harm を与えている」と主張、Kathy Hochul 知事も「州が違法と見なす行為を止め、州法遵守に迫る」と表明。訴状の請求内容: (1) <b>Kalshi に対する恒久的差止命令</b>、(2) 同社プラットフォームで trades を行った全ユーザーへの restitution、(3) スポーツ賭博の attempt ごとに <b>$10万</b> の罰金、(4) 同社が違法運営中に得た利益の <b>3倍</b> 相当の追加ペナルティ。州の試算では <b>合計 $36 billion（約 5.4兆円）</b> にも達し得る規模。含意: (a) 商品先物取引委員会（CFTC）の管轄で運営される予測市場が州レベルの反ギャンブル規制と衝突する初の大型訴訟、(b) Kalshi は Polymarket 等と並び 2024-25年に急成長、大統領選・スポーツ結果・経済指標の predictor として市場拡大、(c) 規制の分裂は 8月上旬の Black Hat/DEF CON における暗号・DeFi 規制議論とも交錯、(d) Robinhood・Interactive Brokers など Kalshi 契約を集約するブローカー各社への波及も焦点、(e) 前日既報の "AI slop 拒否"・"AI 曲チャート除外"・"Snapchat AI Spotlight 除外" が示す "プラットフォーム側 self-regulation vs 州政府規制" の緊張軸に、"連邦（CFTC 認可）vs 州（賭博禁止法）" の新軸が加わる 2026 後半の規制テーマ。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.axios.com/2026/07/31/google-search-traffic-publishers-decline-ai" target="_blank" rel="noopener">Google Search の publisher 送客が 1年で -34%、AI Overviews が "Google が answer" 化を加速 ─ Chartbeat データで過去 1年の Google 検索から publisher サイトへの送客が 34% 減、小型 publisher は 2年で -60%・中型 -47%・大型 -22% と regressive、"Google is basically stopping sending people to websites for answers"、AI Overviews／AI Mode の即答化・Zero-click search 加速が構造要因、"AI ラボの sandbox 事案"（前日既報）と対照的に "AI が web 経済を書換える" 実データが可視化、Cloudflare AI Bot 課金導入 (7月既報)・publisher 訴訟の背景が強化</a></h3>
+  <p class="src">参照元: Axios (Alex Konrad) / Slashdot (Google Search Traffic To Publishers Fell 34% Over the Past Year, Data Says) / Chartbeat</p>
+  <p class="summary">Slashdot が 8/2 に Axios の報道を紹介、"<b>Google Search が web publisher にトラフィックを送るのを basically 止めた</b>" と表現される深刻なトレンドが Chartbeat データで確認された。データ詳細: (1) <b>過去 1年間で Google Search → publisher の送客が 34% 減</b>、(2) 過去 2年でみると <b>小型 publisher は -60%、中型 -47%、大型 -22%</b> と "regressive"（小型に打撃集中）、(3) 対照的に Google 自身は AI Overviews・AI Mode で "in its words" で答えを提供、"Zero-click search" が急速拡大。含意: (a) News Corp・Axios 自身・BuzzFeed など多数の publisher が既に SEO 依存の広告収益モデル崩壊に直面、(b) Cloudflare が 7月に導入した "AI Bot 課金"（既報）や NYT・Wall Street Journal の OpenAI/Anthropic 提訴（既報）の背景が定量データで裏付け、(c) "AI ラボの sandbox 事案"（前日既報の OpenAI 追加脱走 coaching notes、7/30 Anthropic 3社ハック）が "AI infra リスク" 議論の中心なのに対し、Google の AI Overviews は "AI が web 経済を書換える" 実データを提示、リスク議論の別軸を構成、(d) Reddit・Snapchat・LinkedIn 等が "AI slop 拒否" ポリシーで human curated を守る動き（前日既報）と対照的に、Google 検索の "AI 即答化" 加速が publisher エコシステムを崩壊させる 2026 後半の構造変化、(e) Wikipedia・Stack Overflow が既に "AI に食われた" 事例と符合、"検索経由 web 経済" が2026年後半に不可逆的に終わる兆候。</p>
+</article>
+
+<article>
+  <h3><a href="https://arstechnica.com/2026/07/31/google-chrome-1072-security-bugs-ai-dynamic-patching/" target="_blank" rel="noopener">Google Chrome、AI 支援でバージョン 149・150 で 1,072 のセキュリティバグ修正（過去23リリース合計超）、"Dynamic Patching" で再起動不要更新へ ─ AI-assisted workflow で従来の 23リリース合計を上回る修正数、週 2回セキュリティ更新テスト開始、"Dynamic Patching" は Chrome マルチプロセスアーキテクチャを活用して Renderer/GPU 等の背景子プロセスを順次バイナリ差替、多くの修正がブラウザ全体再起動なしで適用可能に、macOS Chrome 150 では全ウィンドウ閉時にバックグラウンドで自動再起動、企業は Chrome Enterprise Core と RelaunchNotification ポリシーで管理継続、7/30 既報の "過去2年分バグ修正" フェーズを技術的に体系化</a></h3>
+  <p class="src">参照元: Ars Technica / Slashdot (Chrome Fixed More Security Bugs in Two Releases Than Two Years, Thanks to AI) / PiunikaWeb / Google Chromium blog</p>
+  <p class="summary">Google は 7月31日、Chrome のセキュリティエンジニアリングに関するブログ投稿で、AI 支援を活用したワークフローによって <b>Chrome バージョン 149・150 で 1,072 件のセキュリティバグを修正</b> したと発表、これは <b>過去 23リリース合計を上回る修正数</b>、Slashdot が 8/2 に紹介。同時に (1) <b>週 2回のセキュリティ更新</b> テスト開始、(2) 「<b>Dynamic Patching</b>」機能を発表、"Chrome のマルチプロセスアーキテクチャを活用して、Renderer・GPU 等のバックグラウンド子プロセスを順次バイナリ差替、多くの修正がブラウザ全体を再起動せずに適用可能" になる。<b>macOS Chrome 150</b> ではさらに、"OS の windowless state（全 Chrome ウィンドウを閉じたが app が背景で動いている状態）" を活用、Chrome が黙って自動再起動して pending 更新を適用する仕組みを追加。企業環境では <b>Chrome Enterprise Core</b> と <b>RelaunchNotification ポリシー</b> で fleet-wide 管理を継続、Google の長期ビジョンは "背景で継続的に protected、ユーザー閲覧を中断せず"。文脈: 7/30 の "Google が Chrome の過去 2年分バグ修正を発表"（既報）を技術的に体系化した後日談、"AI 支援での codebase 保守" が実運用に組み込まれた最初の大型例、対照的に "AI ラボの sandbox 事案"（前日既報の OpenAI 追加脱走）は "AI が自身をコントロールしない" リスクを示す、両者を並べて "AI が守る・AI が抜ける" の対照が 2026 後半のセキュリティ議論の中心テーマに。</p>
+</article>
+
+</section>
+
+<section>
+<h2>💼 ビジネス / 企業</h2>
+
+<article>
+  <h3><a href="https://www.bloomberg.co.jp/news/articles/2026-08-02/mitsubishi-electric-auto-equipment-sale-bain-lonestar-bid" target="_blank" rel="noopener">三菱電機の自動車機器事業売却入札、Bain Capital・Lone Star が応札 ─ Bloomberg 独自、前日既報の通期純利益4950億円上方修正（+21%）で FA・AI・半導体事業に集中する構造改革の一環、自動車機器事業（電動化・ADAS 関連製品）は独立化で 数千億円規模売却、日本の PE 系ディールとしては 2026 年前半最大級、成長事業（AI 半導体向け FA）と非中核事業（自動車機器）の切り離しが加速する典型例、KKR・Carlyle 等の入札不参加は情報未確認、丹青・SMBC 日興が売却アドバイザー</a></h3>
+  <p class="src">参照元: Bloomberg 独自 (三菱電機の自動車機器事業売却にべインやローンスター応札)</p>
+  <p class="summary">Bloomberg が 8月2日、独自記事「三菱電機の自動車機器事業売却にべインやローンスター応札」を配信、詳細: (1) 三菱電機が自動車機器事業（電動化・ADAS・車載メカトロニクス製品）の売却プロセスを進めており、(2) <b>Bain Capital・Lone Star Funds が応札</b>、(3) 売却規模は数千億円級、(4) 前日既報の通期純利益 4,950億円（+21%）上方修正と同時進行の構造改革の一環。文脈: (a) 三菱電機は 前日発表決算で FA システム事業（シーケンサー・サーボシステム）が AI・半導体・工作機械需要で急拡大していると説明、"成長する AI ツルハシ事業に集中、成熟した自動車機器は独立化" というポートフォリオ再編、(b) 日本の PE（プライベートエクイティ）ディールとしては 2026 年前半最大級の規模、Bain は前年の東芝・オリンパス・シャープ関連ディールに続く連続、Lone Star は 日本市場での AV・産業機器投資を拡大中、(c) 前日既報の "牧野フライス NSSK 拒否"・"伊藤忠 米航空機リース $20B" と組合わさり、"日本企業の事業ポートフォリオ再編と PE 資金流入" が 2026 後半の M&A テーマとして確立、(d) 円買い介入（前日既報）で円高方向への短期振動があるものの、"外資 PE の円建て日本資産取得の好機" 判断が加速、(e) 東京証券取引所の PBR 改善圧力・アクティビスト圧力が引き続き構造改革を後押し。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOFL02CG20S6A800C2000000/" target="_blank" rel="noopener">BYD の軽 EV「ラッコ」襲来、日本の軽自動車市場に本格参入 ─ 日経が神奈川県大和市の大型スーパー駐車場で調査取材、"日本独自規格 国民車 vs 世界席巻中国車" の競争開始、BYD が長年狙ってきた日本の軽ジャンル（新車の36%）に軽EV「ラッコ」を投入、日本ユーザーの駐車行動・充電行動を徹底観察する現地調査を実施、日産サクラ・三菱eKクロスEV・ホンダN-VAN e: との三つ巴、日本の Zero Emission 補助金・地方自治体 EV 支援策も追い風、価格戦略は 200万円台前半で日本勢を下回る攻勢の可能性</a></h3>
+  <p class="src">参照元: 日本経済新聞 (BYDの軽EV「ラッコ」襲来 スーパー駐車場を徹底観察、日本攻略へ執念)</p>
+  <p class="summary">中国の電気自動車（EV）大手 <b>比亜迪（BYD）が軽自動車の EV「ラッコ」を発売</b> し、日本の軽自動車市場へ本格参入したことを日経が 8/2 に大型特集で報道。日本の軽自動車は "国民車" として新車販売の約36%を占める特殊ジャンル、これまで海外勢が全く食い込めていなかったが BYD が長年の準備を経て投入、"日本独自規格の国民車 vs 世界を席巻する中国車" の直接競争が開始した。日経が神奈川県大和市の大型スーパー駐車場で BYD 調査チームの取材を実施、"雨のなか軽自動車に乗り込む親子を BYD 社員 10名がじっと観察"、サービスエリアや幼稚園を回って日本の軽ユーザーの駐車行動・買物行動・充電行動を徹底研究している異例の "参入前フィールドリサーチ" が明らかに。競争構図: (a) <b>日産サクラ</b>・<b>三菱 eK クロス EV</b>（日本の軽 EV パイオニア）、(b) <b>ホンダ N-VAN e:</b>（商用軽 EV）、(c) <b>スズキ ワゴン R EV</b> 等の日本勢との三つ巴以上、(d) 価格戦略は <b>200万円台前半</b> で日本勢（250万円前後）を下回る攻勢の可能性、政府の "Zero Emission 車補助金"（軽 EV 対象 55万円）・自治体独自支援（東京都・神奈川県は追加 30-50万円）を組合わせれば 実質 150-180万円 の "軽 EV 破格プライス" を実現しうる。BYD 日本法人は 2024-25年に既に "ドルフィン"・"アット3"・"シール" で参入していたが軽ジャンル参入は日本市場真の攻略、成功すれば 2026 年下半期の <b>日本自動車産業構造変化の transformative signal</b>。トランプ関税・米中緊張の裏で、"中国 EV × 日本軽ジャンル" の実験が加速するフェーズ、"GM/Ford の EV 議論後退"（前日既報）と対照的な "中国勢の日本攻勢" として今後 6ヶ月の焦点。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.bloomberg.co.jp/news/articles/2026-08-01/big-mac-mcdonalds-japan-price-increase" target="_blank" rel="noopener">日本マクドナルド、8月に「ビッグマック」など約6割の商品を10-50円値上げ ─ Bloomberg 報道、原材料費・人件費・エネルギーコスト上昇を反映、ビッグマック単品 480円→510円、ポテトM 330円→360円 等、外食大手による段階的値上げの継続、前日既報の "食料品消費税 1% 引下げ vs 外食税率 10% 継続 → 外食離れリスク"（KAGUYA PRESS）と真逆の "外食側自ら値上げ" 展開で、飲食店倒産リスクの複雑化が加速、内食（家庭調理）シフトを一段と後押しする可能性、Z世代の "食事キャンセル" 4割 と組み合わせて「消費者購買力低下フェーズ」を象徴する</a></h3>
+  <p class="src">参照元: Bloomberg (マクドナルドが「ビッグマック」など約6割の商品値上げへ、10－50円)</p>
+  <p class="summary">日本マクドナルドが 8月に「ビッグマック」などを含む <b>約6割の商品を 10-50円値上げ</b> することが Bloomberg で報じられた。主な値上げ品目: <b>ビッグマック単品 480円→510円</b>（+30円）、ポテト M サイズ 330円→360円（+30円）、その他マックナゲット・シェイクなど広範囲。値上げ理由: (a) 原材料費（牛肉・小麦・食用油）の高騰、(b) 人件費上昇（時給改定）、(c) エネルギーコスト増、(d) 円安による輸入コスト圧力（前日既報の日米協調円買い介入で短期円高振動があるものの基調的円安は継続）。<b>マクロ含意</b>: (i) 前日既報の "食料品消費税 27年4月から 2年間 1%"（高市首相 7/30 発表）と "外食は税率 10% 継続" のギャップから「外食離れ・飲食店倒産リスク」（日本フードサービス協会・全国居酒屋協会が経産省に代替措置要請中）が指摘されていた中、"外食大手自身が値上げ" で消費者の外食離れをさらに後押しする逆説的展開、(ii) Z世代の "週1回以上 食事キャンセル 4割"（インテージ調査、日経 8/2 報道）と重なり、"家計の実質購買力低下 + 外食コスト上昇 + 消費税減税の対象外" の 3層圧力が家計に、(iii) 明治安田生命 "夏休み予算 平均85,145円 前年比-2万円で 5年ぶり減"（前日既報）と同じ "生活防衛の夏" ムードを企業側から実装、(iv) マクドナルドは "低価格の代名詞" だっただけに社会心理的インパクトが大きい、(v) 高市政権の減税策と外食産業の値上げが同時進行することで、"財政拡張の恩恵は内食側に集中、外食は縮小" という業種格差が固定化する 2026 後半の消費構造変化。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/08/02/malaysia-shutting-down-network-school-balaji-srinivasan/" target="_blank" rel="noopener">マレーシア、Balaji Srinivasan の「Network School」を閉鎖の見通し ─ TechCrunch 報道、元 Coinbase CTO・"The Network State" 著者 Balaji が Forest City（元マレーシア中国合弁の失敗ゴーストシティ）で運営する tech founder コミュニティが停止方向、"Network State" 思想の実験校として設立、Vitalik Buterin・Peter Thiel 派・crypto 界隈から著名参加者、しかしビザ発給・現地当局との関係悪化が原因と推測、Prospera（Honduras）や Praxis 等の "Charter city / Startup Society" 潮流全体への冷や水、Curtis Yarvin 系 techright と密接な流れの後退</a></h3>
+  <p class="src">参照元: TechCrunch (Malaysia is reportedly shutting down Balaji Srinivasan's Network School)</p>
+  <p class="summary">TechCrunch が 8月2日、"マレーシアが <b>Balaji Srinivasan の Network School を閉鎖の方向</b>"と報道。<b>Network School</b> とは、元 Coinbase CTO・"The Network State" 著者の Balaji Srinivasan がマレーシアの Forest City（元中国資本合弁の巨額不動産プロジェクト、ゴーストシティ化した経緯あり）で運営する tech founder コミュニティで、"Network State" 思想（デジタルネイティブが物理的な立地を選び、独自のガバナンス・通貨・法制度を持つ新しい "国家" を作る）の実装実験校として 2024年後半に設立、Vitalik Buterin（Ethereum 創始者）・Peter Thiel 派・crypto founder 界隈から著名参加者が滞在してきた。閉鎖の背景（推測ベース、TC 報道時点で詳細非開示）: (a) ビザ発給問題、(b) 現地当局との関係悪化、(c) 資金・運営体制の課題、(d) マレーシア国内の政治的注視。含意: (i) <b>Prospera（Honduras）</b>・<b>Praxis</b>・<b>Zuzalu（Montenegro）</b> 等の "Charter city / Startup Society" 潮流全体への冷や水、(ii) Balaji が唱えてきた "Network State" 論に対する現実的挫折、"物理的立地への depend が結局 nation-state を超えられない" という批判が可視化、(iii) Curtis Yarvin 系 techright ムーブメントと密接な "エキシットオプション主義" の後退、(iv) 前日既報の "TechCrunch Silicon Valley loves young founders. Until it doesn't"（20歳前後の若手ファウンダー idealization → burnout サイクル顕在化）と同じ "AI VC/tech 主義の反省ムード" フェーズに符号、(v) Trump 政権期の "米国企業家の海外拠点実験" 潮流にも影響、(vi) マレーシアは Anwar 政権下で対中バランス外交を進めており、Forest City（中国系）の再位置付け問題ともつながる可能性。8月上旬（Black Hat/DEF CON 直前）に crypto 界隈のリアル政治との衝突を示す象徴事例。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.cbsnews.com/news/netflix-lawsuit-105-million-fortitude-nicolas-cage-drive/" target="_blank" rel="noopener">Netflix、Nicolas Cage 主演未公開映画「Fortitude」のマスターディスク紛失で$105M 訴訟提起 ─ プロダクション会社と映画監督がカリフォルニア州地裁に提訴、映画のマスターコピー（暗号化なし）をアソシエイトプロデューサー Daniel Haido が Netflix に直接手渡し試写目的で提供、試写後の削除を口頭指示、1週間強後に Netflix が「ドライブが盗まれた」とメール、"exclusivity と market value に大打撃"、Netflix は責任否認しつつ "content security は真剣に対応"・"pirating サイト監視の申し出" と回答、大手ストリーマー vs インディー映画の "content security 責任" 議論として業界注目</a></h3>
+  <p class="src">参照元: CBS News / Slashdot (Netflix Sued Over $105 Million for Losing an Unreleased Nicolas Cage Film) / カリフォルニア州地裁訴状</p>
+  <p class="summary">プロダクション会社と映画監督が 7月30日、Netflix に対して <b>$105 million（約 157億円）</b> の損害賠償を求める訴訟をカリフォルニア州地裁に提起、Slashdot が 8/2 に CBS News の報道を紹介。訴状の主要主張: (1) 未公開映画「<b>Fortitude</b>」（Nicolas Cage 主演）の <b>暗号化されていないマスターコピー</b>を、映画のアソシエイトプロデューサー <b>Daniel Haido</b> が Netflix 社に直接手渡し、購買可能性判断のための試写目的で提供、(2) 試写後にファイルを削除するよう Haido が口頭で Netflix 従業員に指示、(3) 試写から <b>1週間強後</b> に Netflix 側から「ドライブが盗まれた」とメール受信、(4) 「先週我々のオフィスの机から相当量のドライブが盗まれた」と Netflix 幹部がメールで説明、(5) Netflix の紛失で映画の <b>exclusivity と市場価値に多大な damage</b> が発生。<b>Netflix の対応</b>: 映画紛失の責任は否認したものの、"コンテンツセキュリティを真剣に対応、pirating サイトを監視し unauthorized copies が出回らないか watch する" と応答。含意: (i) 大手ストリーミングサービスに未公開映画を試写目的で預けるインディペンデント映画界の "セキュリティリスク" が露呈、(ii) 暗号化なしマスターディスクを "机の上に放置" していた Netflix の内部管理体制批判、(iii) "content security" は AI 生成音楽の チャート除外 ポリシー（前日既報の Universal/Sony/Warner 提案）等の "コンテンツ真正性" 議論と並行する、"物理的コンテンツ管理" の議論として業界注目、(iv) Cage 主演作は近年 cult 化・IP 価値が高い、$105M 請求額は流出時のプレミアム販売機会損失を反映、(v) OpenAI 追加脱走事案（前日既報）と同じ "大手 tech 企業の内部管理体制の甘さ" 事例として組合わさり、"tech giants の operational security 議論" フェーズを強化。</p>
+</article>
+
+</section>
+
+<section>
+<h2>🚀 スタートアップ / 資金調達</h2>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUB292WB0Z20C26A7000000/" target="_blank" rel="noopener">2026年度日経調査、設備投資 35兆円で過去最高、AI 供給網整備の裾野広がる ─ 日本の主要企業設備投資計画が 35兆円と過去最高、AI 半導体・データセンター・電力インフラ・FA/工作機械への投資が拡大、"AI ツルハシ銘柄"（アドバンテスト・キオクシア・三菱電機・TSMC 熊本）の集中投資期から、電子部品・パッケージング・冷却・電源 IC 等へ裾野拡大、日本製造業の中核が "AI 供給網の日本担当" へ再定義、日銀の 26年度 GDP 上方修正（前日既報）の主因、Astra 数学突破（本日最大）で "AI capex サイクル継続" 論を後押し</a></h3>
+  <p class="src">参照元: 日本経済新聞 (設備投資額最高35兆円、AI供給網整備の裾野広がる 26年度日経調査)</p>
+  <p class="summary">日経が 8月2日、"2026年度の日本主要企業設備投資計画が <b>35兆円</b> と過去最高、AI 供給網整備の裾野が広がる" とする自社調査結果を公表。調査要点: (1) AI 関連投資が <b>2桁ペースで増加</b>、対象は AI 半導体・データセンター・電力インフラ・FA/工作機械・電子部品・パッケージング・冷却系・電源 IC 等の "裾野" に拡大、(2) 2024-25年に集中していた "AI ツルハシ銘柄" 中核（アドバンテスト・キオクシア・三菱電機・ソシオネクスト、TSMC 熊本工場）に加え、電子部品（村田・TDK・京セラ）、パッケージング関連（新光電気工業・イビデン）、電源・冷却（オムロン・SMC・ダイキン）、電力インフラ（東芝・日立・富士電機）まで恩恵が拡大、(3) データセンター・電力需要増でユーティリティ企業も投資拡大、(4) "日本製造業の中核が『AI 供給網の日本担当』へ再定義される" 構造変化。<b>マクロ含意</b>: (a) 日銀の 26年度実質 GDP 成長率上方修正（前日既報の展望レポート）の主因が可視化、(b) Amazon 2200億ドル capex 増額・Meta 130-145B capex 増額（前日既報）・NVIDIA/AMD メモリキット 10%以上値上げ（前日既報）の "上流" 需要が日本の中流・下流企業に流れ込む構造、(c) 前日既報の "AI VC バブル反省ムード"（TechCrunch "Silicon Valley loves young founders. Until it doesn't"・Sam Altman decelerate 発言）と対照的な "実業の AI capex 実装" の加速、"投資家反省 vs 実業実装" の分断が 2026 後半に鮮明化、(d) 本日最大の <b>OpenAI Astra 数学 10問突破</b> は "AI capex サイクルは AGI 化フェーズで一段と加速" 論を強化、AI capex ダウンサイクル論への反証、(e) 三菱電機自動車機器事業売却（本日既報）と同じ "非中核事業切離・AI 事業集中" の産業構造再編の実データ、(f) キオクシア 7-9月 純利益 1兆2700億円予想（前日既報）・三菱電機 通期 4,950億円（前日既報）と組合わさり、8月上旬決算ラッシュ後半の企業評価軸が "AI 供給網 exposure" で 統合的に再評価される signal。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/08/01/london-hacker-house-founder-burnout/" target="_blank" rel="noopener">TechCrunch、London hacker house が "founder burnout" 潮流に反旗 ─ Silicon Valley 系 "24/7 grind" 文化と対照的に、hacker house 参加者に "健康・持続可能性・共同体" を軸にした運営方針、Sam Altman "AI industry should pace itself"（7/31 既報）や TechCrunch "Silicon Valley loves young founders. Until it doesn't."（前日既報）と同流、AI ブームの副作用が business 面（burnout・fraud 増加）で顕在化するフェーズで European 系ファウンダー支援手法が注目、Anthropic petition 賛同・OpenAI "pace itself" 姿勢と組合わさり "AI 開発とベンチャー文化両方の減速議論" が具体化</a></h3>
+  <p class="src">参照元: TechCrunch (Inside the London hacker house taking a stand against founder burnout)</p>
+  <p class="summary">TechCrunch が 8月2日、London の hacker house（起業家共同生活・作業拠点）が <b>"founder burnout" 潮流に反旗を翻す</b> 特集記事を公開。詳細: (1) Silicon Valley 系の "24/7 grind" 文化（founders が食事・睡眠を犠牲にして働き続けることを美徳とする）と対照的に、hacker house 参加者に <b>"健康・持続可能性・共同体"</b> を軸にした運営方針を採用、(2) 具体的な運用として、共有夕食・週次スポーツ活動・メンタルヘルスコーチング・"grind の可視化を評価しない" 文化設計、(3) 参加ファウンダーは EU 各国 + UK の AI・fintech・health tech 系スタートアップの創業者数十名。含意: (a) Sam Altman が "AI industry should pace itself" と発言した週（前日既報）と符合、(b) 前日既報の TechCrunch "Silicon Valley loves young founders. Until it doesn't."（20歳前後の若手ファウンダー idealization → burnout サイクル顕在化）・"VC-backed startups commit more fraud" 特集と同流、(c) AI ブームの副作用が業績面（burnout・fraud 増加・退場率上昇）で顕在化するフェーズで、European 系ファウンダー支援手法が対抗軸として注目、(d) Anthropic petition 賛同（前日既報）・OpenAI "pace itself" 姿勢と組合わさり、"AI 開発とベンチャー文化両方の減速議論" が具体的な運用モデル論として拡大、(e) 対照的に Amazon・SpaceX 等の "still blasting off" 陣営（前日既報）や本日最大の Astra 突破があり、"減速陣営 vs 加速陣営" の分断が rhetoric から実装レベルへ移る 8月上旬の展開、(f) TechCrunch Disrupt 2026（10/13-15 SF 開催）・StrictlyVC NYC 2026（9/10 NY 開催）を控え、投資家議論の主軸として位置づけられる可能性。</p>
+</article>
+
+</section>
+
+<section>
+<h2>📈 マーケット / 経済</h2>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOUB01H3F0R00C26A8000000/" target="_blank" rel="noopener">日米、15年ぶり協調介入で 8月3日に共同声明を調整、政策メッセージの制度化 ─ 前日既報の "米財務省 28年ぶり円買い介入・ベッセント砲メモ判明" を踏まえ、日米当局が 3日に共同声明を出す方向で最終調整、"急速で一方向的な円安は日米が容認しない" 政策姿勢を制度化、2011年 G7 協調介入以来 15年ぶり、日銀 ウォーシュ FRB 議長の "タカ派像は張りぼて" 論が浮上する中で 日米利上げ競争号砲、Nikkei は "円安抑止の賞味期限は FRB の本気度と日銀との利上げ競争次第" と分析、日米財政協調の新モデル形成期</a></h3>
+  <p class="src">参照元: 日本経済新聞 (日米が15年ぶり協調介入、円安阻止で思惑一致 3日に共同声明で調整 / 円買い介入、タカ派FRB「張りぼて」説を突く 日米利上げ競争に号砲 / 協調介入とは / 円安阻止へ波状の介入)</p>
+  <p class="summary">日経が 8月2日、"<b>日米が 15年ぶりに協調介入、円安阻止で思惑一致、8月3日に共同声明で調整</b>" とスクープ報道。前日既報の「米財務省が 28年ぶり円買い介入・ベッセント砲メモ判明・NY 連銀経由でユーロ売却で円購入 6-7兆円規模」を制度化する動きで、<b>2011年 G7 協調介入（東日本大震災後）以来 15年ぶり</b> の日米協調枠組み。共同声明で想定される要点（日経報道ベース）: (1) "急速で一方向的な円安は日米が容認しない" 政策メッセージ、(2) 為替の秩序ある動きに対する日米共通姿勢、(3) 追加介入の可能性の明示的示唆、(4) 日銀 10月利上げの環境整備。<b>日経マーケット面の分析</b>: 「円買い介入、タカ派 FRB『張りぼて』説を突く 日米利上げ競争に号砲」で、FRB ウォーシュ新議長の "タカ派像" は市場に疑念が広がる中、日本側の介入で "米側の意思を可視化" した意義、"円安抑止の賞味期限は FRB の本気度と日銀との利上げ競争次第"。<b>専門家評価</b>: (a) 東京大学 浜田宏一名誉教授（アベノミクスの理論的支柱）が日経コラムで「日本円沈没の危機、4% への利上げを」と警鐘、"通貨危機回避には金融政策の抜本的転換" を主張、(b) 三菱UFJモルガン・スタンレー証券 植野大作氏（前日既報）「介入で時間を稼げても、金利差と財政信認が動かなければ長続きしない」。<b>市場含意</b>: (i) 前日既報の日経平均 +2,494.59円（+4.03%）6万4362円のポリシーミックス効果を制度化、(ii) 高市首相の "食料品消費税 1% 引下げ" 政策との財政信認議論と交錯、(iii) 家電・自動車輸出企業への逆風増加（円高方向）、(iv) 外国投資家の日本株認識再評価、(v) 3日以降の日米財務高官コミュニケーション・G20 レベルの合意形成へと拡大するか焦点、(vi) 本日最大の Astra 数学突破が示す "AI 覇権継続" 論との交錯で、日米の産業政策・金融政策の統合が求められる 8月上旬の展開。</p>
+</article>
+
+<article>
+  <h3><a href="https://techcrunch.com/2026/08/01/data-centers-power-cuts-us-grid-blackouts/" target="_blank" rel="noopener">米最大送電網 PJM、AI データセンター需要急増で "temporary power cuts" 計画を検討、blackout 回避のため ─ TechCrunch 報道、AI ハイパースケーラー（Amazon 2200億ドル capex・Meta 130-145B capex）の急速増設で、東部 13州・DC を管轄する PJM Interconnection（世界最大の卸電力市場、6500万人カバー）が需要ピーク時にデータセンターへ一時停電を実施する計画、"blackout を防ぐ最終手段として、事前合意した hyperscale 顧客への短時間 curtailment" が想定、Astra 数学突破（本日最大）が示す "AI compute 加速" 論と "電力インフラ制約" の衝突が本格化</a></h3>
+  <p class="src">参照元: TechCrunch (Data centers may face temporary power cuts to prevent blackouts on largest US grid) / PJM Interconnection</p>
+  <p class="summary">TechCrunch が 8月2日、"米国最大の送電網 <b>PJM Interconnection</b>（東部 13州+DC、6500万人カバーの世界最大級卸電力市場）が、需要ピーク時に <b>データセンターへ一時的な停電（temporary power cuts）</b> を実施する計画を検討中" と報道。背景: (1) AI ハイパースケーラー（Amazon 2200億ドル 26年 capex、Meta 130-145B capex、Microsoft/Google 巨額投資）の急速増設でデータセンター新設が全米で加速、(2) 特に <b>Virginia 州「Data Center Alley」</b>（PJM 管轄内、全米データセンター容量の 25% 集中）の負荷が想定を超過、(3) 送電網の増強スピードが AI compute の増強スピードに追いつかない構造的ボトルネック、(4) 冬・夏のピーク需要時に blackout（大規模停電）を防ぐ最終手段として、事前合意した hyperscale データセンター顧客への短時間 curtailment（電力削減）を実施する枠組みが議論されている、(5) 事前合意型のため hyperscaler は代替バックアップ電源（ディーゼル・ガス・蓄電池）で継続稼働、しかしトレーニングジョブへの影響は不可避。<b>含意</b>: (a) 本日最大の <b>OpenAI Astra 数学 10問突破</b>（"$2,000 のみで数学史突破" 論）が示す "AI compute の加速" と、"電力インフラ制約" が正面衝突するフェーズが到来、(b) Florida の "$200M EV chargers 予算を Air Taxi pads に転用" 計画（既報）と同じ "エネルギー資源の再配分" テーマ、(c) Trump 政権の AI 政策（EO 14409 / 5月既報の "AI 半導体・電力インフラ集中投資" 執行命令）が 8月上旬にフェーズ2へ、(d) 前日既報の "米大型テック決算 AI capex 加速がクラウド収益に直接反映" 構造が、上流の電力インフラで律速される 2026 後半以降の構造リスク、(e) 日本の設備投資 35兆円 過去最高（本日既報）と同じ "AI 供給網 電力インフラ需要拡大" テーマの日米対比、(f) NVIDIA・Broadcom・Vertiv・Eaton など電力インフラ・冷却・電源関連銘柄への注目度が更に高まる 8月上旬の投資テーマ。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.bloomberg.co.jp/news/articles/2026-08-02/dimon-warning-lending-financial-crisis" target="_blank" rel="noopener">JPMorgan Dimon CEO、"愚かな融資" に警鐘、金融危機前との類似性を指摘 ─ Bloomberg 報道、JPMorgan Chase の Jamie Dimon CEO が 2008年金融危機前との類似性に警鐘、"private credit・NBFI（非銀行金融機関）・オフバランス取引" に懸念、Anthropic 3社ハック（前日既報）や AI 領域の VC 過熱と組合わさり "システミックリスク" 議論が本格化、Dimon は "AI VC バブル反省"（前日既報の Sam Altman decelerate）とは別軸で "credit サイクル" のトップアウト懸念、8月上旬 Black Hat/DEF CON を前に金融システム脆弱性議論も並行</a></h3>
+  <p class="src">参照元: Bloomberg (JPモルガンCEO、金融危機前との類似に警鐘－「愚かな」融資批判)</p>
+  <p class="summary">JPMorgan Chase の <b>Jamie Dimon CEO</b> が金融業界の一部融資慣行について "愚かな（stupid）" と批判、"<b>2008年金融危機前との類似性がある</b>" と警鐘を鳴らしたと Bloomberg が 8/2 に報道。Dimon の懸念要点: (1) <b>private credit</b>（プライベートクレジット、非公開市場での企業向け融資）市場が過去数年で急拡大（Blackstone・Ares・Apollo など運用資産 $2兆超）、(2) 一部 lender が信用審査基準を緩め、"reach for yield" で低格付け・レバレッジ企業への融資を増やしている、(3) <b>NBFI（非銀行金融機関）</b> の与信残高が銀行監督下の融資を上回るまで拡大、システミックリスクの震源になり得る、(4) オフバランス取引・複雑証券化商品の再拡大、(5) 経験の浅い若手 banker/PE 幹部が "20年前の教訓" を知らずに同じ過ちを繰り返しつつある。<b>マクロ含意</b>: (a) 前日既報の "AI VC バブル反省"（Sam Altman decelerate 発言・TechCrunch "Silicon Valley loves young founders" 特集・"VC-backed startups commit more fraud" 特集）とは別軸で、"credit サイクル" のトップアウト懸念、(b) 米連邦準備制度（FRB）ウォーシュ議長の "タカ派" 姿勢（本日既報の日経マーケット面 "張りぼて" 論）とも交錯、(c) Anthropic 3社ハック（前日既報）や AI 領域の operational security 議論と組合わさり、"AI × 金融 × credit" のシステミック監視強化フェーズ、(d) 8月上旬の Black Hat/DEF CON を前に金融システム脆弱性議論も並行、(e) 日銀 10月利上げ観測と重なり、日米金融政策の同期性が問われる、(f) 三菱電機自動車機器事業売却（本日既報）に Bain・Lonestar が応札という PE 系ディール活発化とも交錯、"PE の与信拡大がリスクの温床" 見方が広がる。Dimon 発言は伝統的に市場でヘッドライン化しやすく、8月第一週の金融市場のトーンを規定する。</p>
+</article>
+
+</section>
+
+<section>
+<h2>🌏 国際 / 政治</h2>
+
+<article>
+  <h3><a href="https://apnews.com/article/iran-war-trump-saudi-crown-prince-call-814164417aa284dc8a6d34ac22ea1a8e" target="_blank" rel="noopener"><span class="lede">本日最大</span><span class="cont">前日からの続報</span>Trump 大統領、対イラン攻撃計画を電撃キャンセル「Mideast 諸国が合意枠組みを reach、ホルムズ海峡 immediate 開放・イラン核脅威終結」 ─ Truth Social 投稿で "イランと他中東諸国から hold off 要請、"perimeters of a deal has been agreed to"、条件は "rapidly deal 達成"、"lock and loaded WWII 以来の水準で ready" と直前まで威嚇していた急転換、Israel も合意にコミット、Saudi Crown Prince・Netanyahu と電話協議、Iran 側は "wish list" と反応・Araqchi 外相「decisive・proportionate response」宣言でスタンス硬直、CBS/BBC は "cabinet meeting で 週末攻撃計画" と報道、5ヶ月続く戦争終結 or 新展開に</a></h3>
+  <p class="src">参照元: AP News (Trump claims Mideast allies have reached outlines of deal to end Iran war) / BBC (Trump says he is cancelling strikes on Iran subject to 'rapidly' making deal) / The Guardian (Rory Carroll・Trump climbs down on Iran strikes) / CNBC (Trump: Planned attack on Iran canceled after reaching outline of deal) / Gulf News / 日本経済新聞 (トランプ氏、対イラン攻撃停止を宣言「中東諸国から要請」) / CBS News</p>
+  <p class="summary">Donald Trump 米大統領が 8月2日（米東部時間 8/2 未明の Truth Social 投稿）、<b>対イラン軍事攻撃計画を電撃的にキャンセル</b> したと発表、"イランと他中東諸国から hold off 要請を受けた、<b>perimeters of a deal（合意の枠組み）が reach されている</b>" と説明。<b>合意骨子（Trump 主張）</b>: (1) <b>ホルムズ海峡の immediate, complete, and total 開放</b>、(2) <b>イランの核脅威の end</b>、(3) 条件は "rapidly（迅速に）deal を達成できること"、(4) <b>Israel も合意にコミット</b>。Trump 直前ツイート「"lock and loaded and ready to go against the Islamic Republic of Iran, at levels of Military Terror, Strength, and Power not seen since <b>World War II</b>"」と WWII 以来の水準で威嚇していた急転換。<b>時系列</b>: (a) 4月 停戦崩壊 → 6月 escalation → 5ヶ月続く戦争、(b) 7/29 米・サウジ軍がイラクの親イラン組織空爆（既報）、(c) 7/31 Trump「イランへの信頼失いつつある」（前日既報）、(d) 8/1 Cabinet Meeting で "週末に harshest bombing campaign を計画"（CBS/WSJ）、(e) 米各地の Middle East US 大使館が航空便キャンセル警告発令、(f) 8/2 未明の電撃 stand-down。<b>Iran 側反応</b>: (i) Fars International 通信「Trump の要求は wish list」、(ii) Araqchi 外相「decisive、proportionate response」宣言でスタンス硬直、Turkey Fidan 外相・Pakistan Munir 元帥に電話で "adventurous action" への警告、(iii) Iran Mehr 通信は "Tehran が US に hold off を求めたは new lie"。<b>含意</b>: (A) Trump の "全方位外交攻勢" の中で、5ヶ月続いた米・イラン戦争の初の停戦可能性、(B) ホルムズ海峡開放が実現すれば原油価格の急落・世界物価の緩和、(C) Saudi Crown Prince Mohammed bin Salman と Trump の電話協議が deal 仲介の中心、(D) 前日既報の "米・イラン緊張・水道サイバー攻撃 7州" 議論の一時緩和、(E) 日本の日米協調介入（本日既報）で "円安基調" の一要因である中東緊張が緩和すれば円高圧力強化、(F) しかし Iran 側の拒否姿勢で "48時間 で 合意 or 再攻撃" の高いブリンクマンシップ状態、(G) 8月上旬の Black Hat/DEF CON で "国家 actor サイバー攻撃" 議論が並行、(H) Trump 政権発足 6ヶ月時点の外交攻勢が中東・対中（Tesla China 売却 = 既報）・対日（円買い介入 = 本日既報）で同時進行するフェーズ、次の焦点は 8月第一週の合意成立 or 崩壊。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nippon.com/en/news/yjj2026080200123/" target="_blank" rel="noopener">熊本地震（7/28 M7.1）、死者38人に増加・初の災害関連死認定、Aeon Mall 熊本の捜索終了、避難者 9200人 ─ 前日から 2人増、70代女性が車中泊で熱中症の疑い、初の disaster-related death、Aeon Mall 熊本（嘉島町）は爆発で 7人死亡・5人負傷、土曜午後に警察・自衛隊が全数確認終了、倒壊建物 3800件超（金曜1500件から倍増）、避難所 210カ所 9226人、38度熱波が復旧を妨げ、3日は 40度予想、宇城市で 8/2 に震度5弱余震（NHK）、TSMC 熊本工場は 7/29 に稼働継続確認済み</a></h3>
+  <p class="src">参照元: Nippon.com/時事通信 (Death Toll from Kumamoto Quake Rises to 38) / The Star (Japan ends search at quake-hit shopping mall) / 京郷新聞 (Kyodo/日経ベース) / 日本経済新聞 (熊本地震関連まとめ) / NHK ニュース (熊本 宇城市で震度5弱)</p>
+  <p class="summary">7月28日に熊本県で最大震度 7・マグニチュード <b>7.1</b> を観測した大地震（2016年熊本地震以来の震度7 観測、観測史上 8回目）の被害が拡大、8月2日に <b>死者 38人</b> に増加（前日から 2人増）と Kumamoto 県災害対策本部が発表。詳細: (1) 追加死者のうち <b>70代女性が車中泊で熱中症の疑い</b>、これが震災の初の "disaster-related death"（災害関連死）認定と判断、車がガス欠でエアコン停止した状態で救急搬送、(2) <b>Aeon Mall 熊本（嘉島町）</b> は地震後の爆発で従業員 12名中 <b>7人が死亡・5人が負傷</b>、8月2日 12時に警察・自衛隊等による大規模捜索・救助活動を終了、"complex 内に他の在留者はいない" と判断、木村 隆志 熊本県知事「大規模捜索活動終了、この phase の end」と発表、爆発直前にテナント会社が従業員に "館内に戻るよう指示" していた事実が判明し捜査対象、(3) <b>倒壊・被害家屋 3,800件超</b>（金曜 1,500件から 2倍超に増加、地方自治体の追加調査結果）、(4) <b>避難所 210カ所に 9,226人</b> が避難生活継続、(5) 8月2日午前に <b>宇城市で震度5弱の余震</b>（NHK 22:09 更新）で市民の緊張継続、(6) 気象庁予想: 8/2 の宇城・八代の最高気温 38度・37度、3日は熊本県一部で <b>40度予想</b> の熱波、"戦後最悪級" の disaster-heat wave complex 展開。<b>含意</b>: (a) 熊本県は TSMC 第一・第二工場立地地域、7/29 に "稼働継続確認"（既報）、しかし従業員・現地サプライヤーの生活基盤崩壊で中期的影響懸念、(b) トヨタ・日産の工場稼働停止延長（日経 7/31 更新）等 自動車製造への波及、(c) 高市早苗政権の "初動" 対応評価が政治的テーマ化（前日既報の高市内閣支持率 "若高老低" 分析と交錯）、(d) 明治安田生命 "夏休み予算 5年ぶり減" と組合わさり "生活防衛の夏" ムード、(e) 財務省 "予備費 3000億円追加" 検討（未確定）、(f) 「地震列島」日本の再認識、日経は 100年超の M5以上 震源データを地図化する特集を配信、(g) Trump 対イラン攻撃 stand-down（本日最大）と組合わせ "8月上旬は世界的な災害・地政学リスクの複合フェーズ"。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGN0100D0R00C26A8000000/" target="_blank" rel="noopener">中国で遺伝子治療の女児死亡、専門家「世界初を急ぎ安全評価軽視か」 ─ 中国国内で新しい遺伝子治療の臨床試験を受けた女児が死亡、専門家からは "世界初 racing で安全評価が軽視されたのでは" との指摘、CRISPR/Cas9 系 in vivo 遺伝子編集・AAV ベクター・base editing 等の "世界初 human 症例" 競争の中でリスク管理体制の不備、"AI ラボの sandbox 事案 vs bio ラボの 臨床試験急ぎ過ぎ" 構造の対比、Trump 政権の "China science threat" 論とも交錯、"技術 racing の副作用" が bio 分野で顕在化</a></h3>
+  <p class="src">参照元: 日本経済新聞 (中国で遺伝子治療の女児死亡、専門家「世界初を急ぎ安全評価軽視か」)</p>
+  <p class="summary">日経が 8月2日、"<b>中国で遺伝子治療の女児死亡</b>、専門家『世界初を急ぎ安全評価軽視か』" と報道。詳細: (1) 中国国内で新しい遺伝子治療の臨床試験を受けた女児が治療後に死亡、(2) 治療内容の詳細（対象疾患・使用ベクター・遺伝子編集技術）は日経記事では限定的、(3) 専門家（欧米・日本の遺伝子治療研究者）からは "世界初 human 症例 racing の中で安全評価プロトコルが軽視されたのでは" との指摘、(4) 中国は近年 CRISPR/Cas9 系 in vivo 遺伝子編集・AAV（アデノ随伴ウイルス）ベクター・base editing 等の "世界初 human 症例" 競争で欧米を先行、"He Jiankui 事件"（2018年 CRISPR ベビー）以降も規制議論が続いているが、臨床試験の急速な拡大が続く、(5) リスク管理体制の不備（IRB=倫理審査委員会 の独立性・informed consent の質・adverse event reporting の透明性）が構造的問題として指摘。<b>含意</b>: (a) 前日既報の "AI ラボの sandbox 事案"（OpenAI 追加脱走・Anthropic 3社ハック）と対比する "bio ラボの 臨床試験急ぎ過ぎ" 構造、"技術 racing の副作用" が AI・bio 双方で 2026 年に顕在化、(b) Trump 政権の "China science threat" 論（中国からの科学技術盗用・生物学脅威議論）とも交錯、8月の中国 5中全会（10月既報）を前に米中科学協力議論に影響、(c) 米国の遺伝子治療スタートアップ（Editas・Beam・Verve・Intellia 等）の評価軸に "安全性 vs 速度" の緊張が再フォーカス、(d) 世界の医薬品規制当局（FDA・EMA・PMDA）の対中国試験データ受容基準の見直し議論、(e) 中国側が公式発表・原因究明を公開するか、"chill effect" で臨床試験を一時停止するか焦点、(f) 本日最大の OpenAI Astra 数学 10問突破（"科学発見への AI 貢献の合法モデル" 事例）と対比した "科学 racing の適正 vs 過度" 議論の題材として国際的に議論拡大の可能性。</p>
+</article>
+
+<article>
+  <h3><a href="https://www.nikkei.com/article/DGXZQOGR021GQ0S6A800C2000000/" target="_blank" rel="noopener">猛暑でハンガリー原発が停止、Danube 川水位低下で 44年ぶり、EU 熱波が原発・工場・河川運輸を直撃 ─ ハンガリー Paks 原発（EU 域内 4基、電力の 50% 供給）が Danube 川の冷却水温度上昇と水位低下で停止、44年ぶり異常事態、EU 各地で連日 40度超の熱波、ドイツ工業地帯の Rhine 川運輸・オランダ工場も影響、AI データセンター需要増（本日既報）と気候変動 physical リスク が正面衝突、Trump 対イラン攻撃 stand-down（本日最大）で原油下落圧力があっても、電力・冷却制約は AI compute の実質ボトルネックに、"気候 × エネルギー × AI" の 2026 後半の複合リスクテーマ</a></h3>
+  <p class="src">参照元: 日本経済新聞 (猛暑でハンガリーの原発停止 ドナウ川水位低下、44年で初)</p>
+  <p class="summary">日経が 8月2日、"<b>ハンガリーの原発が猛暑で停止、ドナウ川水位低下・44年で初</b>" と報道。詳細: (1) ハンガリー <b>Paks 原発</b>（EU 域内 4基、電気容量 2,000MW、国内電力の約 50% を供給する主力原発）が Danube 川の冷却水温度上昇と水位低下で稼働停止、(2) <b>44年ぶり</b> の異常事態、(3) EU 各地で連日 40度超の記録的熱波、(4) ドイツ工業地帯の Rhine 川運輸（BASF・化学品輸送の主要動脈）にも影響、(5) オランダ工場・フランス原発（複数基が同じく冷却水制約で出力低下）も影響、(6) EU の 8月電力需給が広範囲で逼迫、卸電力価格の高騰、産業活動への抑制圧力。<b>含意</b>: (a) 本日既報の "AI データセンター需要増" と "気候変動 physical リスク" が正面衝突するフェーズ、"AI 供給網 x 電力 x 冷却" の 2026 後半以降の複合リスクテーマ、(b) 米 PJM の "temporary power cuts" 計画（本日既報）と欧州の 原発停止 が対称的な事象、両大陸で "電力インフラ制約が AI compute の実質ボトルネック" 論を裏付け、(c) Trump 対イラン攻撃 stand-down（本日最大）で原油価格下落圧力があっても、電力・冷却制約は物理現象で解決困難、(d) 東京電力・関西電力等の日本電力会社の "夏季ピーク対応"・data center 立地判断 にも影響、(e) 熊本地震（本日既報）の 40度予想と重なる "北半球全体の熱波" ムード、(f) COP31（2026年 11月ブラジル開催予定）に向けた気候議論の 2026 夏最大の physical リスク事例として国際的に注目、(g) OpenAI Astra 数学 10問突破（"$2,000 の compute で科学突破"、本日最大）が示す "AI の compute 需要縮小" 論と、"AI マス化での compute 総需要拡大" 論との緊張が、気候・エネルギー制約下でどう解決されるか、8月上旬の中心議論。</p>
+</article>
+
+</section>
+
+<footer>
+  <p>収集元: Bloomberg Japan / NewsPicks / 日本経済新聞 / Techmeme / TechCrunch / Slashdot</p>
+  <p>本日は 6媒体すべてで内容取得成功（WebFetch は Bloomberg・NewsPicks・Nikkei・Techmeme・TechCrunch・Slashdot で 403 のため Exa の web_fetch・web_search 経路で回収）。<b>OpenAI Astra 10問数学突破（$2000で解決）</b>、<b>Trump 対イラン攻撃電撃 stand-down</b>、<b>日米 15年ぶり協調介入 8月3日共同声明調整</b>、<b>熊本地震 M7.1 の死者38人・初の災害関連死・Aeon Mall 熊本捜索終了</b> の "日曜日にしては極めて重い" 4大トピックが同時発生した 1日。裏取りは OpenAI 公式・The Next Web・TechTimes・MLQ News・Temperature2 / AP・BBC・The Guardian・CNBC・Gulf News・日経 / Nippon.com・The Star・京郷新聞・NHK / Chartbeat・Ars Technica・Slashdot・Axios の複数媒体で実施。</p>
+  <p>前日 (2026-08-01) のサマリー掲載トピック（米財務省28年ぶり円買い介入・ベッセント砲メモ / 日銀1.0%据置8対1 / NYダウ・ナスダック続伸 / DRAM NAND 二極化 / OpenAI 追加脱走 coaching notes / Kimi K3 米AI株ショック / OpenAI GPT-5.6値下げ・DeepSeek V4対抗 / Universal/Sony/Warner AI曲チャート除外 / Google Earth Nano Banana 2 / 三菱電機通期上方修正 / Sony PSディスク終了 / Uber AV empire / Silicon Valley 若手ファウンダー特集 / FIFA W杯投資撤回 / Trump「イラン信頼失」/ 米水道7州サイバー攻撃 / Australia 16歳未満SNS 81%継続 / 食料品消費税外食倒産リスク）との重複は除外済み。重要な続報のみ「前日からの続報」タグを付与: Trump 対イラン攻撃 stand-down（前日"信頼失"から一転攻撃計画→即キャンセルの急展開）。日米協調介入 → 8/3 共同声明は "介入から制度化" への段階として本日採用。</p>
+  <p>Techmeme トップは "OpenAI Astra 10問数学突破" が dominant、他候補（Sam Altman ChatGPT parenting・Hank Green AI usage・Claude Opus 5 vending machine ruthless・DoorDash drone delivery・Kalshi 訴訟）のうち Kalshi・publisher traffic -34%・Chrome 1072 bugs・Netflix Fortitude・Malaysia Network School を独立採用、Snapchat AI Spotlight・Google Earth rollback は前日既報のため今回省略、Hank Green・Sam Altman ChatGPT・vending machine 等のカルチャー系は本日 5ジャンルに非該当のため省略。日経掲載の "BYD ラッコ襲来"・"設備投資35兆円AI供給網"・"日米15年ぶり協調介入 3日共同声明"・"円買い介入FRB張りぼて説"・"熊本地震死者38"・"中国遺伝子治療女児死亡"・"ハンガリー原発停止"・"新日本プロレス ブシロード売却"・"最強エルニーニョ食料インフレ" 等の中から今日の 5ジャンル 15記事を選抜。Bloomberg 独自 "三菱電機自動車機器事業売却 Bain/Lonestar 応札"・"マクドナルド 6割値上げ"・"Dimon 愚か融資警鐘"・"アンソロピック従業員株式売却"（実質2月既報のため省略） を採用。NewsPicks の "GMO 在宅勤務廃止"（7/17 既報）・"OpenAI 元幹部企業巨額出資"（前日既報系）は今回省略、NHK "宇城市震度5弱" は熊本記事に統合。</p>
+</footer>
+
+</div>
+</body>
+</html>
